@@ -1,7 +1,7 @@
 {
-  "capturedAt": "2026-04-13T18:13:05.294460Z",
+  "capturedAt": "2026-04-13T18:13:08.373253Z",
   "trigger": {
-    "category": "bootstrap.manifest.fetch.error",
+    "category": "bootstrap.resolve.error",
     "message": "读取 GitHub 引导清单失败",
     "details": {
       "error": "IOException",
@@ -32,7 +32,7 @@
     }
   },
   "nativeSnapshot": {
-    "capturedAt": "2026-04-13T18:13:05.294822Z",
+    "capturedAt": "2026-04-13T18:13:08.373430Z",
     "app": {
       "applicationId": "com.pocketcodex.shell",
       "versionName": "0.1.13",
@@ -51,7 +51,7 @@
     },
     "summary": {
       "lifecycleState": "resumed",
-      "loadGeneration": 3,
+      "loadGeneration": 4,
       "hasWindowFocus": true,
       "isFinishing": false,
       "isDestroyed": false
@@ -81,9 +81,126 @@
     },
     "webView": {},
     "buffer": {
-      "pendingCount": 53,
-      "lastSequence": 53,
+      "pendingCount": 64,
+      "lastSequence": 64,
       "recent": [
+        {
+          "source": "android-shell",
+          "category": "bootstrap.manifest.fetch.success",
+          "message": "GitHub 引导清单读取成功",
+          "details": {
+            "manifestUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
+            "requestUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json?_pcv=29601733",
+            "statusCode": 200,
+            "bodyPreview": "{   \"schemaVersion\": 1,   \"generatedAt\": \"2026-04-13T17:49:07.097Z\",   \"appName\": \"Pocket Codex\",   \"provider\": \"configured\",   \"status\": \"在线\",   \"publicUrl\": \"http:\/\/[240e:328:314:9300:edb9:2e10:c791:be72]:3100\",   \"preferredUpstreamUrl\": ...",
+            "candidateCount": 2,
+            "publicUrl": "http:\/\/[240e:328:314:9300:edb9:2e10:c791:be72]:3100",
+            "preferredUpstreamUrl": "http:\/\/[240e:328:314:9300:edb9:2e10:c791:be72]:3100",
+            "nativeContext": {
+              "lifecycleState": "resumed",
+              "loadGeneration": 4,
+              "hasWindowFocus": true,
+              "isFinishing": false,
+              "isDestroyed": false
+            }
+          },
+          "capturedAt": "2026-04-13T18:13:08.084916Z",
+          "nativeSequence": 57
+        },
+        {
+          "source": "android-shell",
+          "category": "bootstrap.candidate.probe.start",
+          "message": "开始探测 GitHub 清单里的公网地址是否可用",
+          "details": {
+            "upstreamBaseUrl": "http:\/\/[240e:328:314:9300:edb9:2e10:c791:be72]:3100",
+            "source": "bootstrap-manifest:configured",
+            "nativeContext": {
+              "lifecycleState": "resumed",
+              "loadGeneration": 4,
+              "hasWindowFocus": true,
+              "isFinishing": false,
+              "isDestroyed": false
+            }
+          },
+          "capturedAt": "2026-04-13T18:13:08.095003Z",
+          "nativeSequence": 58
+        },
+        {
+          "source": "android-shell",
+          "category": "bootstrap.candidate.probe.error",
+          "message": "探测 GitHub 清单里的公网地址失败",
+          "details": {
+            "error": "ConnectException",
+            "message": "Failed to connect to \/[240e:328:314:9300:edb9:2e10:c791:be72]:3100",
+            "upstreamBaseUrl": "http:\/\/[240e:328:314:9300:edb9:2e10:c791:be72]:3100",
+            "source": "bootstrap-manifest:configured",
+            "nativeContext": {
+              "lifecycleState": "resumed",
+              "loadGeneration": 4,
+              "hasWindowFocus": true,
+              "isFinishing": false,
+              "isDestroyed": false
+            }
+          },
+          "capturedAt": "2026-04-13T18:13:08.117282Z",
+          "nativeSequence": 59
+        },
+        {
+          "source": "android-shell",
+          "category": "bootstrap.candidate.probe.start",
+          "message": "开始探测 GitHub 清单里的公网地址是否可用",
+          "details": {
+            "upstreamBaseUrl": "http:\/\/[240e:328:314:9300:b86d:7ff6:6d61:7768]:3100",
+            "source": "bootstrap-manifest:direct-ipv6",
+            "nativeContext": {
+              "lifecycleState": "resumed",
+              "loadGeneration": 4,
+              "hasWindowFocus": true,
+              "isFinishing": false,
+              "isDestroyed": false
+            }
+          },
+          "capturedAt": "2026-04-13T18:13:08.131577Z",
+          "nativeSequence": 60
+        },
+        {
+          "source": "android-shell",
+          "category": "bootstrap.candidate.probe.error",
+          "message": "探测 GitHub 清单里的公网地址失败",
+          "details": {
+            "error": "ConnectException",
+            "message": "Failed to connect to \/[240e:328:314:9300:b86d:7ff6:6d61:7768]:3100",
+            "upstreamBaseUrl": "http:\/\/[240e:328:314:9300:b86d:7ff6:6d61:7768]:3100",
+            "source": "bootstrap-manifest:direct-ipv6",
+            "nativeContext": {
+              "lifecycleState": "resumed",
+              "loadGeneration": 4,
+              "hasWindowFocus": true,
+              "isFinishing": false,
+              "isDestroyed": false
+            }
+          },
+          "capturedAt": "2026-04-13T18:13:08.142461Z",
+          "nativeSequence": 61
+        },
+        {
+          "source": "android-shell",
+          "category": "bootstrap.manifest.fetch.error",
+          "message": "读取 GitHub 引导清单失败",
+          "details": {
+            "error": "ConnectException",
+            "message": "Failed to connect to \/[240e:328:314:9300:b86d:7ff6:6d61:7768]:3100",
+            "nativeContext": {
+              "lifecycleState": "resumed",
+              "loadGeneration": 4,
+              "hasWindowFocus": true,
+              "isFinishing": false,
+              "isDestroyed": false
+            }
+          },
+          "capturedAt": "2026-04-13T18:13:08.148776Z",
+          "nativeSequence": 62
+        },
         {
           "source": "android-shell",
           "category": "bootstrap.manifest.fetch.start",
@@ -92,14 +209,14 @@
             "manifestUrl": "https:\/\/ghproxy.vip\/https:\/\/api.github.com\/repos\/wishforgood\/pocket-codex-bootstrap\/contents\/pocket-codex\/bootstrap.json?ref=main",
             "nativeContext": {
               "lifecycleState": "resumed",
-              "loadGeneration": 3,
+              "loadGeneration": 4,
               "hasWindowFocus": true,
               "isFinishing": false,
               "isDestroyed": false
             }
           },
-          "capturedAt": "2026-04-13T18:13:01.327035Z",
-          "nativeSequence": 46
+          "capturedAt": "2026-04-13T18:13:08.159119Z",
+          "nativeSequence": 63
         },
         {
           "source": "android-shell",
@@ -112,188 +229,14 @@
             "statusCode": 200,
             "nativeContext": {
               "lifecycleState": "resumed",
-              "loadGeneration": 3,
+              "loadGeneration": 4,
               "hasWindowFocus": true,
               "isFinishing": false,
               "isDestroyed": false
             }
           },
-          "capturedAt": "2026-04-13T18:13:02.006771Z",
-          "nativeSequence": 47
-        },
-        {
-          "source": "android-shell",
-          "category": "bootstrap.manifest.fetch.error",
-          "message": "GitHub 引导清单返回异常状态",
-          "details": {
-            "manifestUrl": "https:\/\/ghproxy.vip\/https:\/\/api.github.com\/repos\/wishforgood\/pocket-codex-bootstrap\/contents\/pocket-codex\/bootstrap.json?ref=main",
-            "requestUrl": "https:\/\/ghproxy.vip\/https:\/\/api.github.com\/repos\/wishforgood\/pocket-codex-bootstrap\/contents\/pocket-codex\/bootstrap.json?ref=main&_pcv=29601733",
-            "statusCode": 403,
-            "bodyPreview": "{\"message\":\"API rate limit exceeded for 38.106.24.222. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https:\/\/docs.github.com\/rest\/overview\/res...",
-            "nativeContext": {
-              "lifecycleState": "resumed",
-              "loadGeneration": 3,
-              "hasWindowFocus": true,
-              "isFinishing": false,
-              "isDestroyed": false
-            }
-          },
-          "capturedAt": "2026-04-13T18:13:02.021182Z",
-          "nativeSequence": 48
-        },
-        {
-          "source": "android-shell",
-          "category": "bootstrap.manifest.fetch.error",
-          "message": "读取 GitHub 引导清单失败",
-          "details": {
-            "error": "IOException",
-            "message": "{\"message\":\"API rate limit exceeded for 38.106.24.222. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https:\/\/docs.github.com\/rest\/overview\/resources-in-the-rest-api#rate-limiting\"}",
-            "nativeContext": {
-              "lifecycleState": "resumed",
-              "loadGeneration": 3,
-              "hasWindowFocus": true,
-              "isFinishing": false,
-              "isDestroyed": false
-            }
-          },
-          "capturedAt": "2026-04-13T18:13:02.042692Z",
-          "nativeSequence": 49
-        },
-        {
-          "source": "android-shell",
-          "category": "bootstrap.resolve.error",
-          "message": "读取 GitHub 引导清单失败",
-          "details": {
-            "error": "IOException",
-            "message": "{\"message\":\"API rate limit exceeded for 38.106.24.222. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https:\/\/docs.github.com\/rest\/overview\/resources-in-the-rest-api#rate-limiting\"}",
-            "nativeContext": {
-              "lifecycleState": "resumed",
-              "loadGeneration": 3,
-              "hasWindowFocus": true,
-              "isFinishing": false,
-              "isDestroyed": false
-            }
-          },
-          "capturedAt": "2026-04-13T18:13:02.074222Z",
-          "nativeSequence": 50
-        },
-        {
-          "source": "android-shell",
-          "category": "proxy.resolve.error",
-          "message": "Android 应用壳解析上游地址失败",
-          "details": {
-            "error": "IOException",
-            "message": "{\"message\":\"API rate limit exceeded for 38.106.24.222. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https:\/\/docs.github.com\/rest\/overview\/resources-in-the-rest-api#rate-limiting\"}",
-            "stack": [
-              "com.pocketcodex.shell.PocketCodexBootstrapResolver.resolveFromManifest(PocketCodexBootstrapResolver.java:185)",
-              "com.pocketcodex.shell.PocketCodexBootstrapResolver.resolve(PocketCodexBootstrapResolver.java:63)",
-              "com.pocketcodex.shell.MainActivity.startOrReloadProxy(MainActivity.java:495)",
-              "com.pocketcodex.shell.MainActivity.lambda$loadPocketCodex$4(MainActivity.java:361)",
-              "com.pocketcodex.shell.MainActivity.$r8$lambda$vnP4WSy9edJ98qcrNny_BZ_mtkY(Unknown Source:0)",
-              "com.pocketcodex.shell.MainActivity$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)",
-              "java.lang.Thread.run(Thread.java:1019)"
-            ],
-            "generation": 3,
-            "nativeContext": {
-              "lifecycleState": "resumed",
-              "loadGeneration": 3,
-              "hasWindowFocus": true,
-              "isFinishing": false,
-              "isDestroyed": false
-            }
-          },
-          "capturedAt": "2026-04-13T18:13:02.088629Z",
-          "nativeSequence": 51
-        },
-        {
-          "source": "android-shell",
-          "category": "proxy.auto-reconnect.schedule",
-          "message": "Android 应用壳已安排自动重连",
-          "details": {
-            "reason": "show-error",
-            "delayMs": 5400,
-            "attempt": 3,
-            "lastPageError": "",
-            "lastResolvedUpstreamBaseUrl": "",
-            "scheduledReconnectAtMs": 1776103987503,
-            "nativeContext": {
-              "lifecycleState": "resumed",
-              "loadGeneration": 3,
-              "hasWindowFocus": true,
-              "isFinishing": false,
-              "isDestroyed": false,
-              "currentUrl": "",
-              "recordAudioPermissionGranted": true,
-              "proxyReady": false,
-              "bootstrapLoadInProgress": false,
-              "bootstrapLoadGeneration": 0,
-              "activeBootstrapReason": "",
-              "reconnectDispatchPending": false,
-              "reconnectDispatchReason": "",
-              "scheduledReconnectReason": "show-error",
-              "scheduledReconnectAtMs": 1776103987503,
-              "scheduledReconnectWaitMs": 5400,
-              "lastProxySource": "",
-              "lastResolvedUpstreamBaseUrl": "",
-              "sdkInt": 34,
-              "manufacturer": "HONOR",
-              "model": "CLK-AN00",
-              "app": {
-                "applicationId": "com.pocketcodex.shell",
-                "versionName": "0.1.13",
-                "versionCode": 14,
-                "localProxyPort": 3180,
-                "githubDiagnostic": {
-                  "configured": true,
-                  "owner": "wishforgood",
-                  "repo": "pocket-codex-bootstrap",
-                  "branch": "main",
-                  "pathPrefix": "pocket-codex\/device-logs",
-                  "proxyPrefix": "https:\/\/ghproxy.vip\/",
-                  "deviceId": "5e740ae166b533fb",
-                  "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
-                }
-              },
-              "network": {
-                "available": false,
-                "error": "SecurityException",
-                "message": "ConnectivityService: Neither user 10293 nor current process has android.permission.ACCESS_NETWORK_STATE."
-              },
-              "bootstrap": {
-                "packagedManifestUrls": [
-                  "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
-                  "https:\/\/ghproxy.vip\/https:\/\/api.github.com\/repos\/wishforgood\/pocket-codex-bootstrap\/contents\/pocket-codex\/bootstrap.json?ref=main"
-                ],
-                "lastBootstrapReadUrl": "",
-                "lastRemoteUrl": "",
-                "lastUpstreamStaleUrl": "",
-                "lastUpstreamStaleAt": "",
-                "lastConfigSyncAt": ""
-              }
-            }
-          },
-          "capturedAt": "2026-04-13T18:13:02.111882Z",
-          "nativeSequence": 52
-        },
-        {
-          "source": "android-shell",
-          "category": "diagnostic.github.publish.success",
-          "message": "诊断日志已通过 ghproxy 上传到 GitHub",
-          "details": {
-            "triggerCategory": "bootstrap.manifest.fetch.error",
-            "filePath": "pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
-            "readUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
-            "statusCode": 200,
-            "nativeContext": {
-              "lifecycleState": "resumed",
-              "loadGeneration": 3,
-              "hasWindowFocus": true,
-              "isFinishing": false,
-              "isDestroyed": false
-            }
-          },
-          "capturedAt": "2026-04-13T18:13:05.281529Z",
-          "nativeSequence": 53
+          "capturedAt": "2026-04-13T18:13:08.365945Z",
+          "nativeSequence": 64
         }
       ]
     },
@@ -310,327 +253,9 @@
     }
   },
   "recentLogs": {
-    "pendingCount": 53,
-    "lastSequence": 53,
+    "pendingCount": 64,
+    "lastSequence": 64,
     "recent": [
-      {
-        "source": "android-shell",
-        "category": "bootstrap.manifest.fetch.start",
-        "message": "开始读取 GitHub 引导清单",
-        "details": {
-          "manifestUrl": "https:\/\/ghproxy.vip\/https:\/\/api.github.com\/repos\/wishforgood\/pocket-codex-bootstrap\/contents\/pocket-codex\/bootstrap.json?ref=main",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 1,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-13T18:12:51.482948Z",
-        "nativeSequence": 14
-      },
-      {
-        "source": "android-shell",
-        "category": "bootstrap.manifest.fetch.error",
-        "message": "GitHub 引导清单返回异常状态",
-        "details": {
-          "manifestUrl": "https:\/\/ghproxy.vip\/https:\/\/api.github.com\/repos\/wishforgood\/pocket-codex-bootstrap\/contents\/pocket-codex\/bootstrap.json?ref=main",
-          "requestUrl": "https:\/\/ghproxy.vip\/https:\/\/api.github.com\/repos\/wishforgood\/pocket-codex-bootstrap\/contents\/pocket-codex\/bootstrap.json?ref=main&_pcv=29601732",
-          "statusCode": 403,
-          "bodyPreview": "{\"message\":\"API rate limit exceeded for 38.106.24.222. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https:\/\/docs.github.com\/rest\/overview\/res...",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 1,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-13T18:12:53.087722Z",
-        "nativeSequence": 15
-      },
-      {
-        "source": "android-shell",
-        "category": "bootstrap.manifest.fetch.error",
-        "message": "读取 GitHub 引导清单失败",
-        "details": {
-          "error": "IOException",
-          "message": "{\"message\":\"API rate limit exceeded for 38.106.24.222. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https:\/\/docs.github.com\/rest\/overview\/resources-in-the-rest-api#rate-limiting\"}",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 1,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-13T18:12:53.095981Z",
-        "nativeSequence": 16
-      },
-      {
-        "source": "android-shell",
-        "category": "bootstrap.resolve.error",
-        "message": "读取 GitHub 引导清单失败",
-        "details": {
-          "error": "IOException",
-          "message": "{\"message\":\"API rate limit exceeded for 38.106.24.222. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https:\/\/docs.github.com\/rest\/overview\/resources-in-the-rest-api#rate-limiting\"}",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 1,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-13T18:12:53.107063Z",
-        "nativeSequence": 17
-      },
-      {
-        "source": "android-shell",
-        "category": "proxy.resolve.error",
-        "message": "Android 应用壳解析上游地址失败",
-        "details": {
-          "error": "IOException",
-          "message": "{\"message\":\"API rate limit exceeded for 38.106.24.222. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https:\/\/docs.github.com\/rest\/overview\/resources-in-the-rest-api#rate-limiting\"}",
-          "stack": [
-            "com.pocketcodex.shell.PocketCodexBootstrapResolver.resolveFromManifest(PocketCodexBootstrapResolver.java:185)",
-            "com.pocketcodex.shell.PocketCodexBootstrapResolver.resolve(PocketCodexBootstrapResolver.java:63)",
-            "com.pocketcodex.shell.MainActivity.startOrReloadProxy(MainActivity.java:495)",
-            "com.pocketcodex.shell.MainActivity.lambda$loadPocketCodex$4(MainActivity.java:361)",
-            "com.pocketcodex.shell.MainActivity.$r8$lambda$vnP4WSy9edJ98qcrNny_BZ_mtkY(Unknown Source:0)",
-            "com.pocketcodex.shell.MainActivity$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)",
-            "java.lang.Thread.run(Thread.java:1019)"
-          ],
-          "generation": 1,
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 1,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-13T18:12:53.114393Z",
-        "nativeSequence": 18
-      },
-      {
-        "source": "android-shell",
-        "category": "proxy.auto-reconnect.schedule",
-        "message": "Android 应用壳已安排自动重连",
-        "details": {
-          "reason": "show-error",
-          "delayMs": 2200,
-          "attempt": 1,
-          "lastPageError": "",
-          "lastResolvedUpstreamBaseUrl": "",
-          "scheduledReconnectAtMs": 1776103975323,
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 1,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false,
-            "currentUrl": "",
-            "recordAudioPermissionGranted": true,
-            "proxyReady": false,
-            "bootstrapLoadInProgress": false,
-            "bootstrapLoadGeneration": 0,
-            "activeBootstrapReason": "",
-            "reconnectDispatchPending": false,
-            "reconnectDispatchReason": "",
-            "scheduledReconnectReason": "show-error",
-            "scheduledReconnectAtMs": 1776103975323,
-            "scheduledReconnectWaitMs": 2199,
-            "lastProxySource": "",
-            "lastResolvedUpstreamBaseUrl": "",
-            "sdkInt": 34,
-            "manufacturer": "HONOR",
-            "model": "CLK-AN00",
-            "app": {
-              "applicationId": "com.pocketcodex.shell",
-              "versionName": "0.1.13",
-              "versionCode": 14,
-              "localProxyPort": 3180,
-              "githubDiagnostic": {
-                "configured": true,
-                "owner": "wishforgood",
-                "repo": "pocket-codex-bootstrap",
-                "branch": "main",
-                "pathPrefix": "pocket-codex\/device-logs",
-                "proxyPrefix": "https:\/\/ghproxy.vip\/",
-                "deviceId": "5e740ae166b533fb",
-                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
-              }
-            },
-            "network": {
-              "available": false,
-              "error": "SecurityException",
-              "message": "ConnectivityService: Neither user 10293 nor current process has android.permission.ACCESS_NETWORK_STATE."
-            },
-            "bootstrap": {
-              "packagedManifestUrls": [
-                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
-                "https:\/\/ghproxy.vip\/https:\/\/api.github.com\/repos\/wishforgood\/pocket-codex-bootstrap\/contents\/pocket-codex\/bootstrap.json?ref=main"
-              ],
-              "lastBootstrapReadUrl": "",
-              "lastRemoteUrl": "",
-              "lastUpstreamStaleUrl": "",
-              "lastUpstreamStaleAt": "",
-              "lastConfigSyncAt": ""
-            }
-          }
-        },
-        "capturedAt": "2026-04-13T18:12:53.131102Z",
-        "nativeSequence": 19
-      },
-      {
-        "source": "android-shell",
-        "category": "proxy.reload",
-        "message": "准备重新解析并加载 Pocket Codex 页面",
-        "details": {
-          "generation": 2,
-          "triggerReason": "show-error",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 2,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false,
-            "currentUrl": "",
-            "recordAudioPermissionGranted": true,
-            "proxyReady": false,
-            "bootstrapLoadInProgress": true,
-            "bootstrapLoadGeneration": 2,
-            "activeBootstrapReason": "show-error",
-            "reconnectDispatchPending": false,
-            "reconnectDispatchReason": "",
-            "scheduledReconnectReason": "",
-            "scheduledReconnectAtMs": 0,
-            "scheduledReconnectWaitMs": 0,
-            "lastProxySource": "",
-            "lastResolvedUpstreamBaseUrl": "",
-            "sdkInt": 34,
-            "manufacturer": "HONOR",
-            "model": "CLK-AN00",
-            "app": {
-              "applicationId": "com.pocketcodex.shell",
-              "versionName": "0.1.13",
-              "versionCode": 14,
-              "localProxyPort": 3180,
-              "githubDiagnostic": {
-                "configured": true,
-                "owner": "wishforgood",
-                "repo": "pocket-codex-bootstrap",
-                "branch": "main",
-                "pathPrefix": "pocket-codex\/device-logs",
-                "proxyPrefix": "https:\/\/ghproxy.vip\/",
-                "deviceId": "5e740ae166b533fb",
-                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
-              }
-            },
-            "network": {
-              "available": false,
-              "error": "SecurityException",
-              "message": "ConnectivityService: Neither user 10293 nor current process has android.permission.ACCESS_NETWORK_STATE."
-            },
-            "bootstrap": {
-              "packagedManifestUrls": [
-                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
-                "https:\/\/ghproxy.vip\/https:\/\/api.github.com\/repos\/wishforgood\/pocket-codex-bootstrap\/contents\/pocket-codex\/bootstrap.json?ref=main"
-              ],
-              "lastBootstrapReadUrl": "",
-              "lastRemoteUrl": "",
-              "lastUpstreamStaleUrl": "",
-              "lastUpstreamStaleAt": "",
-              "lastConfigSyncAt": ""
-            }
-          }
-        },
-        "capturedAt": "2026-04-13T18:12:55.342089Z",
-        "nativeSequence": 20
-      },
-      {
-        "source": "android-shell",
-        "category": "bootstrap.resolve.start",
-        "message": "开始从 GitHub 引导清单解析最新地址",
-        "details": {
-          "manifestCandidates": [
-            "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
-            "https:\/\/ghproxy.vip\/https:\/\/api.github.com\/repos\/wishforgood\/pocket-codex-bootstrap\/contents\/pocket-codex\/bootstrap.json?ref=main"
-          ],
-          "manifestCandidateCount": 2,
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 2,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-13T18:12:55.353257Z",
-        "nativeSequence": 21
-      },
-      {
-        "source": "android-shell",
-        "category": "bootstrap.manifest.fetch.start",
-        "message": "开始读取 GitHub 引导清单",
-        "details": {
-          "manifestUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 2,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-13T18:12:55.361496Z",
-        "nativeSequence": 22
-      },
-      {
-        "source": "android-shell",
-        "category": "diagnostic.github.publish.success",
-        "message": "诊断日志已通过 ghproxy 上传到 GitHub",
-        "details": {
-          "triggerCategory": "bootstrap.candidate.probe.error",
-          "filePath": "pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
-          "readUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
-          "statusCode": 201,
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 2,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-13T18:12:55.484497Z",
-        "nativeSequence": 23
-      },
-      {
-        "source": "android-shell",
-        "category": "bootstrap.manifest.fetch.success",
-        "message": "GitHub 引导清单读取成功",
-        "details": {
-          "manifestUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
-          "requestUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json?_pcv=29601732",
-          "statusCode": 200,
-          "bodyPreview": "{   \"schemaVersion\": 1,   \"generatedAt\": \"2026-04-13T17:49:07.097Z\",   \"appName\": \"Pocket Codex\",   \"provider\": \"configured\",   \"status\": \"在线\",   \"publicUrl\": \"http:\/\/[240e:328:314:9300:edb9:2e10:c791:be72]:3100\",   \"preferredUpstreamUrl\": ...",
-          "candidateCount": 2,
-          "publicUrl": "http:\/\/[240e:328:314:9300:edb9:2e10:c791:be72]:3100",
-          "preferredUpstreamUrl": "http:\/\/[240e:328:314:9300:edb9:2e10:c791:be72]:3100",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 2,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-13T18:12:55.869156Z",
-        "nativeSequence": 24
-      },
       {
         "source": "android-shell",
         "category": "bootstrap.candidate.probe.start",
@@ -1347,6 +972,264 @@
         },
         "capturedAt": "2026-04-13T18:13:05.281529Z",
         "nativeSequence": 53
+      },
+      {
+        "source": "android-shell",
+        "category": "proxy.reload",
+        "message": "准备重新解析并加载 Pocket Codex 页面",
+        "details": {
+          "generation": 4,
+          "triggerReason": "show-error",
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 4,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false,
+            "currentUrl": "",
+            "recordAudioPermissionGranted": true,
+            "proxyReady": false,
+            "bootstrapLoadInProgress": true,
+            "bootstrapLoadGeneration": 4,
+            "activeBootstrapReason": "show-error",
+            "reconnectDispatchPending": false,
+            "reconnectDispatchReason": "",
+            "scheduledReconnectReason": "",
+            "scheduledReconnectAtMs": 0,
+            "scheduledReconnectWaitMs": 0,
+            "lastProxySource": "",
+            "lastResolvedUpstreamBaseUrl": "",
+            "sdkInt": 34,
+            "manufacturer": "HONOR",
+            "model": "CLK-AN00",
+            "app": {
+              "applicationId": "com.pocketcodex.shell",
+              "versionName": "0.1.13",
+              "versionCode": 14,
+              "localProxyPort": 3180,
+              "githubDiagnostic": {
+                "configured": true,
+                "owner": "wishforgood",
+                "repo": "pocket-codex-bootstrap",
+                "branch": "main",
+                "pathPrefix": "pocket-codex\/device-logs",
+                "proxyPrefix": "https:\/\/ghproxy.vip\/",
+                "deviceId": "5e740ae166b533fb",
+                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
+              }
+            },
+            "network": {
+              "available": false,
+              "error": "SecurityException",
+              "message": "ConnectivityService: Neither user 10293 nor current process has android.permission.ACCESS_NETWORK_STATE."
+            },
+            "bootstrap": {
+              "packagedManifestUrls": [
+                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
+                "https:\/\/ghproxy.vip\/https:\/\/api.github.com\/repos\/wishforgood\/pocket-codex-bootstrap\/contents\/pocket-codex\/bootstrap.json?ref=main"
+              ],
+              "lastBootstrapReadUrl": "",
+              "lastRemoteUrl": "",
+              "lastUpstreamStaleUrl": "",
+              "lastUpstreamStaleAt": "",
+              "lastConfigSyncAt": ""
+            }
+          }
+        },
+        "capturedAt": "2026-04-13T18:13:07.557421Z",
+        "nativeSequence": 54
+      },
+      {
+        "source": "android-shell",
+        "category": "bootstrap.resolve.start",
+        "message": "开始从 GitHub 引导清单解析最新地址",
+        "details": {
+          "manifestCandidates": [
+            "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
+            "https:\/\/ghproxy.vip\/https:\/\/api.github.com\/repos\/wishforgood\/pocket-codex-bootstrap\/contents\/pocket-codex\/bootstrap.json?ref=main"
+          ],
+          "manifestCandidateCount": 2,
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 4,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-13T18:13:07.578597Z",
+        "nativeSequence": 55
+      },
+      {
+        "source": "android-shell",
+        "category": "bootstrap.manifest.fetch.start",
+        "message": "开始读取 GitHub 引导清单",
+        "details": {
+          "manifestUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 4,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-13T18:13:07.591908Z",
+        "nativeSequence": 56
+      },
+      {
+        "source": "android-shell",
+        "category": "bootstrap.manifest.fetch.success",
+        "message": "GitHub 引导清单读取成功",
+        "details": {
+          "manifestUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
+          "requestUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json?_pcv=29601733",
+          "statusCode": 200,
+          "bodyPreview": "{   \"schemaVersion\": 1,   \"generatedAt\": \"2026-04-13T17:49:07.097Z\",   \"appName\": \"Pocket Codex\",   \"provider\": \"configured\",   \"status\": \"在线\",   \"publicUrl\": \"http:\/\/[240e:328:314:9300:edb9:2e10:c791:be72]:3100\",   \"preferredUpstreamUrl\": ...",
+          "candidateCount": 2,
+          "publicUrl": "http:\/\/[240e:328:314:9300:edb9:2e10:c791:be72]:3100",
+          "preferredUpstreamUrl": "http:\/\/[240e:328:314:9300:edb9:2e10:c791:be72]:3100",
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 4,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-13T18:13:08.084916Z",
+        "nativeSequence": 57
+      },
+      {
+        "source": "android-shell",
+        "category": "bootstrap.candidate.probe.start",
+        "message": "开始探测 GitHub 清单里的公网地址是否可用",
+        "details": {
+          "upstreamBaseUrl": "http:\/\/[240e:328:314:9300:edb9:2e10:c791:be72]:3100",
+          "source": "bootstrap-manifest:configured",
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 4,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-13T18:13:08.095003Z",
+        "nativeSequence": 58
+      },
+      {
+        "source": "android-shell",
+        "category": "bootstrap.candidate.probe.error",
+        "message": "探测 GitHub 清单里的公网地址失败",
+        "details": {
+          "error": "ConnectException",
+          "message": "Failed to connect to \/[240e:328:314:9300:edb9:2e10:c791:be72]:3100",
+          "upstreamBaseUrl": "http:\/\/[240e:328:314:9300:edb9:2e10:c791:be72]:3100",
+          "source": "bootstrap-manifest:configured",
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 4,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-13T18:13:08.117282Z",
+        "nativeSequence": 59
+      },
+      {
+        "source": "android-shell",
+        "category": "bootstrap.candidate.probe.start",
+        "message": "开始探测 GitHub 清单里的公网地址是否可用",
+        "details": {
+          "upstreamBaseUrl": "http:\/\/[240e:328:314:9300:b86d:7ff6:6d61:7768]:3100",
+          "source": "bootstrap-manifest:direct-ipv6",
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 4,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-13T18:13:08.131577Z",
+        "nativeSequence": 60
+      },
+      {
+        "source": "android-shell",
+        "category": "bootstrap.candidate.probe.error",
+        "message": "探测 GitHub 清单里的公网地址失败",
+        "details": {
+          "error": "ConnectException",
+          "message": "Failed to connect to \/[240e:328:314:9300:b86d:7ff6:6d61:7768]:3100",
+          "upstreamBaseUrl": "http:\/\/[240e:328:314:9300:b86d:7ff6:6d61:7768]:3100",
+          "source": "bootstrap-manifest:direct-ipv6",
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 4,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-13T18:13:08.142461Z",
+        "nativeSequence": 61
+      },
+      {
+        "source": "android-shell",
+        "category": "bootstrap.manifest.fetch.error",
+        "message": "读取 GitHub 引导清单失败",
+        "details": {
+          "error": "ConnectException",
+          "message": "Failed to connect to \/[240e:328:314:9300:b86d:7ff6:6d61:7768]:3100",
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 4,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-13T18:13:08.148776Z",
+        "nativeSequence": 62
+      },
+      {
+        "source": "android-shell",
+        "category": "bootstrap.manifest.fetch.start",
+        "message": "开始读取 GitHub 引导清单",
+        "details": {
+          "manifestUrl": "https:\/\/ghproxy.vip\/https:\/\/api.github.com\/repos\/wishforgood\/pocket-codex-bootstrap\/contents\/pocket-codex\/bootstrap.json?ref=main",
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 4,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-13T18:13:08.159119Z",
+        "nativeSequence": 63
+      },
+      {
+        "source": "android-shell",
+        "category": "diagnostic.github.publish.success",
+        "message": "诊断日志已通过 ghproxy 上传到 GitHub",
+        "details": {
+          "triggerCategory": "bootstrap.manifest.fetch.error",
+          "filePath": "pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
+          "readUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
+          "statusCode": 200,
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 4,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-13T18:13:08.365945Z",
+        "nativeSequence": 64
       }
     ]
   }
