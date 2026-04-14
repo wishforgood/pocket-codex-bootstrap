@@ -1,8 +1,8 @@
 {
-  "capturedAt": "2026-04-14T16:12:14.550860Z",
+  "capturedAt": "2026-04-14T16:12:18.772365Z",
   "trigger": {
-    "category": "bootstrap.manifest.pending",
-    "message": "GitHub 引导清单返回了等待状态",
+    "category": "bootstrap.manifest.fetch.error",
+    "message": "读取 GitHub 引导清单失败",
     "details": {
       "error": "ManifestPendingException",
       "message": "电脑端当前外网入口状态为：在线",
@@ -32,7 +32,7 @@
     }
   },
   "nativeSnapshot": {
-    "capturedAt": "2026-04-14T16:12:14.551372Z",
+    "capturedAt": "2026-04-14T16:12:18.773255Z",
     "app": {
       "applicationId": "com.pocketcodex.shell",
       "versionName": "0.1.17",
@@ -88,36 +88,13 @@
       "lastRemoteUrl": "",
       "lastUpstreamStaleUrl": "https:\/\/installed-namespace-cook-rendering.trycloudflare.com\/",
       "lastUpstreamStaleAt": "2026-04-14T16:11:36.861303Z",
-      "lastConfigSyncAt": "2026-04-14T16:12:13.042963Z"
+      "lastConfigSyncAt": "2026-04-14T16:12:16.744518Z"
     }
   },
   "recentLogs": {
-    "pendingCount": 74,
-    "lastSequence": 5601,
+    "pendingCount": 27,
+    "lastSequence": 5602,
     "recent": [
-      {
-        "source": "android-shell",
-        "category": "bootstrap.manifest.fetch.success",
-        "message": "GitHub 引导清单读取成功",
-        "details": {
-          "manifestUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
-          "requestUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json?_pcv=1776183118803-b8b2zbcmq6",
-          "statusCode": 200,
-          "bodyPreview": "{   \"schemaVersion\": 1,   \"generatedAt\": \"2026-04-14T16:11:48.196Z\",   \"appName\": \"Pocket Codex\",   \"provider\": \"github-repo\",   \"status\": \"在线\",   \"publicUrl\": \"https:\/\/phil-listen-corner-lat.trycloudflare.com\",   \"preferredUpstreamUrl\": \"h...",
-          "candidateCount": 1,
-          "publicUrl": "https:\/\/phil-listen-corner-lat.trycloudflare.com",
-          "preferredUpstreamUrl": "https:\/\/phil-listen-corner-lat.trycloudflare.com",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 26,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-14T16:11:59.848855Z",
-        "nativeSequence": 5582
-      },
       {
         "source": "android-shell",
         "category": "bootstrap.candidate.probe.start",
@@ -948,6 +925,26 @@
         },
         "capturedAt": "2026-04-14T16:12:14.480125Z",
         "nativeSequence": 5601
+      },
+      {
+        "source": "android-shell",
+        "category": "diagnostic.github.publish.success",
+        "message": "诊断日志已通过 ghproxy 上传到 GitHub",
+        "details": {
+          "triggerCategory": "bootstrap.manifest.pending",
+          "filePath": "pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
+          "readUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
+          "statusCode": 200,
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 26,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-14T16:12:18.738803Z",
+        "nativeSequence": 5602
       }
     ]
   }
