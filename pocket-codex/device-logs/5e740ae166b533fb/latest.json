@@ -1,13 +1,24 @@
 {
-  "capturedAt": "2026-04-14T06:02:49.183800Z",
+  "capturedAt": "2026-04-14T06:02:51.686018Z",
   "trigger": {
-    "category": "bootstrap.resolve.error",
-    "message": "GitHub 清单里的公网 IPv6 当前不可达",
+    "category": "proxy.resolve.error",
+    "message": "Android 应用壳解析上游地址失败",
     "details": {
-      "error": "CandidateProbeException",
+      "error": "SocketTimeoutException",
       "message": "failed to connect to \/240e:328:314:9300:b86d:7ff6:6d61:7768 (port 3100) from \/2408:8411:60a0:fedf::1 (port 48926) after 2500ms",
-      "cause": "SocketTimeoutException",
-      "causeMessage": "failed to connect to \/240e:328:314:9300:b86d:7ff6:6d61:7768 (port 3100) from \/2408:8411:60a0:fedf::1 (port 48926) after 2500ms",
+      "stack": [
+        "libcore.io.IoBridge.connectErrno(IoBridge.java:235)",
+        "libcore.io.IoBridge.connect(IoBridge.java:179)",
+        "java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:142)",
+        "java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:390)",
+        "java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:230)",
+        "java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:212)",
+        "java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)",
+        "java.net.Socket.connect(Socket.java:646)",
+        "com.android.okhttp.internal.Platform.connectSocket(Platform.java:182)",
+        "com.android.okhttp.internal.io.RealConnection.connectSocket(RealConnection.java:145)"
+      ],
+      "generation": 5,
       "nativeContext": {
         "lifecycleState": "resumed",
         "loadGeneration": 5,
@@ -34,7 +45,7 @@
     }
   },
   "nativeSnapshot": {
-    "capturedAt": "2026-04-14T06:02:49.183964Z",
+    "capturedAt": "2026-04-14T06:02:51.686202Z",
     "app": {
       "applicationId": "com.pocketcodex.shell",
       "versionName": "0.1.16",
@@ -95,28 +106,8 @@
   },
   "recentLogs": {
     "pendingCount": 400,
-    "lastSequence": 956,
+    "lastSequence": 957,
     "recent": [
-      {
-        "source": "android-shell",
-        "category": "bootstrap.candidate.probe.error",
-        "message": "探测 GitHub 清单里的公网地址失败",
-        "details": {
-          "error": "SocketTimeoutException",
-          "message": "failed to connect to \/240e:328:314:9300:b86d:7ff6:6d61:7768 (port 3100) from \/2408:8411:60a0:fedf::1 (port 48894) after 2500ms",
-          "upstreamBaseUrl": "http:\/\/[240e:328:314:9300:b86d:7ff6:6d61:7768]:3100",
-          "source": "bootstrap-manifest:direct-ipv6",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 4,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-14T06:02:29.682828Z",
-        "nativeSequence": 937
-      },
       {
         "source": "android-shell",
         "category": "bootstrap.resolve.error",
@@ -711,6 +702,26 @@
         },
         "capturedAt": "2026-04-14T06:02:48.891328Z",
         "nativeSequence": 956
+      },
+      {
+        "source": "android-shell",
+        "category": "diagnostic.github.publish.success",
+        "message": "诊断日志已通过 ghproxy 上传到 GitHub",
+        "details": {
+          "triggerCategory": "bootstrap.resolve.error",
+          "filePath": "pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
+          "readUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
+          "statusCode": 200,
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 5,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-14T06:02:51.437640Z",
+        "nativeSequence": 957
       }
     ]
   }
