@@ -1,13 +1,26 @@
 {
-  "capturedAt": "2026-04-14T09:32:11.098568Z",
+  "capturedAt": "2026-04-14T09:34:38.202291Z",
   "trigger": {
-    "category": "bootstrap.resolve.error",
-    "message": "GitHub 清单里的公网 IPv6 当前不可达",
+    "category": "proxy.resolve.error",
+    "message": "Android 应用壳解析上游地址失败",
     "details": {
-      "error": "CandidateProbeException",
+      "error": "UnknownHostException",
       "message": "Unable to resolve host \"changes-piece-conventions-rainbow.trycloudflare.com\": No address associated with hostname",
-      "cause": "UnknownHostException",
-      "causeMessage": "Unable to resolve host \"changes-piece-conventions-rainbow.trycloudflare.com\": No address associated with hostname",
+      "cause": "GaiException",
+      "causeMessage": "android_getaddrinfo failed: EAI_NODATA (No address associated with hostname)",
+      "stack": [
+        "java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:156)",
+        "java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:103)",
+        "java.net.InetAddress.getAllByName(InetAddress.java:1152)",
+        "com.android.okhttp.Dns$1.lookup(Dns.java:41)",
+        "com.android.okhttp.internal.http.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:178)",
+        "com.android.okhttp.internal.http.RouteSelector.nextProxy(RouteSelector.java:144)",
+        "com.android.okhttp.internal.http.RouteSelector.next(RouteSelector.java:86)",
+        "com.android.okhttp.internal.http.StreamAllocation.findConnection(StreamAllocation.java:176)",
+        "com.android.okhttp.internal.http.StreamAllocation.findHealthyConnection(StreamAllocation.java:128)",
+        "com.android.okhttp.internal.http.StreamAllocation.newStream(StreamAllocation.java:97)"
+      ],
+      "generation": 3,
       "nativeContext": {
         "lifecycleState": "resumed",
         "loadGeneration": 3,
@@ -34,7 +47,7 @@
     }
   },
   "nativeSnapshot": {
-    "capturedAt": "2026-04-14T09:32:11.099069Z",
+    "capturedAt": "2026-04-14T09:34:38.202473Z",
     "app": {
       "applicationId": "com.pocketcodex.shell",
       "versionName": "0.1.16",
@@ -53,7 +66,7 @@
     },
     "summary": {
       "lifecycleState": "stopped",
-      "loadGeneration": 8,
+      "loadGeneration": 9,
       "hasWindowFocus": false,
       "isFinishing": false,
       "isDestroyed": false
@@ -94,49 +107,9 @@
     }
   },
   "recentLogs": {
-    "pendingCount": 306,
-    "lastSequence": 1481,
+    "pendingCount": 308,
+    "lastSequence": 1483,
     "recent": [
-      {
-        "source": "android-shell",
-        "category": "bootstrap.candidate.probe.start",
-        "message": "开始探测 GitHub 清单里的公网地址是否可用",
-        "details": {
-          "upstreamBaseUrl": "https:\/\/changes-piece-conventions-rainbow.trycloudflare.com",
-          "source": "bootstrap-manifest:configured",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 7,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-14T09:32:05.464759Z",
-        "nativeSequence": 1462
-      },
-      {
-        "source": "android-shell",
-        "category": "bootstrap.candidate.probe.error",
-        "message": "探测 GitHub 清单里的公网地址失败",
-        "details": {
-          "error": "UnknownHostException",
-          "message": "Unable to resolve host \"changes-piece-conventions-rainbow.trycloudflare.com\": No address associated with hostname",
-          "cause": "GaiException",
-          "causeMessage": "android_getaddrinfo failed: EAI_NODATA (No address associated with hostname)",
-          "upstreamBaseUrl": "https:\/\/changes-piece-conventions-rainbow.trycloudflare.com",
-          "source": "bootstrap-manifest:configured",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 7,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-14T09:32:05.560566Z",
-        "nativeSequence": 1463
-      },
       {
         "source": "android-shell",
         "category": "bootstrap.resolve.error",
@@ -899,6 +872,122 @@
         },
         "capturedAt": "2026-04-14T09:32:10.967855Z",
         "nativeSequence": 1481
+      },
+      {
+        "source": "android-shell",
+        "category": "diagnostic.github.publish.error",
+        "message": "诊断日志上传失败",
+        "details": {
+          "error": "SocketTimeoutException",
+          "message": "timeout",
+          "cause": "SocketException",
+          "causeMessage": "Socket closed",
+          "stack": [
+            "com.android.okhttp.okio.Okio$3.newTimeoutException(Okio.java:214)",
+            "com.android.okhttp.okio.AsyncTimeout.exit(AsyncTimeout.java:263)",
+            "com.android.okhttp.okio.AsyncTimeout$2.read(AsyncTimeout.java:217)",
+            "com.android.okhttp.okio.RealBufferedSource.indexOf(RealBufferedSource.java:307)",
+            "com.android.okhttp.okio.RealBufferedSource.indexOf(RealBufferedSource.java:301)",
+            "com.android.okhttp.okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:197)",
+            "com.android.okhttp.internal.http.Http1xStream.readResponse(Http1xStream.java:188)",
+            "com.android.okhttp.internal.http.Http1xStream.readResponseHeaders(Http1xStream.java:129)",
+            "com.android.okhttp.internal.http.HttpEngine.readNetworkResponse(HttpEngine.java:750)",
+            "com.android.okhttp.internal.http.HttpEngine.readResponse(HttpEngine.java:622)"
+          ],
+          "triggerCategory": "bootstrap.resolve.error",
+          "nativeContext": {
+            "lifecycleState": "stopped",
+            "loadGeneration": 9,
+            "hasWindowFocus": false,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-14T09:34:38.097239Z",
+        "nativeSequence": 1482
+      },
+      {
+        "source": "android-shell",
+        "category": "proxy.reload",
+        "message": "准备重新解析并加载 Pocket Codex 页面",
+        "details": {
+          "generation": 9,
+          "triggerReason": "show-error",
+          "nativeContext": {
+            "lifecycleState": "stopped",
+            "loadGeneration": 9,
+            "hasWindowFocus": false,
+            "isFinishing": false,
+            "isDestroyed": false,
+            "currentUrl": "",
+            "recordAudioPermissionGranted": true,
+            "proxyReady": false,
+            "bootstrapLoadInProgress": true,
+            "bootstrapLoadGeneration": 9,
+            "activeBootstrapReason": "show-error",
+            "reconnectDispatchPending": false,
+            "reconnectDispatchReason": "",
+            "scheduledReconnectReason": "",
+            "scheduledReconnectAtMs": 0,
+            "scheduledReconnectWaitMs": 0,
+            "lastProxySource": "",
+            "lastResolvedUpstreamBaseUrl": "",
+            "sdkInt": 34,
+            "manufacturer": "HONOR",
+            "model": "CLK-AN00",
+            "app": {
+              "applicationId": "com.pocketcodex.shell",
+              "versionName": "0.1.16",
+              "versionCode": 17,
+              "localProxyPort": 3180,
+              "githubDiagnostic": {
+                "configured": true,
+                "owner": "wishforgood",
+                "repo": "pocket-codex-bootstrap",
+                "branch": "main",
+                "pathPrefix": "pocket-codex\/device-logs",
+                "proxyPrefix": "https:\/\/ghproxy.vip\/",
+                "deviceId": "5e740ae166b533fb",
+                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
+              }
+            },
+            "network": {
+              "available": true,
+              "activeNetworkPresent": true,
+              "transports": [
+                "CELLULAR"
+              ],
+              "hasInternet": true,
+              "isValidated": true,
+              "isCaptivePortal": false,
+              "interfaceName": "ccmni2",
+              "addresses": [
+                "10.99.35.32",
+                "2408:8411:6000:427f::1"
+              ],
+              "dnsServers": [
+                "\/2408:8888:0:8888::8",
+                "\/2408:8899:0:8899::8",
+                "\/202.99.96.68",
+                "\/202.99.104.68"
+              ],
+              "hasIpv4": true,
+              "hasIpv6": true
+            },
+            "bootstrap": {
+              "packagedManifestUrls": [
+                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
+              ],
+              "lastBootstrapReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
+              "lastRemoteUrl": "",
+              "lastUpstreamStaleUrl": "https:\/\/changes-piece-conventions-rainbow.trycloudflare.com\/",
+              "lastUpstreamStaleAt": "2026-04-14T09:31:30.291291Z",
+              "lastConfigSyncAt": "2026-04-14T07:24:02.433258Z"
+            }
+          }
+        },
+        "capturedAt": "2026-04-14T09:34:38.201143Z",
+        "nativeSequence": 1483
       }
     ]
   }
