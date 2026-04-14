@@ -1,11 +1,13 @@
 {
-  "capturedAt": "2026-04-14T05:23:18.662474Z",
+  "capturedAt": "2026-04-14T05:30:31.834381Z",
   "trigger": {
-    "category": "bootstrap.manifest.fetch.error",
-    "message": "读取 GitHub 引导清单失败",
+    "category": "bootstrap.candidate.probe.error",
+    "message": "探测 GitHub 清单里的公网地址失败",
     "details": {
       "error": "SocketTimeoutException",
-      "message": "failed to connect to \/240e:328:314:9300:b86d:7ff6:6d61:7768 (port 3100) from \/2408:8411:60a0:fedf::1 (port 45594) after 2500ms",
+      "message": "failed to connect to \/240e:328:314:9300:edb9:2e10:c791:be72 (port 3100) from \/2408:8411:60a0:fedf::1 (port 57506) after 2500ms",
+      "upstreamBaseUrl": "http:\/\/[240e:328:314:9300:edb9:2e10:c791:be72]:3100",
+      "source": "bootstrap-manifest:configured",
       "nativeContext": {
         "lifecycleState": "resumed",
         "loadGeneration": 1,
@@ -17,8 +19,8 @@
   },
   "app": {
     "applicationId": "com.pocketcodex.shell",
-    "versionName": "0.1.15",
-    "versionCode": 16,
+    "versionName": "0.1.16",
+    "versionCode": 17,
     "localProxyPort": 3180,
     "githubDiagnostic": {
       "configured": true,
@@ -32,11 +34,11 @@
     }
   },
   "nativeSnapshot": {
-    "capturedAt": "2026-04-14T05:23:18.662667Z",
+    "capturedAt": "2026-04-14T05:30:31.834804Z",
     "app": {
       "applicationId": "com.pocketcodex.shell",
-      "versionName": "0.1.15",
-      "versionCode": 16,
+      "versionName": "0.1.16",
+      "versionCode": 17,
       "localProxyPort": 3180,
       "githubDiagnostic": {
         "configured": true,
@@ -84,7 +86,7 @@
       "packagedManifestUrls": [
         "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
       ],
-      "lastBootstrapReadUrl": "https:\/\/cdn.jsdelivr.net\/gh\/wishforgood\/pocket-codex-bootstrap@main\/pocket-codex\/bootstrap.json",
+      "lastBootstrapReadUrl": "",
       "lastRemoteUrl": "",
       "lastUpstreamStaleUrl": "",
       "lastUpstreamStaleAt": "",
@@ -92,711 +94,9 @@
     }
   },
   "recentLogs": {
-    "pendingCount": 346,
-    "lastSequence": 752,
+    "pendingCount": 363,
+    "lastSequence": 769,
     "recent": [
-      {
-        "source": "android-shell",
-        "category": "diagnostic.github.publish.success",
-        "message": "诊断日志已通过 ghproxy 上传到 GitHub",
-        "details": {
-          "triggerCategory": "bootstrap.candidate.probe.error",
-          "filePath": "pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
-          "readUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
-          "statusCode": 200,
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 1,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-14T05:22:58.332881Z",
-        "nativeSequence": 733
-      },
-      {
-        "source": "android-shell",
-        "category": "activity.window-focus",
-        "message": "Android 应用壳失去窗口焦点",
-        "details": {
-          "hasWindowFocus": false,
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 1,
-            "hasWindowFocus": false,
-            "isFinishing": false,
-            "isDestroyed": false,
-            "currentUrl": "",
-            "recordAudioPermissionGranted": true,
-            "proxyReady": false,
-            "bootstrapLoadInProgress": false,
-            "bootstrapLoadGeneration": 0,
-            "activeBootstrapReason": "",
-            "reconnectDispatchPending": false,
-            "reconnectDispatchReason": "",
-            "scheduledReconnectReason": "show-error",
-            "scheduledReconnectAtMs": 1776144178593,
-            "scheduledReconnectWaitMs": 0,
-            "lastProxySource": "",
-            "lastResolvedUpstreamBaseUrl": "",
-            "sdkInt": 34,
-            "manufacturer": "HONOR",
-            "model": "CLK-AN00",
-            "app": {
-              "applicationId": "com.pocketcodex.shell",
-              "versionName": "0.1.15",
-              "versionCode": 16,
-              "localProxyPort": 3180,
-              "githubDiagnostic": {
-                "configured": true,
-                "owner": "wishforgood",
-                "repo": "pocket-codex-bootstrap",
-                "branch": "main",
-                "pathPrefix": "pocket-codex\/device-logs",
-                "proxyPrefix": "https:\/\/ghproxy.vip\/",
-                "deviceId": "5e740ae166b533fb",
-                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
-              }
-            },
-            "network": {
-              "available": true,
-              "activeNetworkPresent": true,
-              "transports": [
-                "CELLULAR"
-              ],
-              "hasInternet": true,
-              "isValidated": true,
-              "isCaptivePortal": false,
-              "interfaceName": "ccmni3",
-              "addresses": [
-                "10.227.84.70",
-                "2408:8411:60a0:fedf::1"
-              ],
-              "dnsServers": [
-                "\/2408:8888:0:8888::8",
-                "\/2408:8899:0:8899::8",
-                "\/202.99.96.68",
-                "\/202.99.104.68"
-              ],
-              "hasIpv4": true,
-              "hasIpv6": true
-            },
-            "bootstrap": {
-              "packagedManifestUrls": [
-                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
-              ],
-              "lastBootstrapReadUrl": "https:\/\/cdn.jsdelivr.net\/gh\/wishforgood\/pocket-codex-bootstrap@main\/pocket-codex\/bootstrap.json",
-              "lastRemoteUrl": "",
-              "lastUpstreamStaleUrl": "",
-              "lastUpstreamStaleAt": "",
-              "lastConfigSyncAt": "2026-04-13T18:59:34.232760Z"
-            }
-          }
-        },
-        "capturedAt": "2026-04-14T05:22:59.296957Z",
-        "nativeSequence": 734
-      },
-      {
-        "source": "android-shell",
-        "category": "activity.create",
-        "message": "Android 应用壳已创建",
-        "details": {
-          "nativeContext": {
-            "lifecycleState": "created",
-            "loadGeneration": 0,
-            "hasWindowFocus": false,
-            "isFinishing": false,
-            "isDestroyed": false,
-            "currentUrl": "",
-            "recordAudioPermissionGranted": true,
-            "proxyReady": false,
-            "bootstrapLoadInProgress": false,
-            "bootstrapLoadGeneration": 0,
-            "activeBootstrapReason": "",
-            "reconnectDispatchPending": false,
-            "reconnectDispatchReason": "",
-            "scheduledReconnectReason": "",
-            "scheduledReconnectAtMs": 0,
-            "scheduledReconnectWaitMs": 0,
-            "lastProxySource": "",
-            "lastResolvedUpstreamBaseUrl": "",
-            "sdkInt": 34,
-            "manufacturer": "HONOR",
-            "model": "CLK-AN00",
-            "app": {
-              "applicationId": "com.pocketcodex.shell",
-              "versionName": "0.1.15",
-              "versionCode": 16,
-              "localProxyPort": 3180,
-              "githubDiagnostic": {
-                "configured": true,
-                "owner": "wishforgood",
-                "repo": "pocket-codex-bootstrap",
-                "branch": "main",
-                "pathPrefix": "pocket-codex\/device-logs",
-                "proxyPrefix": "https:\/\/ghproxy.vip\/",
-                "deviceId": "5e740ae166b533fb",
-                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
-              }
-            },
-            "network": {
-              "available": true,
-              "activeNetworkPresent": true,
-              "transports": [
-                "CELLULAR"
-              ],
-              "hasInternet": true,
-              "isValidated": true,
-              "isCaptivePortal": false,
-              "interfaceName": "ccmni3",
-              "addresses": [
-                "10.227.84.70",
-                "2408:8411:60a0:fedf::1"
-              ],
-              "dnsServers": [
-                "\/2408:8888:0:8888::8",
-                "\/2408:8899:0:8899::8",
-                "\/202.99.96.68",
-                "\/202.99.104.68"
-              ],
-              "hasIpv4": true,
-              "hasIpv6": true
-            },
-            "bootstrap": {
-              "packagedManifestUrls": [
-                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
-              ],
-              "lastBootstrapReadUrl": "https:\/\/cdn.jsdelivr.net\/gh\/wishforgood\/pocket-codex-bootstrap@main\/pocket-codex\/bootstrap.json",
-              "lastRemoteUrl": "",
-              "lastUpstreamStaleUrl": "",
-              "lastUpstreamStaleAt": "",
-              "lastConfigSyncAt": "2026-04-13T18:59:34.232760Z"
-            }
-          }
-        },
-        "capturedAt": "2026-04-14T05:23:02.731550Z",
-        "nativeSequence": 735
-      },
-      {
-        "source": "android-shell",
-        "category": "proxy.reload",
-        "message": "准备重新解析并加载 Pocket Codex 页面",
-        "details": {
-          "generation": 1,
-          "triggerReason": "activity-create",
-          "nativeContext": {
-            "lifecycleState": "created",
-            "loadGeneration": 1,
-            "hasWindowFocus": false,
-            "isFinishing": false,
-            "isDestroyed": false,
-            "currentUrl": "",
-            "recordAudioPermissionGranted": true,
-            "proxyReady": false,
-            "bootstrapLoadInProgress": true,
-            "bootstrapLoadGeneration": 1,
-            "activeBootstrapReason": "activity-create",
-            "reconnectDispatchPending": false,
-            "reconnectDispatchReason": "",
-            "scheduledReconnectReason": "",
-            "scheduledReconnectAtMs": 0,
-            "scheduledReconnectWaitMs": 0,
-            "lastProxySource": "",
-            "lastResolvedUpstreamBaseUrl": "",
-            "sdkInt": 34,
-            "manufacturer": "HONOR",
-            "model": "CLK-AN00",
-            "app": {
-              "applicationId": "com.pocketcodex.shell",
-              "versionName": "0.1.15",
-              "versionCode": 16,
-              "localProxyPort": 3180,
-              "githubDiagnostic": {
-                "configured": true,
-                "owner": "wishforgood",
-                "repo": "pocket-codex-bootstrap",
-                "branch": "main",
-                "pathPrefix": "pocket-codex\/device-logs",
-                "proxyPrefix": "https:\/\/ghproxy.vip\/",
-                "deviceId": "5e740ae166b533fb",
-                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
-              }
-            },
-            "network": {
-              "available": true,
-              "activeNetworkPresent": true,
-              "transports": [
-                "CELLULAR"
-              ],
-              "hasInternet": true,
-              "isValidated": true,
-              "isCaptivePortal": false,
-              "interfaceName": "ccmni3",
-              "addresses": [
-                "10.227.84.70",
-                "2408:8411:60a0:fedf::1"
-              ],
-              "dnsServers": [
-                "\/2408:8888:0:8888::8",
-                "\/2408:8899:0:8899::8",
-                "\/202.99.96.68",
-                "\/202.99.104.68"
-              ],
-              "hasIpv4": true,
-              "hasIpv6": true
-            },
-            "bootstrap": {
-              "packagedManifestUrls": [
-                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
-              ],
-              "lastBootstrapReadUrl": "https:\/\/cdn.jsdelivr.net\/gh\/wishforgood\/pocket-codex-bootstrap@main\/pocket-codex\/bootstrap.json",
-              "lastRemoteUrl": "",
-              "lastUpstreamStaleUrl": "",
-              "lastUpstreamStaleAt": "",
-              "lastConfigSyncAt": "2026-04-13T18:59:34.232760Z"
-            }
-          }
-        },
-        "capturedAt": "2026-04-14T05:23:03.418410Z",
-        "nativeSequence": 736
-      },
-      {
-        "source": "android-shell",
-        "category": "bootstrap.resolve.start",
-        "message": "开始从 GitHub 引导清单解析最新地址",
-        "details": {
-          "manifestCandidates": [
-            "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
-          ],
-          "manifestCandidateCount": 1,
-          "nativeContext": {
-            "lifecycleState": "created",
-            "loadGeneration": 1,
-            "hasWindowFocus": false,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-14T05:23:04.030860Z",
-        "nativeSequence": 737
-      },
-      {
-        "source": "android-shell",
-        "category": "activity.start",
-        "message": "Android 应用壳进入 started",
-        "details": {
-          "nativeContext": {
-            "lifecycleState": "started",
-            "loadGeneration": 1,
-            "hasWindowFocus": false,
-            "isFinishing": false,
-            "isDestroyed": false,
-            "currentUrl": "",
-            "recordAudioPermissionGranted": true,
-            "proxyReady": false,
-            "bootstrapLoadInProgress": true,
-            "bootstrapLoadGeneration": 1,
-            "activeBootstrapReason": "activity-create",
-            "reconnectDispatchPending": false,
-            "reconnectDispatchReason": "",
-            "scheduledReconnectReason": "",
-            "scheduledReconnectAtMs": 0,
-            "scheduledReconnectWaitMs": 0,
-            "lastProxySource": "",
-            "lastResolvedUpstreamBaseUrl": "",
-            "sdkInt": 34,
-            "manufacturer": "HONOR",
-            "model": "CLK-AN00",
-            "app": {
-              "applicationId": "com.pocketcodex.shell",
-              "versionName": "0.1.15",
-              "versionCode": 16,
-              "localProxyPort": 3180,
-              "githubDiagnostic": {
-                "configured": true,
-                "owner": "wishforgood",
-                "repo": "pocket-codex-bootstrap",
-                "branch": "main",
-                "pathPrefix": "pocket-codex\/device-logs",
-                "proxyPrefix": "https:\/\/ghproxy.vip\/",
-                "deviceId": "5e740ae166b533fb",
-                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
-              }
-            },
-            "network": {
-              "available": true,
-              "activeNetworkPresent": true,
-              "transports": [
-                "CELLULAR"
-              ],
-              "hasInternet": true,
-              "isValidated": true,
-              "isCaptivePortal": false,
-              "interfaceName": "ccmni3",
-              "addresses": [
-                "10.227.84.70",
-                "2408:8411:60a0:fedf::1"
-              ],
-              "dnsServers": [
-                "\/2408:8888:0:8888::8",
-                "\/2408:8899:0:8899::8",
-                "\/202.99.96.68",
-                "\/202.99.104.68"
-              ],
-              "hasIpv4": true,
-              "hasIpv6": true
-            },
-            "bootstrap": {
-              "packagedManifestUrls": [
-                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
-              ],
-              "lastBootstrapReadUrl": "https:\/\/cdn.jsdelivr.net\/gh\/wishforgood\/pocket-codex-bootstrap@main\/pocket-codex\/bootstrap.json",
-              "lastRemoteUrl": "",
-              "lastUpstreamStaleUrl": "",
-              "lastUpstreamStaleAt": "",
-              "lastConfigSyncAt": "2026-04-13T18:59:34.232760Z"
-            }
-          }
-        },
-        "capturedAt": "2026-04-14T05:23:04.424246Z",
-        "nativeSequence": 738
-      },
-      {
-        "source": "android-shell",
-        "category": "bootstrap.manifest.fetch.start",
-        "message": "开始读取 GitHub 引导清单",
-        "details": {
-          "manifestUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
-          "nativeContext": {
-            "lifecycleState": "started",
-            "loadGeneration": 1,
-            "hasWindowFocus": false,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-14T05:23:05.039082Z",
-        "nativeSequence": 739
-      },
-      {
-        "source": "android-shell",
-        "category": "activity.resume",
-        "message": "Android 应用壳进入 resumed",
-        "details": {
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 1,
-            "hasWindowFocus": false,
-            "isFinishing": false,
-            "isDestroyed": false,
-            "currentUrl": "",
-            "recordAudioPermissionGranted": true,
-            "proxyReady": false,
-            "bootstrapLoadInProgress": true,
-            "bootstrapLoadGeneration": 1,
-            "activeBootstrapReason": "activity-create",
-            "reconnectDispatchPending": false,
-            "reconnectDispatchReason": "",
-            "scheduledReconnectReason": "",
-            "scheduledReconnectAtMs": 0,
-            "scheduledReconnectWaitMs": 0,
-            "lastProxySource": "",
-            "lastResolvedUpstreamBaseUrl": "",
-            "sdkInt": 34,
-            "manufacturer": "HONOR",
-            "model": "CLK-AN00",
-            "app": {
-              "applicationId": "com.pocketcodex.shell",
-              "versionName": "0.1.15",
-              "versionCode": 16,
-              "localProxyPort": 3180,
-              "githubDiagnostic": {
-                "configured": true,
-                "owner": "wishforgood",
-                "repo": "pocket-codex-bootstrap",
-                "branch": "main",
-                "pathPrefix": "pocket-codex\/device-logs",
-                "proxyPrefix": "https:\/\/ghproxy.vip\/",
-                "deviceId": "5e740ae166b533fb",
-                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
-              }
-            },
-            "network": {
-              "available": true,
-              "activeNetworkPresent": true,
-              "transports": [
-                "CELLULAR"
-              ],
-              "hasInternet": true,
-              "isValidated": true,
-              "isCaptivePortal": false,
-              "interfaceName": "ccmni3",
-              "addresses": [
-                "10.227.84.70",
-                "2408:8411:60a0:fedf::1"
-              ],
-              "dnsServers": [
-                "\/2408:8888:0:8888::8",
-                "\/2408:8899:0:8899::8",
-                "\/202.99.96.68",
-                "\/202.99.104.68"
-              ],
-              "hasIpv4": true,
-              "hasIpv6": true
-            },
-            "bootstrap": {
-              "packagedManifestUrls": [
-                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
-              ],
-              "lastBootstrapReadUrl": "https:\/\/cdn.jsdelivr.net\/gh\/wishforgood\/pocket-codex-bootstrap@main\/pocket-codex\/bootstrap.json",
-              "lastRemoteUrl": "",
-              "lastUpstreamStaleUrl": "",
-              "lastUpstreamStaleAt": "",
-              "lastConfigSyncAt": "2026-04-13T18:59:34.232760Z"
-            }
-          }
-        },
-        "capturedAt": "2026-04-14T05:23:05.423636Z",
-        "nativeSequence": 740
-      },
-      {
-        "source": "android-shell",
-        "category": "activity.window-focus",
-        "message": "Android 应用壳拿到窗口焦点",
-        "details": {
-          "hasWindowFocus": true,
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 1,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false,
-            "currentUrl": "",
-            "recordAudioPermissionGranted": true,
-            "proxyReady": false,
-            "bootstrapLoadInProgress": true,
-            "bootstrapLoadGeneration": 1,
-            "activeBootstrapReason": "activity-create",
-            "reconnectDispatchPending": false,
-            "reconnectDispatchReason": "",
-            "scheduledReconnectReason": "",
-            "scheduledReconnectAtMs": 0,
-            "scheduledReconnectWaitMs": 0,
-            "lastProxySource": "",
-            "lastResolvedUpstreamBaseUrl": "",
-            "sdkInt": 34,
-            "manufacturer": "HONOR",
-            "model": "CLK-AN00",
-            "app": {
-              "applicationId": "com.pocketcodex.shell",
-              "versionName": "0.1.15",
-              "versionCode": 16,
-              "localProxyPort": 3180,
-              "githubDiagnostic": {
-                "configured": true,
-                "owner": "wishforgood",
-                "repo": "pocket-codex-bootstrap",
-                "branch": "main",
-                "pathPrefix": "pocket-codex\/device-logs",
-                "proxyPrefix": "https:\/\/ghproxy.vip\/",
-                "deviceId": "5e740ae166b533fb",
-                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
-              }
-            },
-            "network": {
-              "available": true,
-              "activeNetworkPresent": true,
-              "transports": [
-                "CELLULAR"
-              ],
-              "hasInternet": true,
-              "isValidated": true,
-              "isCaptivePortal": false,
-              "interfaceName": "ccmni3",
-              "addresses": [
-                "10.227.84.70",
-                "2408:8411:60a0:fedf::1"
-              ],
-              "dnsServers": [
-                "\/2408:8888:0:8888::8",
-                "\/2408:8899:0:8899::8",
-                "\/202.99.96.68",
-                "\/202.99.104.68"
-              ],
-              "hasIpv4": true,
-              "hasIpv6": true
-            },
-            "bootstrap": {
-              "packagedManifestUrls": [
-                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
-              ],
-              "lastBootstrapReadUrl": "https:\/\/cdn.jsdelivr.net\/gh\/wishforgood\/pocket-codex-bootstrap@main\/pocket-codex\/bootstrap.json",
-              "lastRemoteUrl": "",
-              "lastUpstreamStaleUrl": "",
-              "lastUpstreamStaleAt": "",
-              "lastConfigSyncAt": "2026-04-13T18:59:34.232760Z"
-            }
-          }
-        },
-        "capturedAt": "2026-04-14T05:23:06.064449Z",
-        "nativeSequence": 741
-      },
-      {
-        "source": "android-shell",
-        "category": "bootstrap.manifest.fetch.success",
-        "message": "GitHub 引导清单读取成功",
-        "details": {
-          "manifestUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
-          "requestUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json?_pcv=29602403",
-          "statusCode": 200,
-          "bodyPreview": "{   \"schemaVersion\": 1,   \"generatedAt\": \"2026-04-14T03:17:02.215Z\",   \"appName\": \"Pocket Codex\",   \"provider\": \"github-repo\",   \"status\": \"在线\",   \"publicUrl\": \"http:\/\/[240e:328:314:9300:edb9:2e10:c791:be72]:3100\",   \"preferredUpstreamUrl\":...",
-          "candidateCount": 2,
-          "publicUrl": "http:\/\/[240e:328:314:9300:edb9:2e10:c791:be72]:3100",
-          "preferredUpstreamUrl": "http:\/\/[240e:328:314:9300:edb9:2e10:c791:be72]:3100",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 1,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-14T05:23:06.468044Z",
-        "nativeSequence": 742
-      },
-      {
-        "source": "android-shell",
-        "category": "bootstrap.candidate.probe.start",
-        "message": "开始探测 GitHub 清单里的公网地址是否可用",
-        "details": {
-          "upstreamBaseUrl": "http:\/\/[240e:328:314:9300:edb9:2e10:c791:be72]:3100",
-          "source": "bootstrap-manifest:configured",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 1,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-14T05:23:07.112107Z",
-        "nativeSequence": 743
-      },
-      {
-        "source": "android-shell",
-        "category": "bootstrap.candidate.probe.error",
-        "message": "探测 GitHub 清单里的公网地址失败",
-        "details": {
-          "error": "SocketTimeoutException",
-          "message": "failed to connect to \/240e:328:314:9300:edb9:2e10:c791:be72 (port 3100) from \/2408:8411:60a0:fedf::1 (port 57054) after 2500ms",
-          "upstreamBaseUrl": "http:\/\/[240e:328:314:9300:edb9:2e10:c791:be72]:3100",
-          "source": "bootstrap-manifest:configured",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 1,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-14T05:23:10.012548Z",
-        "nativeSequence": 744
-      },
-      {
-        "source": "android-shell",
-        "category": "bootstrap.candidate.probe.start",
-        "message": "开始探测 GitHub 清单里的公网地址是否可用",
-        "details": {
-          "upstreamBaseUrl": "http:\/\/[240e:328:314:9300:b86d:7ff6:6d61:7768]:3100",
-          "source": "bootstrap-manifest:direct-ipv6",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 1,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-14T05:23:10.808079Z",
-        "nativeSequence": 745
-      },
-      {
-        "source": "android-shell",
-        "category": "bootstrap.candidate.probe.error",
-        "message": "探测 GitHub 清单里的公网地址失败",
-        "details": {
-          "error": "SocketTimeoutException",
-          "message": "failed to connect to \/240e:328:314:9300:b86d:7ff6:6d61:7768 (port 3100) from \/2408:8411:60a0:fedf::1 (port 45594) after 2500ms",
-          "upstreamBaseUrl": "http:\/\/[240e:328:314:9300:b86d:7ff6:6d61:7768]:3100",
-          "source": "bootstrap-manifest:direct-ipv6",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 1,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-14T05:23:13.706966Z",
-        "nativeSequence": 746
-      },
-      {
-        "source": "android-shell",
-        "category": "diagnostic.github.publish.success",
-        "message": "诊断日志已通过 ghproxy 上传到 GitHub",
-        "details": {
-          "triggerCategory": "bootstrap.candidate.probe.error",
-          "filePath": "pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
-          "readUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
-          "statusCode": 200,
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 1,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-14T05:23:14.585569Z",
-        "nativeSequence": 747
-      },
-      {
-        "source": "android-shell",
-        "category": "bootstrap.manifest.fetch.error",
-        "message": "读取 GitHub 引导清单失败",
-        "details": {
-          "error": "SocketTimeoutException",
-          "message": "failed to connect to \/240e:328:314:9300:b86d:7ff6:6d61:7768 (port 3100) from \/2408:8411:60a0:fedf::1 (port 45594) after 2500ms",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 1,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-14T05:23:15.036113Z",
-        "nativeSequence": 748
-      },
-      {
-        "source": "android-shell",
-        "category": "bootstrap.resolve.error",
-        "message": "读取 GitHub 引导清单失败",
-        "details": {
-          "error": "SocketTimeoutException",
-          "message": "failed to connect to \/240e:328:314:9300:b86d:7ff6:6d61:7768 (port 3100) from \/2408:8411:60a0:fedf::1 (port 45594) after 2500ms",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 1,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-14T05:23:15.670564Z",
-        "nativeSequence": 749
-      },
       {
         "source": "android-shell",
         "category": "proxy.resolve.error",
@@ -934,6 +234,833 @@
         },
         "capturedAt": "2026-04-14T05:23:18.207001Z",
         "nativeSequence": 752
+      },
+      {
+        "source": "android-shell",
+        "category": "proxy.reload",
+        "message": "准备重新解析并加载 Pocket Codex 页面",
+        "details": {
+          "generation": 2,
+          "triggerReason": "show-error",
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 2,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false,
+            "currentUrl": "",
+            "recordAudioPermissionGranted": true,
+            "proxyReady": false,
+            "bootstrapLoadInProgress": true,
+            "bootstrapLoadGeneration": 2,
+            "activeBootstrapReason": "show-error",
+            "reconnectDispatchPending": false,
+            "reconnectDispatchReason": "",
+            "scheduledReconnectReason": "",
+            "scheduledReconnectAtMs": 0,
+            "scheduledReconnectWaitMs": 0,
+            "lastProxySource": "",
+            "lastResolvedUpstreamBaseUrl": "",
+            "sdkInt": 34,
+            "manufacturer": "HONOR",
+            "model": "CLK-AN00",
+            "app": {
+              "applicationId": "com.pocketcodex.shell",
+              "versionName": "0.1.15",
+              "versionCode": 16,
+              "localProxyPort": 3180,
+              "githubDiagnostic": {
+                "configured": true,
+                "owner": "wishforgood",
+                "repo": "pocket-codex-bootstrap",
+                "branch": "main",
+                "pathPrefix": "pocket-codex\/device-logs",
+                "proxyPrefix": "https:\/\/ghproxy.vip\/",
+                "deviceId": "5e740ae166b533fb",
+                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
+              }
+            },
+            "network": {
+              "available": true,
+              "activeNetworkPresent": true,
+              "transports": [
+                "CELLULAR"
+              ],
+              "hasInternet": true,
+              "isValidated": true,
+              "isCaptivePortal": false,
+              "interfaceName": "ccmni3",
+              "addresses": [
+                "10.227.84.70",
+                "2408:8411:60a0:fedf::1"
+              ],
+              "dnsServers": [
+                "\/2408:8888:0:8888::8",
+                "\/2408:8899:0:8899::8",
+                "\/202.99.96.68",
+                "\/202.99.104.68"
+              ],
+              "hasIpv4": true,
+              "hasIpv6": true
+            },
+            "bootstrap": {
+              "packagedManifestUrls": [
+                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
+              ],
+              "lastBootstrapReadUrl": "https:\/\/cdn.jsdelivr.net\/gh\/wishforgood\/pocket-codex-bootstrap@main\/pocket-codex\/bootstrap.json",
+              "lastRemoteUrl": "",
+              "lastUpstreamStaleUrl": "",
+              "lastUpstreamStaleAt": "",
+              "lastConfigSyncAt": "2026-04-13T18:59:34.232760Z"
+            }
+          }
+        },
+        "capturedAt": "2026-04-14T05:23:19.783196Z",
+        "nativeSequence": 753
+      },
+      {
+        "source": "android-shell",
+        "category": "bootstrap.resolve.start",
+        "message": "开始从 GitHub 引导清单解析最新地址",
+        "details": {
+          "manifestCandidates": [
+            "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
+          ],
+          "manifestCandidateCount": 1,
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 2,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-14T05:23:20.224265Z",
+        "nativeSequence": 754
+      },
+      {
+        "source": "android-shell",
+        "category": "activity.pause",
+        "message": "Android 应用壳进入 paused",
+        "details": {
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 2,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false,
+            "currentUrl": "",
+            "recordAudioPermissionGranted": true,
+            "proxyReady": false,
+            "bootstrapLoadInProgress": true,
+            "bootstrapLoadGeneration": 2,
+            "activeBootstrapReason": "show-error",
+            "reconnectDispatchPending": false,
+            "reconnectDispatchReason": "",
+            "scheduledReconnectReason": "",
+            "scheduledReconnectAtMs": 0,
+            "scheduledReconnectWaitMs": 0,
+            "lastProxySource": "",
+            "lastResolvedUpstreamBaseUrl": "",
+            "sdkInt": 34,
+            "manufacturer": "HONOR",
+            "model": "CLK-AN00",
+            "app": {
+              "applicationId": "com.pocketcodex.shell",
+              "versionName": "0.1.15",
+              "versionCode": 16,
+              "localProxyPort": 3180,
+              "githubDiagnostic": {
+                "configured": true,
+                "owner": "wishforgood",
+                "repo": "pocket-codex-bootstrap",
+                "branch": "main",
+                "pathPrefix": "pocket-codex\/device-logs",
+                "proxyPrefix": "https:\/\/ghproxy.vip\/",
+                "deviceId": "5e740ae166b533fb",
+                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
+              }
+            },
+            "network": {
+              "available": true,
+              "activeNetworkPresent": true,
+              "transports": [
+                "CELLULAR"
+              ],
+              "hasInternet": true,
+              "isValidated": true,
+              "isCaptivePortal": false,
+              "interfaceName": "ccmni3",
+              "addresses": [
+                "10.227.84.70",
+                "2408:8411:60a0:fedf::1"
+              ],
+              "dnsServers": [
+                "\/2408:8888:0:8888::8",
+                "\/2408:8899:0:8899::8",
+                "\/202.99.96.68",
+                "\/202.99.104.68"
+              ],
+              "hasIpv4": true,
+              "hasIpv6": true
+            },
+            "bootstrap": {
+              "packagedManifestUrls": [
+                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
+              ],
+              "lastBootstrapReadUrl": "https:\/\/cdn.jsdelivr.net\/gh\/wishforgood\/pocket-codex-bootstrap@main\/pocket-codex\/bootstrap.json",
+              "lastRemoteUrl": "",
+              "lastUpstreamStaleUrl": "",
+              "lastUpstreamStaleAt": "",
+              "lastConfigSyncAt": "2026-04-13T18:59:34.232760Z"
+            }
+          }
+        },
+        "capturedAt": "2026-04-14T05:23:20.712714Z",
+        "nativeSequence": 755
+      },
+      {
+        "source": "android-shell",
+        "category": "activity.window-focus",
+        "message": "Android 应用壳失去窗口焦点",
+        "details": {
+          "hasWindowFocus": false,
+          "nativeContext": {
+            "lifecycleState": "paused",
+            "loadGeneration": 2,
+            "hasWindowFocus": false,
+            "isFinishing": false,
+            "isDestroyed": false,
+            "currentUrl": "",
+            "recordAudioPermissionGranted": true,
+            "proxyReady": false,
+            "bootstrapLoadInProgress": true,
+            "bootstrapLoadGeneration": 2,
+            "activeBootstrapReason": "show-error",
+            "reconnectDispatchPending": false,
+            "reconnectDispatchReason": "",
+            "scheduledReconnectReason": "",
+            "scheduledReconnectAtMs": 0,
+            "scheduledReconnectWaitMs": 0,
+            "lastProxySource": "",
+            "lastResolvedUpstreamBaseUrl": "",
+            "sdkInt": 34,
+            "manufacturer": "HONOR",
+            "model": "CLK-AN00",
+            "app": {
+              "applicationId": "com.pocketcodex.shell",
+              "versionName": "0.1.15",
+              "versionCode": 16,
+              "localProxyPort": 3180,
+              "githubDiagnostic": {
+                "configured": true,
+                "owner": "wishforgood",
+                "repo": "pocket-codex-bootstrap",
+                "branch": "main",
+                "pathPrefix": "pocket-codex\/device-logs",
+                "proxyPrefix": "https:\/\/ghproxy.vip\/",
+                "deviceId": "5e740ae166b533fb",
+                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
+              }
+            },
+            "network": {
+              "available": true,
+              "activeNetworkPresent": true,
+              "transports": [
+                "CELLULAR"
+              ],
+              "hasInternet": true,
+              "isValidated": true,
+              "isCaptivePortal": false,
+              "interfaceName": "ccmni3",
+              "addresses": [
+                "10.227.84.70",
+                "2408:8411:60a0:fedf::1"
+              ],
+              "dnsServers": [
+                "\/2408:8888:0:8888::8",
+                "\/2408:8899:0:8899::8",
+                "\/202.99.96.68",
+                "\/202.99.104.68"
+              ],
+              "hasIpv4": true,
+              "hasIpv6": true
+            },
+            "bootstrap": {
+              "packagedManifestUrls": [
+                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
+              ],
+              "lastBootstrapReadUrl": "https:\/\/cdn.jsdelivr.net\/gh\/wishforgood\/pocket-codex-bootstrap@main\/pocket-codex\/bootstrap.json",
+              "lastRemoteUrl": "",
+              "lastUpstreamStaleUrl": "",
+              "lastUpstreamStaleAt": "",
+              "lastConfigSyncAt": "2026-04-13T18:59:34.232760Z"
+            }
+          }
+        },
+        "capturedAt": "2026-04-14T05:23:21.756214Z",
+        "nativeSequence": 756
+      },
+      {
+        "source": "android-shell",
+        "category": "diagnostic.github.publish.success",
+        "message": "诊断日志已通过 ghproxy 上传到 GitHub",
+        "details": {
+          "triggerCategory": "bootstrap.manifest.fetch.error",
+          "filePath": "pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
+          "readUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
+          "statusCode": 200,
+          "nativeContext": {
+            "lifecycleState": "paused",
+            "loadGeneration": 2,
+            "hasWindowFocus": false,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-14T05:23:23.040815Z",
+        "nativeSequence": 757
+      },
+      {
+        "source": "android-shell",
+        "category": "bootstrap.manifest.fetch.start",
+        "message": "开始读取 GitHub 引导清单",
+        "details": {
+          "manifestUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 2,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-14T05:23:24.346857Z",
+        "nativeSequence": 758
+      },
+      {
+        "source": "android-shell",
+        "category": "activity.create",
+        "message": "Android 应用壳已创建",
+        "details": {
+          "nativeContext": {
+            "lifecycleState": "created",
+            "loadGeneration": 0,
+            "hasWindowFocus": false,
+            "isFinishing": false,
+            "isDestroyed": false,
+            "currentUrl": "",
+            "recordAudioPermissionGranted": true,
+            "proxyReady": false,
+            "bootstrapLoadInProgress": false,
+            "bootstrapLoadGeneration": 0,
+            "activeBootstrapReason": "",
+            "reconnectDispatchPending": false,
+            "reconnectDispatchReason": "",
+            "scheduledReconnectReason": "",
+            "scheduledReconnectAtMs": 0,
+            "scheduledReconnectWaitMs": 0,
+            "lastProxySource": "",
+            "lastResolvedUpstreamBaseUrl": "",
+            "sdkInt": 34,
+            "manufacturer": "HONOR",
+            "model": "CLK-AN00",
+            "app": {
+              "applicationId": "com.pocketcodex.shell",
+              "versionName": "0.1.16",
+              "versionCode": 17,
+              "localProxyPort": 3180,
+              "githubDiagnostic": {
+                "configured": true,
+                "owner": "wishforgood",
+                "repo": "pocket-codex-bootstrap",
+                "branch": "main",
+                "pathPrefix": "pocket-codex\/device-logs",
+                "proxyPrefix": "https:\/\/ghproxy.vip\/",
+                "deviceId": "5e740ae166b533fb",
+                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
+              }
+            },
+            "network": {
+              "available": true,
+              "activeNetworkPresent": true,
+              "transports": [
+                "CELLULAR"
+              ],
+              "hasInternet": true,
+              "isValidated": true,
+              "isCaptivePortal": false,
+              "interfaceName": "ccmni3",
+              "addresses": [
+                "10.227.84.70",
+                "2408:8411:60a0:fedf::1"
+              ],
+              "dnsServers": [
+                "\/2408:8888:0:8888::8",
+                "\/2408:8899:0:8899::8",
+                "\/202.99.96.68",
+                "\/202.99.104.68"
+              ],
+              "hasIpv4": true,
+              "hasIpv6": true
+            },
+            "bootstrap": {
+              "packagedManifestUrls": [
+                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
+              ],
+              "lastBootstrapReadUrl": "",
+              "lastRemoteUrl": "",
+              "lastUpstreamStaleUrl": "",
+              "lastUpstreamStaleAt": "",
+              "lastConfigSyncAt": "2026-04-13T18:59:34.232760Z"
+            }
+          }
+        },
+        "capturedAt": "2026-04-14T05:30:23.766903Z",
+        "nativeSequence": 759
+      },
+      {
+        "source": "android-shell",
+        "category": "proxy.reload",
+        "message": "准备重新解析并加载 Pocket Codex 页面",
+        "details": {
+          "generation": 1,
+          "triggerReason": "activity-create",
+          "nativeContext": {
+            "lifecycleState": "created",
+            "loadGeneration": 1,
+            "hasWindowFocus": false,
+            "isFinishing": false,
+            "isDestroyed": false,
+            "currentUrl": "",
+            "recordAudioPermissionGranted": true,
+            "proxyReady": false,
+            "bootstrapLoadInProgress": true,
+            "bootstrapLoadGeneration": 1,
+            "activeBootstrapReason": "activity-create",
+            "reconnectDispatchPending": false,
+            "reconnectDispatchReason": "",
+            "scheduledReconnectReason": "",
+            "scheduledReconnectAtMs": 0,
+            "scheduledReconnectWaitMs": 0,
+            "lastProxySource": "",
+            "lastResolvedUpstreamBaseUrl": "",
+            "sdkInt": 34,
+            "manufacturer": "HONOR",
+            "model": "CLK-AN00",
+            "app": {
+              "applicationId": "com.pocketcodex.shell",
+              "versionName": "0.1.16",
+              "versionCode": 17,
+              "localProxyPort": 3180,
+              "githubDiagnostic": {
+                "configured": true,
+                "owner": "wishforgood",
+                "repo": "pocket-codex-bootstrap",
+                "branch": "main",
+                "pathPrefix": "pocket-codex\/device-logs",
+                "proxyPrefix": "https:\/\/ghproxy.vip\/",
+                "deviceId": "5e740ae166b533fb",
+                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
+              }
+            },
+            "network": {
+              "available": true,
+              "activeNetworkPresent": true,
+              "transports": [
+                "CELLULAR"
+              ],
+              "hasInternet": true,
+              "isValidated": true,
+              "isCaptivePortal": false,
+              "interfaceName": "ccmni3",
+              "addresses": [
+                "10.227.84.70",
+                "2408:8411:60a0:fedf::1"
+              ],
+              "dnsServers": [
+                "\/2408:8888:0:8888::8",
+                "\/2408:8899:0:8899::8",
+                "\/202.99.96.68",
+                "\/202.99.104.68"
+              ],
+              "hasIpv4": true,
+              "hasIpv6": true
+            },
+            "bootstrap": {
+              "packagedManifestUrls": [
+                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
+              ],
+              "lastBootstrapReadUrl": "",
+              "lastRemoteUrl": "",
+              "lastUpstreamStaleUrl": "",
+              "lastUpstreamStaleAt": "",
+              "lastConfigSyncAt": "2026-04-13T18:59:34.232760Z"
+            }
+          }
+        },
+        "capturedAt": "2026-04-14T05:30:24.460452Z",
+        "nativeSequence": 760
+      },
+      {
+        "source": "android-shell",
+        "category": "bootstrap.resolve.start",
+        "message": "开始从 GitHub 引导清单解析最新地址",
+        "details": {
+          "manifestCandidates": [
+            "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
+          ],
+          "manifestCandidateCount": 1,
+          "nativeContext": {
+            "lifecycleState": "created",
+            "loadGeneration": 1,
+            "hasWindowFocus": false,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-14T05:30:25.077955Z",
+        "nativeSequence": 761
+      },
+      {
+        "source": "android-shell",
+        "category": "activity.start",
+        "message": "Android 应用壳进入 started",
+        "details": {
+          "nativeContext": {
+            "lifecycleState": "started",
+            "loadGeneration": 1,
+            "hasWindowFocus": false,
+            "isFinishing": false,
+            "isDestroyed": false,
+            "currentUrl": "",
+            "recordAudioPermissionGranted": true,
+            "proxyReady": false,
+            "bootstrapLoadInProgress": true,
+            "bootstrapLoadGeneration": 1,
+            "activeBootstrapReason": "activity-create",
+            "reconnectDispatchPending": false,
+            "reconnectDispatchReason": "",
+            "scheduledReconnectReason": "",
+            "scheduledReconnectAtMs": 0,
+            "scheduledReconnectWaitMs": 0,
+            "lastProxySource": "",
+            "lastResolvedUpstreamBaseUrl": "",
+            "sdkInt": 34,
+            "manufacturer": "HONOR",
+            "model": "CLK-AN00",
+            "app": {
+              "applicationId": "com.pocketcodex.shell",
+              "versionName": "0.1.16",
+              "versionCode": 17,
+              "localProxyPort": 3180,
+              "githubDiagnostic": {
+                "configured": true,
+                "owner": "wishforgood",
+                "repo": "pocket-codex-bootstrap",
+                "branch": "main",
+                "pathPrefix": "pocket-codex\/device-logs",
+                "proxyPrefix": "https:\/\/ghproxy.vip\/",
+                "deviceId": "5e740ae166b533fb",
+                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
+              }
+            },
+            "network": {
+              "available": true,
+              "activeNetworkPresent": true,
+              "transports": [
+                "CELLULAR"
+              ],
+              "hasInternet": true,
+              "isValidated": true,
+              "isCaptivePortal": false,
+              "interfaceName": "ccmni3",
+              "addresses": [
+                "10.227.84.70",
+                "2408:8411:60a0:fedf::1"
+              ],
+              "dnsServers": [
+                "\/2408:8888:0:8888::8",
+                "\/2408:8899:0:8899::8",
+                "\/202.99.96.68",
+                "\/202.99.104.68"
+              ],
+              "hasIpv4": true,
+              "hasIpv6": true
+            },
+            "bootstrap": {
+              "packagedManifestUrls": [
+                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
+              ],
+              "lastBootstrapReadUrl": "",
+              "lastRemoteUrl": "",
+              "lastUpstreamStaleUrl": "",
+              "lastUpstreamStaleAt": "",
+              "lastConfigSyncAt": "2026-04-13T18:59:34.232760Z"
+            }
+          }
+        },
+        "capturedAt": "2026-04-14T05:30:25.480819Z",
+        "nativeSequence": 762
+      },
+      {
+        "source": "android-shell",
+        "category": "bootstrap.manifest.fetch.start",
+        "message": "开始读取 GitHub 引导清单",
+        "details": {
+          "manifestUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
+          "nativeContext": {
+            "lifecycleState": "started",
+            "loadGeneration": 1,
+            "hasWindowFocus": false,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-14T05:30:26.097456Z",
+        "nativeSequence": 763
+      },
+      {
+        "source": "android-shell",
+        "category": "activity.resume",
+        "message": "Android 应用壳进入 resumed",
+        "details": {
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 1,
+            "hasWindowFocus": false,
+            "isFinishing": false,
+            "isDestroyed": false,
+            "currentUrl": "",
+            "recordAudioPermissionGranted": true,
+            "proxyReady": false,
+            "bootstrapLoadInProgress": true,
+            "bootstrapLoadGeneration": 1,
+            "activeBootstrapReason": "activity-create",
+            "reconnectDispatchPending": false,
+            "reconnectDispatchReason": "",
+            "scheduledReconnectReason": "",
+            "scheduledReconnectAtMs": 0,
+            "scheduledReconnectWaitMs": 0,
+            "lastProxySource": "",
+            "lastResolvedUpstreamBaseUrl": "",
+            "sdkInt": 34,
+            "manufacturer": "HONOR",
+            "model": "CLK-AN00",
+            "app": {
+              "applicationId": "com.pocketcodex.shell",
+              "versionName": "0.1.16",
+              "versionCode": 17,
+              "localProxyPort": 3180,
+              "githubDiagnostic": {
+                "configured": true,
+                "owner": "wishforgood",
+                "repo": "pocket-codex-bootstrap",
+                "branch": "main",
+                "pathPrefix": "pocket-codex\/device-logs",
+                "proxyPrefix": "https:\/\/ghproxy.vip\/",
+                "deviceId": "5e740ae166b533fb",
+                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
+              }
+            },
+            "network": {
+              "available": true,
+              "activeNetworkPresent": true,
+              "transports": [
+                "CELLULAR"
+              ],
+              "hasInternet": true,
+              "isValidated": true,
+              "isCaptivePortal": false,
+              "interfaceName": "ccmni3",
+              "addresses": [
+                "10.227.84.70",
+                "2408:8411:60a0:fedf::1"
+              ],
+              "dnsServers": [
+                "\/2408:8888:0:8888::8",
+                "\/2408:8899:0:8899::8",
+                "\/202.99.96.68",
+                "\/202.99.104.68"
+              ],
+              "hasIpv4": true,
+              "hasIpv6": true
+            },
+            "bootstrap": {
+              "packagedManifestUrls": [
+                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
+              ],
+              "lastBootstrapReadUrl": "",
+              "lastRemoteUrl": "",
+              "lastUpstreamStaleUrl": "",
+              "lastUpstreamStaleAt": "",
+              "lastConfigSyncAt": "2026-04-13T18:59:34.232760Z"
+            }
+          }
+        },
+        "capturedAt": "2026-04-14T05:30:26.482908Z",
+        "nativeSequence": 764
+      },
+      {
+        "source": "android-shell",
+        "category": "activity.window-focus",
+        "message": "Android 应用壳拿到窗口焦点",
+        "details": {
+          "hasWindowFocus": true,
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 1,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false,
+            "currentUrl": "",
+            "recordAudioPermissionGranted": true,
+            "proxyReady": false,
+            "bootstrapLoadInProgress": true,
+            "bootstrapLoadGeneration": 1,
+            "activeBootstrapReason": "activity-create",
+            "reconnectDispatchPending": false,
+            "reconnectDispatchReason": "",
+            "scheduledReconnectReason": "",
+            "scheduledReconnectAtMs": 0,
+            "scheduledReconnectWaitMs": 0,
+            "lastProxySource": "",
+            "lastResolvedUpstreamBaseUrl": "",
+            "sdkInt": 34,
+            "manufacturer": "HONOR",
+            "model": "CLK-AN00",
+            "app": {
+              "applicationId": "com.pocketcodex.shell",
+              "versionName": "0.1.16",
+              "versionCode": 17,
+              "localProxyPort": 3180,
+              "githubDiagnostic": {
+                "configured": true,
+                "owner": "wishforgood",
+                "repo": "pocket-codex-bootstrap",
+                "branch": "main",
+                "pathPrefix": "pocket-codex\/device-logs",
+                "proxyPrefix": "https:\/\/ghproxy.vip\/",
+                "deviceId": "5e740ae166b533fb",
+                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
+              }
+            },
+            "network": {
+              "available": true,
+              "activeNetworkPresent": true,
+              "transports": [
+                "CELLULAR"
+              ],
+              "hasInternet": true,
+              "isValidated": true,
+              "isCaptivePortal": false,
+              "interfaceName": "ccmni3",
+              "addresses": [
+                "10.227.84.70",
+                "2408:8411:60a0:fedf::1"
+              ],
+              "dnsServers": [
+                "\/2408:8888:0:8888::8",
+                "\/2408:8899:0:8899::8",
+                "\/202.99.96.68",
+                "\/202.99.104.68"
+              ],
+              "hasIpv4": true,
+              "hasIpv6": true
+            },
+            "bootstrap": {
+              "packagedManifestUrls": [
+                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
+              ],
+              "lastBootstrapReadUrl": "",
+              "lastRemoteUrl": "",
+              "lastUpstreamStaleUrl": "",
+              "lastUpstreamStaleAt": "",
+              "lastConfigSyncAt": "2026-04-13T18:59:34.232760Z"
+            }
+          }
+        },
+        "capturedAt": "2026-04-14T05:30:27.125696Z",
+        "nativeSequence": 765
+      },
+      {
+        "source": "android-shell",
+        "category": "bootstrap.manifest.fetch.success",
+        "message": "GitHub 引导清单读取成功",
+        "details": {
+          "manifestUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
+          "requestUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json?_pcv=29602410",
+          "statusCode": 200,
+          "bodyPreview": "{   \"schemaVersion\": 1,   \"generatedAt\": \"2026-04-14T03:17:02.215Z\",   \"appName\": \"Pocket Codex\",   \"provider\": \"github-repo\",   \"status\": \"在线\",   \"publicUrl\": \"http:\/\/[240e:328:314:9300:edb9:2e10:c791:be72]:3100\",   \"preferredUpstreamUrl\":...",
+          "candidateCount": 2,
+          "publicUrl": "http:\/\/[240e:328:314:9300:edb9:2e10:c791:be72]:3100",
+          "preferredUpstreamUrl": "http:\/\/[240e:328:314:9300:edb9:2e10:c791:be72]:3100",
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 1,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-14T05:30:27.822125Z",
+        "nativeSequence": 766
+      },
+      {
+        "source": "android-shell",
+        "category": "bootstrap.candidate.probe.start",
+        "message": "开始探测 GitHub 清单里的公网地址是否可用",
+        "details": {
+          "upstreamBaseUrl": "http:\/\/[240e:328:314:9300:edb9:2e10:c791:be72]:3100",
+          "source": "bootstrap-manifest:configured",
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 1,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-14T05:30:28.493682Z",
+        "nativeSequence": 767
+      },
+      {
+        "source": "android-shell",
+        "category": "bootstrap.candidate.probe.error",
+        "message": "探测 GitHub 清单里的公网地址失败",
+        "details": {
+          "error": "SocketTimeoutException",
+          "message": "failed to connect to \/240e:328:314:9300:edb9:2e10:c791:be72 (port 3100) from \/2408:8411:60a0:fedf::1 (port 57506) after 2500ms",
+          "upstreamBaseUrl": "http:\/\/[240e:328:314:9300:edb9:2e10:c791:be72]:3100",
+          "source": "bootstrap-manifest:configured",
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 1,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-14T05:30:31.404990Z",
+        "nativeSequence": 768
+      },
+      {
+        "source": "android-shell",
+        "category": "bootstrap.candidate.probe.start",
+        "message": "开始探测 GitHub 清单里的公网地址是否可用",
+        "details": {
+          "upstreamBaseUrl": "http:\/\/[240e:328:314:9300:b86d:7ff6:6d61:7768]:3100",
+          "source": "bootstrap-manifest:direct-ipv6",
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 1,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-14T05:30:32.080334Z",
+        "nativeSequence": 769
       }
     ]
   }
