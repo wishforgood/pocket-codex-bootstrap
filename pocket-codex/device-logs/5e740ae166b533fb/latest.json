@@ -1,8 +1,8 @@
 {
-  "capturedAt": "2026-04-14T16:17:50.349837Z",
+  "capturedAt": "2026-04-14T16:17:53.563595Z",
   "trigger": {
-    "category": "bootstrap.manifest.pending",
-    "message": "GitHub 引导清单返回了等待状态",
+    "category": "bootstrap.manifest.fetch.error",
+    "message": "读取 GitHub 引导清单失败",
     "details": {
       "error": "ManifestPendingException",
       "message": "电脑端当前外网入口状态为：在线",
@@ -32,7 +32,7 @@
     }
   },
   "nativeSnapshot": {
-    "capturedAt": "2026-04-14T16:17:50.350393Z",
+    "capturedAt": "2026-04-14T16:17:53.563934Z",
     "app": {
       "applicationId": "com.pocketcodex.shell",
       "versionName": "0.1.17",
@@ -88,31 +88,13 @@
       "lastRemoteUrl": "",
       "lastUpstreamStaleUrl": "https:\/\/phil-listen-corner-lat.trycloudflare.com\/",
       "lastUpstreamStaleAt": "2026-04-14T16:17:23.161217Z",
-      "lastConfigSyncAt": "2026-04-14T16:17:50.027472Z"
+      "lastConfigSyncAt": "2026-04-14T16:17:53.030225Z"
     }
   },
   "recentLogs": {
-    "pendingCount": 160,
-    "lastSequence": 5873,
+    "pendingCount": 113,
+    "lastSequence": 5874,
     "recent": [
-      {
-        "source": "android-shell",
-        "category": "bootstrap.candidate.probe.start",
-        "message": "开始探测 GitHub 清单里的公网地址是否可用",
-        "details": {
-          "upstreamBaseUrl": "https:\/\/optics-matters-describe-researcher.trycloudflare.com",
-          "source": "bootstrap-manifest:configured",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 31,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-14T16:17:38.365409Z",
-        "nativeSequence": 5854
-      },
       {
         "source": "android-shell",
         "category": "webview.page.error",
@@ -1017,6 +999,26 @@
         },
         "capturedAt": "2026-04-14T16:17:50.281293Z",
         "nativeSequence": 5873
+      },
+      {
+        "source": "android-shell",
+        "category": "diagnostic.github.publish.success",
+        "message": "诊断日志已通过 ghproxy 上传到 GitHub",
+        "details": {
+          "triggerCategory": "bootstrap.manifest.pending",
+          "filePath": "pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
+          "readUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
+          "statusCode": 200,
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 31,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-14T16:17:53.481317Z",
+        "nativeSequence": 5874
       }
     ]
   }
