@@ -1,13 +1,26 @@
 {
-  "capturedAt": "2026-04-14T12:51:15.473950Z",
+  "capturedAt": "2026-04-14T12:51:17.904433Z",
   "trigger": {
-    "category": "bootstrap.resolve.error",
-    "message": "读取 GitHub 引导清单失败",
+    "category": "proxy.resolve.error",
+    "message": "Android 应用壳解析上游地址失败",
     "details": {
       "error": "IOException",
       "message": "unexpected end of stream on com.android.okhttp.Address@25074a50",
       "cause": "EOFException",
       "causeMessage": "\\n not found: size=0 content=...",
+      "stack": [
+        "com.android.okhttp.internal.http.Http1xStream.readResponse(Http1xStream.java:203)",
+        "com.android.okhttp.internal.http.Http1xStream.readResponseHeaders(Http1xStream.java:129)",
+        "com.android.okhttp.internal.http.HttpEngine.readNetworkResponse(HttpEngine.java:750)",
+        "com.android.okhttp.internal.http.HttpEngine.readResponse(HttpEngine.java:622)",
+        "com.android.okhttp.internal.huc.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:475)",
+        "com.android.okhttp.internal.huc.HttpURLConnectionImpl.getResponse(HttpURLConnectionImpl.java:411)",
+        "com.android.okhttp.internal.huc.HttpURLConnectionImpl.getResponseCode(HttpURLConnectionImpl.java:542)",
+        "com.android.okhttp.internal.huc.DelegatingHttpsURLConnection.getResponseCode(DelegatingHttpsURLConnection.java:106)",
+        "com.android.okhttp.internal.huc.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:30)",
+        "com.pocketcodex.shell.PocketCodexBootstrapResolver.resolveFromManifest(PocketCodexBootstrapResolver.java:177)"
+      ],
+      "generation": 6,
       "nativeContext": {
         "lifecycleState": "resumed",
         "loadGeneration": 6,
@@ -34,7 +47,7 @@
     }
   },
   "nativeSnapshot": {
-    "capturedAt": "2026-04-14T12:51:15.474660Z",
+    "capturedAt": "2026-04-14T12:51:17.905358Z",
     "app": {
       "applicationId": "com.pocketcodex.shell",
       "versionName": "0.1.17",
@@ -90,19 +103,19 @@
       "lastRemoteUrl": "",
       "lastUpstreamStaleUrl": "https:\/\/gonna-marked-officially-assignments.trycloudflare.com\/",
       "lastUpstreamStaleAt": "2026-04-14T12:49:27.041786Z",
-      "lastConfigSyncAt": "2026-04-14T12:51:14.792479Z"
+      "lastConfigSyncAt": "2026-04-14T12:51:16.979512Z"
     }
   },
   "recentLogs": {
     "pendingCount": 1,
-    "lastSequence": 2636,
+    "lastSequence": 2637,
     "recent": [
       {
         "source": "android-shell",
         "category": "diagnostic.github.publish.success",
         "message": "诊断日志已通过 ghproxy 上传到 GitHub",
         "details": {
-          "triggerCategory": "bootstrap.manifest.fetch.error",
+          "triggerCategory": "bootstrap.resolve.error",
           "filePath": "pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
           "readUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
           "statusCode": 200,
@@ -114,8 +127,8 @@
             "isDestroyed": false
           }
         },
-        "capturedAt": "2026-04-14T12:51:15.470978Z",
-        "nativeSequence": 2636
+        "capturedAt": "2026-04-14T12:51:17.900599Z",
+        "nativeSequence": 2637
       }
     ]
   }
