@@ -1,11 +1,24 @@
 {
-  "capturedAt": "2026-04-14T05:08:55.587022Z",
+  "capturedAt": "2026-04-14T05:08:58.638842Z",
   "trigger": {
-    "category": "bootstrap.resolve.error",
-    "message": "读取 GitHub 引导清单失败",
+    "category": "proxy.resolve.error",
+    "message": "Android 应用壳解析上游地址失败",
     "details": {
       "error": "SocketTimeoutException",
       "message": "failed to connect to \/240e:328:314:9300:b86d:7ff6:6d61:7768 (port 3100) from \/2408:8411:60a0:fedf::1 (port 44676) after 2500ms",
+      "stack": [
+        "libcore.io.IoBridge.connectErrno(IoBridge.java:235)",
+        "libcore.io.IoBridge.connect(IoBridge.java:179)",
+        "java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:142)",
+        "java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:390)",
+        "java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:230)",
+        "java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:212)",
+        "java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)",
+        "java.net.Socket.connect(Socket.java:646)",
+        "com.android.okhttp.internal.Platform.connectSocket(Platform.java:182)",
+        "com.android.okhttp.internal.io.RealConnection.connectSocket(RealConnection.java:145)"
+      ],
+      "generation": 1,
       "nativeContext": {
         "lifecycleState": "resumed",
         "loadGeneration": 1,
@@ -32,7 +45,7 @@
     }
   },
   "nativeSnapshot": {
-    "capturedAt": "2026-04-14T05:08:55.587202Z",
+    "capturedAt": "2026-04-14T05:08:58.639022Z",
     "app": {
       "applicationId": "com.pocketcodex.shell",
       "versionName": "0.1.15",
@@ -92,110 +105,9 @@
     }
   },
   "recentLogs": {
-    "pendingCount": 295,
-    "lastSequence": 701,
+    "pendingCount": 297,
+    "lastSequence": 703,
     "recent": [
-      {
-        "source": "android-shell",
-        "category": "bootstrap.resolve.start",
-        "message": "开始从 GitHub 引导清单解析最新地址",
-        "details": {
-          "manifestCandidates": [
-            "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
-          ],
-          "manifestCandidateCount": 1,
-          "nativeContext": {
-            "lifecycleState": "created",
-            "loadGeneration": 1,
-            "hasWindowFocus": false,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-14T05:08:35.906728Z",
-        "nativeSequence": 682
-      },
-      {
-        "source": "android-shell",
-        "category": "activity.start",
-        "message": "Android 应用壳进入 started",
-        "details": {
-          "nativeContext": {
-            "lifecycleState": "started",
-            "loadGeneration": 1,
-            "hasWindowFocus": false,
-            "isFinishing": false,
-            "isDestroyed": false,
-            "currentUrl": "",
-            "recordAudioPermissionGranted": true,
-            "proxyReady": false,
-            "bootstrapLoadInProgress": true,
-            "bootstrapLoadGeneration": 1,
-            "activeBootstrapReason": "activity-create",
-            "reconnectDispatchPending": false,
-            "reconnectDispatchReason": "",
-            "scheduledReconnectReason": "",
-            "scheduledReconnectAtMs": 0,
-            "scheduledReconnectWaitMs": 0,
-            "lastProxySource": "",
-            "lastResolvedUpstreamBaseUrl": "",
-            "sdkInt": 34,
-            "manufacturer": "HONOR",
-            "model": "CLK-AN00",
-            "app": {
-              "applicationId": "com.pocketcodex.shell",
-              "versionName": "0.1.15",
-              "versionCode": 16,
-              "localProxyPort": 3180,
-              "githubDiagnostic": {
-                "configured": true,
-                "owner": "wishforgood",
-                "repo": "pocket-codex-bootstrap",
-                "branch": "main",
-                "pathPrefix": "pocket-codex\/device-logs",
-                "proxyPrefix": "https:\/\/ghproxy.vip\/",
-                "deviceId": "5e740ae166b533fb",
-                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
-              }
-            },
-            "network": {
-              "available": true,
-              "activeNetworkPresent": true,
-              "transports": [
-                "CELLULAR"
-              ],
-              "hasInternet": true,
-              "isValidated": true,
-              "isCaptivePortal": false,
-              "interfaceName": "ccmni3",
-              "addresses": [
-                "10.227.84.70",
-                "2408:8411:60a0:fedf::1"
-              ],
-              "dnsServers": [
-                "\/2408:8888:0:8888::8",
-                "\/2408:8899:0:8899::8",
-                "\/202.99.96.68",
-                "\/202.99.104.68"
-              ],
-              "hasIpv4": true,
-              "hasIpv6": true
-            },
-            "bootstrap": {
-              "packagedManifestUrls": [
-                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
-              ],
-              "lastBootstrapReadUrl": "https:\/\/cdn.jsdelivr.net\/gh\/wishforgood\/pocket-codex-bootstrap@main\/pocket-codex\/bootstrap.json",
-              "lastRemoteUrl": "",
-              "lastUpstreamStaleUrl": "",
-              "lastUpstreamStaleAt": "",
-              "lastConfigSyncAt": "2026-04-13T18:59:34.232760Z"
-            }
-          }
-        },
-        "capturedAt": "2026-04-14T05:08:36.305911Z",
-        "nativeSequence": 683
-      },
       {
         "source": "android-shell",
         "category": "bootstrap.manifest.fetch.start",
@@ -808,6 +720,49 @@
         },
         "capturedAt": "2026-04-14T05:08:54.994526Z",
         "nativeSequence": 701
+      },
+      {
+        "source": "android-shell",
+        "category": "diagnostic.github.publish.success",
+        "message": "诊断日志已通过 ghproxy 上传到 GitHub",
+        "details": {
+          "triggerCategory": "bootstrap.resolve.error",
+          "filePath": "pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
+          "readUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
+          "statusCode": 200,
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 2,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-14T05:08:58.047130Z",
+        "nativeSequence": 702
+      },
+      {
+        "source": "android-shell",
+        "category": "bootstrap.manifest.fetch.success",
+        "message": "GitHub 引导清单读取成功",
+        "details": {
+          "manifestUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
+          "requestUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json?_pcv=29602388",
+          "statusCode": 200,
+          "bodyPreview": "{   \"schemaVersion\": 1,   \"generatedAt\": \"2026-04-14T03:17:02.215Z\",   \"appName\": \"Pocket Codex\",   \"provider\": \"github-repo\",   \"status\": \"在线\",   \"publicUrl\": \"http:\/\/[240e:328:314:9300:edb9:2e10:c791:be72]:3100\",   \"preferredUpstreamUrl\":...",
+          "candidateCount": 2,
+          "publicUrl": "http:\/\/[240e:328:314:9300:edb9:2e10:c791:be72]:3100",
+          "preferredUpstreamUrl": "http:\/\/[240e:328:314:9300:edb9:2e10:c791:be72]:3100",
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 2,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-14T05:08:58.638853Z",
+        "nativeSequence": 703
       }
     ]
   }
