@@ -1,24 +1,14 @@
 {
-  "capturedAt": "2026-04-15T08:21:12.721264Z",
+  "capturedAt": "2026-04-15T08:21:18.738281Z",
   "trigger": {
-    "category": "proxy.resolve.error",
-    "message": "Android 应用壳解析上游地址失败",
+    "category": "bootstrap.manifest.fetch.error",
+    "message": "读取 GitHub 引导清单失败",
     "details": {
       "error": "ManifestPendingException",
       "message": "电脑端当前外网入口状态为：在线",
-      "stack": [
-        "com.pocketcodex.shell.PocketCodexBootstrapResolver.resolveFromManifest(PocketCodexBootstrapResolver.java:238)",
-        "com.pocketcodex.shell.PocketCodexBootstrapResolver.resolve(PocketCodexBootstrapResolver.java:63)",
-        "com.pocketcodex.shell.MainActivity.startOrReloadProxy(MainActivity.java:495)",
-        "com.pocketcodex.shell.MainActivity.lambda$loadPocketCodex$4(MainActivity.java:361)",
-        "com.pocketcodex.shell.MainActivity.$r8$lambda$vnP4WSy9edJ98qcrNny_BZ_mtkY(Unknown Source:0)",
-        "com.pocketcodex.shell.MainActivity$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)",
-        "java.lang.Thread.run(Thread.java:1019)"
-      ],
-      "generation": 3,
       "nativeContext": {
         "lifecycleState": "resumed",
-        "loadGeneration": 3,
+        "loadGeneration": 4,
         "hasWindowFocus": true,
         "isFinishing": false,
         "isDestroyed": false
@@ -42,7 +32,7 @@
     }
   },
   "nativeSnapshot": {
-    "capturedAt": "2026-04-15T08:21:12.721570Z",
+    "capturedAt": "2026-04-15T08:21:18.738470Z",
     "app": {
       "applicationId": "com.pocketcodex.shell",
       "versionName": "0.1.17",
@@ -98,49 +88,13 @@
       "lastRemoteUrl": "",
       "lastUpstreamStaleUrl": "https:\/\/mumbai-fragrances-joy-nebraska.trycloudflare.com\/",
       "lastUpstreamStaleAt": "2026-04-15T08:16:07.032203Z",
-      "lastConfigSyncAt": "2026-04-15T08:21:12.502988Z"
+      "lastConfigSyncAt": "2026-04-15T08:21:15.282284Z"
     }
   },
   "recentLogs": {
-    "pendingCount": 180,
-    "lastSequence": 7566,
+    "pendingCount": 62,
+    "lastSequence": 7568,
     "recent": [
-      {
-        "source": "android-shell",
-        "category": "bootstrap.manifest.fetch.error",
-        "message": "读取 GitHub 引导清单失败",
-        "details": {
-          "error": "ManifestPendingException",
-          "message": "电脑端当前外网入口状态为：在线",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 5,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-15T08:21:03.260718Z",
-        "nativeSequence": 7547
-      },
-      {
-        "source": "android-shell",
-        "category": "bootstrap.resolve.pending",
-        "message": "GitHub 引导清单已响应，但最新地址暂不可用",
-        "details": {
-          "error": "ManifestPendingException",
-          "message": "电脑端当前外网入口状态为：在线",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 5,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-15T08:21:03.400485Z",
-        "nativeSequence": 7548
-      },
       {
         "source": "android-shell",
         "category": "proxy.resolve.error",
@@ -767,6 +721,55 @@
         },
         "capturedAt": "2026-04-15T08:21:12.630440Z",
         "nativeSequence": 7566
+      },
+      {
+        "source": "android-shell",
+        "category": "diagnostic.github.publish.success",
+        "message": "诊断日志已通过 ghproxy 上传到 GitHub",
+        "details": {
+          "triggerCategory": "proxy.resolve.error",
+          "filePath": "pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
+          "readUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
+          "statusCode": 200,
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 6,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-15T08:21:15.782260Z",
+        "nativeSequence": 7567
+      },
+      {
+        "source": "android-shell",
+        "category": "diagnostic.github.publish.error",
+        "message": "诊断日志上传失败",
+        "details": {
+          "error": "IllegalStateException",
+          "message": "GitHub 诊断日志上传失败：HTTP 409 {\"message\":\"is at 3dbb771ec28ddecf640bf77d5049be8b27f80d0b but expected 26542e97f418c9b19f16c79850425c53a0ab684f\",\"documentation_url\":\"https:\/\/docs.github.com\/rest\/repos\/contents#create-or-update-file-contents\",\"status\":\"409\"}",
+          "stack": [
+            "com.pocketcodex.shell.GitHubDebugLogPublisher.publishLatest(GitHubDebugLogPublisher.java:150)",
+            "com.pocketcodex.shell.MainActivity.publishGitHubDiagnosticSnapshot(MainActivity.java:1955)",
+            "com.pocketcodex.shell.MainActivity.lambda$maybePublishGitHubDiagnostic$11(MainActivity.java:1913)",
+            "com.pocketcodex.shell.MainActivity.$r8$lambda$OOR2DzBvG-2jh2EFuN_UyGAzD6w(Unknown Source:0)",
+            "com.pocketcodex.shell.MainActivity$$ExternalSyntheticLambda15.run(D8$$SyntheticClass:0)",
+            "java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)",
+            "java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)",
+            "java.lang.Thread.run(Thread.java:1019)"
+          ],
+          "triggerCategory": "bootstrap.manifest.pending",
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 6,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-15T08:21:18.728201Z",
+        "nativeSequence": 7568
       }
     ]
   }
