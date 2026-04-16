@@ -1,8 +1,8 @@
 {
-  "capturedAt": "2026-04-16T10:04:06.279841Z",
+  "capturedAt": "2026-04-16T10:07:23.850680Z",
   "trigger": {
-    "category": "bootstrap.manifest.pending",
-    "message": "GitHub 引导清单返回了等待状态",
+    "category": "bootstrap.manifest.fetch.error",
+    "message": "读取 GitHub 引导清单失败",
     "details": {
       "error": "ManifestPendingException",
       "message": "电脑端当前外网入口状态为：在线",
@@ -32,7 +32,7 @@
     }
   },
   "nativeSnapshot": {
-    "capturedAt": "2026-04-16T10:04:06.280194Z",
+    "capturedAt": "2026-04-16T10:07:23.851266Z",
     "app": {
       "applicationId": "com.pocketcodex.shell",
       "versionName": "0.1.17",
@@ -50,8 +50,8 @@
       }
     },
     "summary": {
-      "lifecycleState": "stopped",
-      "loadGeneration": 14,
+      "lifecycleState": "started",
+      "loadGeneration": 15,
       "hasWindowFocus": false,
       "isFinishing": false,
       "isDestroyed": false
@@ -92,339 +92,9 @@
     }
   },
   "recentLogs": {
-    "pendingCount": 86,
-    "lastSequence": 12608,
+    "pendingCount": 95,
+    "lastSequence": 12617,
     "recent": [
-      {
-        "source": "android-shell",
-        "category": "diagnostic.github.publish.error",
-        "message": "诊断日志上传失败",
-        "details": {
-          "error": "UnknownHostException",
-          "message": "Unable to resolve host \"ghproxy.vip\": No address associated with hostname",
-          "stack": [
-            "java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:124)",
-            "java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:103)",
-            "java.net.InetAddress.getAllByName(InetAddress.java:1152)",
-            "com.android.okhttp.Dns$1.lookup(Dns.java:41)",
-            "com.android.okhttp.internal.http.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:178)",
-            "com.android.okhttp.internal.http.RouteSelector.nextProxy(RouteSelector.java:144)",
-            "com.android.okhttp.internal.http.RouteSelector.next(RouteSelector.java:86)",
-            "com.android.okhttp.internal.http.StreamAllocation.findConnection(StreamAllocation.java:176)",
-            "com.android.okhttp.internal.http.StreamAllocation.findHealthyConnection(StreamAllocation.java:128)",
-            "com.android.okhttp.internal.http.StreamAllocation.newStream(StreamAllocation.java:97)"
-          ],
-          "triggerCategory": "webview.page.http-error",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 13,
-            "hasWindowFocus": false,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-16T10:04:01.006653Z",
-        "nativeSequence": 12589
-      },
-      {
-        "source": "android-shell",
-        "category": "diagnostic.github.publish.error",
-        "message": "诊断日志上传失败",
-        "details": {
-          "error": "UnknownHostException",
-          "message": "Unable to resolve host \"ghproxy.vip\": No address associated with hostname",
-          "stack": [
-            "java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:124)",
-            "java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:103)",
-            "java.net.InetAddress.getAllByName(InetAddress.java:1152)",
-            "com.android.okhttp.Dns$1.lookup(Dns.java:41)",
-            "com.android.okhttp.internal.http.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:178)",
-            "com.android.okhttp.internal.http.RouteSelector.nextProxy(RouteSelector.java:144)",
-            "com.android.okhttp.internal.http.RouteSelector.next(RouteSelector.java:86)",
-            "com.android.okhttp.internal.http.StreamAllocation.findConnection(StreamAllocation.java:176)",
-            "com.android.okhttp.internal.http.StreamAllocation.findHealthyConnection(StreamAllocation.java:128)",
-            "com.android.okhttp.internal.http.StreamAllocation.newStream(StreamAllocation.java:97)"
-          ],
-          "triggerCategory": "proxy.resolve.error",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 13,
-            "hasWindowFocus": false,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-16T10:04:01.021561Z",
-        "nativeSequence": 12590
-      },
-      {
-        "source": "android-shell",
-        "category": "diagnostic.github.publish.error",
-        "message": "诊断日志上传失败",
-        "details": {
-          "error": "UnknownHostException",
-          "message": "Unable to resolve host \"ghproxy.vip\": No address associated with hostname",
-          "stack": [
-            "java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:124)",
-            "java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:103)",
-            "java.net.InetAddress.getAllByName(InetAddress.java:1152)",
-            "com.android.okhttp.Dns$1.lookup(Dns.java:41)",
-            "com.android.okhttp.internal.http.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:178)",
-            "com.android.okhttp.internal.http.RouteSelector.nextProxy(RouteSelector.java:144)",
-            "com.android.okhttp.internal.http.RouteSelector.next(RouteSelector.java:86)",
-            "com.android.okhttp.internal.http.StreamAllocation.findConnection(StreamAllocation.java:176)",
-            "com.android.okhttp.internal.http.StreamAllocation.findHealthyConnection(StreamAllocation.java:128)",
-            "com.android.okhttp.internal.http.StreamAllocation.newStream(StreamAllocation.java:97)"
-          ],
-          "triggerCategory": "bootstrap.manifest.pending",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 13,
-            "hasWindowFocus": false,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-16T10:04:01.093550Z",
-        "nativeSequence": 12591
-      },
-      {
-        "source": "android-shell",
-        "category": "diagnostic.github.publish.error",
-        "message": "诊断日志上传失败",
-        "details": {
-          "error": "UnknownHostException",
-          "message": "Unable to resolve host \"ghproxy.vip\": No address associated with hostname",
-          "stack": [
-            "java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:124)",
-            "java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:103)",
-            "java.net.InetAddress.getAllByName(InetAddress.java:1152)",
-            "com.android.okhttp.Dns$1.lookup(Dns.java:41)",
-            "com.android.okhttp.internal.http.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:178)",
-            "com.android.okhttp.internal.http.RouteSelector.nextProxy(RouteSelector.java:144)",
-            "com.android.okhttp.internal.http.RouteSelector.next(RouteSelector.java:86)",
-            "com.android.okhttp.internal.http.StreamAllocation.findConnection(StreamAllocation.java:176)",
-            "com.android.okhttp.internal.http.StreamAllocation.findHealthyConnection(StreamAllocation.java:128)",
-            "com.android.okhttp.internal.http.StreamAllocation.newStream(StreamAllocation.java:97)"
-          ],
-          "triggerCategory": "bootstrap.manifest.fetch.error",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 13,
-            "hasWindowFocus": false,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-16T10:04:01.112165Z",
-        "nativeSequence": 12592
-      },
-      {
-        "source": "android-shell",
-        "category": "diagnostic.github.publish.error",
-        "message": "诊断日志上传失败",
-        "details": {
-          "error": "UnknownHostException",
-          "message": "Unable to resolve host \"ghproxy.vip\": No address associated with hostname",
-          "stack": [
-            "java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:124)",
-            "java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:103)",
-            "java.net.InetAddress.getAllByName(InetAddress.java:1152)",
-            "com.android.okhttp.Dns$1.lookup(Dns.java:41)",
-            "com.android.okhttp.internal.http.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:178)",
-            "com.android.okhttp.internal.http.RouteSelector.nextProxy(RouteSelector.java:144)",
-            "com.android.okhttp.internal.http.RouteSelector.next(RouteSelector.java:86)",
-            "com.android.okhttp.internal.http.StreamAllocation.findConnection(StreamAllocation.java:176)",
-            "com.android.okhttp.internal.http.StreamAllocation.findHealthyConnection(StreamAllocation.java:128)",
-            "com.android.okhttp.internal.http.StreamAllocation.newStream(StreamAllocation.java:97)"
-          ],
-          "triggerCategory": "proxy.resolve.error",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 13,
-            "hasWindowFocus": false,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-16T10:04:01.132164Z",
-        "nativeSequence": 12593
-      },
-      {
-        "source": "android-shell",
-        "category": "diagnostic.github.publish.error",
-        "message": "诊断日志上传失败",
-        "details": {
-          "error": "UnknownHostException",
-          "message": "Unable to resolve host \"ghproxy.vip\": No address associated with hostname",
-          "stack": [
-            "java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:124)",
-            "java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:103)",
-            "java.net.InetAddress.getAllByName(InetAddress.java:1152)",
-            "com.android.okhttp.Dns$1.lookup(Dns.java:41)",
-            "com.android.okhttp.internal.http.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:178)",
-            "com.android.okhttp.internal.http.RouteSelector.nextProxy(RouteSelector.java:144)",
-            "com.android.okhttp.internal.http.RouteSelector.next(RouteSelector.java:86)",
-            "com.android.okhttp.internal.http.StreamAllocation.findConnection(StreamAllocation.java:176)",
-            "com.android.okhttp.internal.http.StreamAllocation.findHealthyConnection(StreamAllocation.java:128)",
-            "com.android.okhttp.internal.http.StreamAllocation.newStream(StreamAllocation.java:97)"
-          ],
-          "triggerCategory": "bootstrap.manifest.pending",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 13,
-            "hasWindowFocus": false,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-16T10:04:01.145346Z",
-        "nativeSequence": 12594
-      },
-      {
-        "source": "android-shell",
-        "category": "diagnostic.github.publish.error",
-        "message": "诊断日志上传失败",
-        "details": {
-          "error": "UnknownHostException",
-          "message": "Unable to resolve host \"ghproxy.vip\": No address associated with hostname",
-          "stack": [
-            "java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:124)",
-            "java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:103)",
-            "java.net.InetAddress.getAllByName(InetAddress.java:1152)",
-            "com.android.okhttp.Dns$1.lookup(Dns.java:41)",
-            "com.android.okhttp.internal.http.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:178)",
-            "com.android.okhttp.internal.http.RouteSelector.nextProxy(RouteSelector.java:144)",
-            "com.android.okhttp.internal.http.RouteSelector.next(RouteSelector.java:86)",
-            "com.android.okhttp.internal.http.StreamAllocation.findConnection(StreamAllocation.java:176)",
-            "com.android.okhttp.internal.http.StreamAllocation.findHealthyConnection(StreamAllocation.java:128)",
-            "com.android.okhttp.internal.http.StreamAllocation.newStream(StreamAllocation.java:97)"
-          ],
-          "triggerCategory": "bootstrap.manifest.fetch.error",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 13,
-            "hasWindowFocus": false,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-16T10:04:01.178427Z",
-        "nativeSequence": 12595
-      },
-      {
-        "source": "android-shell",
-        "category": "diagnostic.github.publish.error",
-        "message": "诊断日志上传失败",
-        "details": {
-          "error": "UnknownHostException",
-          "message": "Unable to resolve host \"ghproxy.vip\": No address associated with hostname",
-          "stack": [
-            "java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:124)",
-            "java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:103)",
-            "java.net.InetAddress.getAllByName(InetAddress.java:1152)",
-            "com.android.okhttp.Dns$1.lookup(Dns.java:41)",
-            "com.android.okhttp.internal.http.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:178)",
-            "com.android.okhttp.internal.http.RouteSelector.nextProxy(RouteSelector.java:144)",
-            "com.android.okhttp.internal.http.RouteSelector.next(RouteSelector.java:86)",
-            "com.android.okhttp.internal.http.StreamAllocation.findConnection(StreamAllocation.java:176)",
-            "com.android.okhttp.internal.http.StreamAllocation.findHealthyConnection(StreamAllocation.java:128)",
-            "com.android.okhttp.internal.http.StreamAllocation.newStream(StreamAllocation.java:97)"
-          ],
-          "triggerCategory": "proxy.resolve.error",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 13,
-            "hasWindowFocus": false,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-16T10:04:01.219772Z",
-        "nativeSequence": 12596
-      },
-      {
-        "source": "android-shell",
-        "category": "activity.window-focus",
-        "message": "Android 应用壳拿到窗口焦点",
-        "details": {
-          "hasWindowFocus": true,
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 13,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false,
-            "currentUrl": "http:\/\/127.0.0.1:3180\/?_pcv=0.1.17-18-10-1776333825786",
-            "recordAudioPermissionGranted": true,
-            "proxyReady": false,
-            "bootstrapLoadInProgress": false,
-            "bootstrapLoadGeneration": 0,
-            "activeBootstrapReason": "",
-            "reconnectDispatchPending": false,
-            "reconnectDispatchReason": "",
-            "scheduledReconnectReason": "bootstrap-manifest-pending",
-            "scheduledReconnectAtMs": 1776333843239,
-            "scheduledReconnectWaitMs": 1610,
-            "lastProxySource": "bootstrap-manifest:configured",
-            "lastResolvedUpstreamBaseUrl": "https:\/\/tuning-automobile-copper-tied.trycloudflare.com",
-            "sdkInt": 34,
-            "manufacturer": "HONOR",
-            "model": "CLK-AN00",
-            "app": {
-              "applicationId": "com.pocketcodex.shell",
-              "versionName": "0.1.17",
-              "versionCode": 18,
-              "localProxyPort": 3180,
-              "githubDiagnostic": {
-                "configured": true,
-                "owner": "wishforgood",
-                "repo": "pocket-codex-bootstrap",
-                "branch": "main",
-                "pathPrefix": "pocket-codex\/device-logs",
-                "proxyPrefix": "https:\/\/ghproxy.vip\/",
-                "deviceId": "5e740ae166b533fb",
-                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
-              }
-            },
-            "network": {
-              "available": true,
-              "activeNetworkPresent": true,
-              "transports": [
-                "CELLULAR"
-              ],
-              "hasInternet": true,
-              "isValidated": true,
-              "isCaptivePortal": false,
-              "interfaceName": "ccmni2",
-              "addresses": [
-                "10.204.27.116",
-                "2408:8411:6070:1e5d::1"
-              ],
-              "dnsServers": [
-                "\/2408:8888:0:8888::8",
-                "\/2408:8899:0:8899::8",
-                "\/202.99.96.68",
-                "\/202.99.104.68"
-              ],
-              "hasIpv4": true,
-              "hasIpv6": true
-            },
-            "bootstrap": {
-              "packagedManifestUrls": [
-                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
-              ],
-              "lastBootstrapReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
-              "lastRemoteUrl": "",
-              "lastUpstreamStaleUrl": "https:\/\/tuning-automobile-copper-tied.trycloudflare.com\/",
-              "lastUpstreamStaleAt": "2026-04-16T10:03:55.914721Z",
-              "lastConfigSyncAt": "2026-04-16T10:03:49.051717Z"
-            }
-          }
-        },
-        "capturedAt": "2026-04-16T10:04:01.630714Z",
-        "nativeSequence": 12597
-      },
       {
         "source": "android-shell",
         "category": "activity.pause",
@@ -887,6 +557,454 @@
         },
         "capturedAt": "2026-04-16T10:04:06.280660Z",
         "nativeSequence": 12608
+      },
+      {
+        "source": "android-shell",
+        "category": "bootstrap.resolve.pending",
+        "message": "GitHub 引导清单已响应，但最新地址暂不可用",
+        "details": {
+          "error": "ManifestPendingException",
+          "message": "电脑端当前外网入口状态为：在线",
+          "nativeContext": {
+            "lifecycleState": "stopped",
+            "loadGeneration": 14,
+            "hasWindowFocus": false,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-16T10:04:06.320851Z",
+        "nativeSequence": 12609
+      },
+      {
+        "source": "android-shell",
+        "category": "proxy.resolve.error",
+        "message": "Android 应用壳解析上游地址失败",
+        "details": {
+          "error": "ManifestPendingException",
+          "message": "电脑端当前外网入口状态为：在线",
+          "stack": [
+            "com.pocketcodex.shell.PocketCodexBootstrapResolver.resolveFromManifest(PocketCodexBootstrapResolver.java:238)",
+            "com.pocketcodex.shell.PocketCodexBootstrapResolver.resolve(PocketCodexBootstrapResolver.java:63)",
+            "com.pocketcodex.shell.MainActivity.startOrReloadProxy(MainActivity.java:495)",
+            "com.pocketcodex.shell.MainActivity.lambda$loadPocketCodex$4(MainActivity.java:361)",
+            "com.pocketcodex.shell.MainActivity.$r8$lambda$vnP4WSy9edJ98qcrNny_BZ_mtkY(Unknown Source:0)",
+            "com.pocketcodex.shell.MainActivity$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)",
+            "java.lang.Thread.run(Thread.java:1019)"
+          ],
+          "generation": 14,
+          "nativeContext": {
+            "lifecycleState": "stopped",
+            "loadGeneration": 14,
+            "hasWindowFocus": false,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-16T10:04:06.385220Z",
+        "nativeSequence": 12610
+      },
+      {
+        "source": "android-shell",
+        "category": "proxy.auto-reconnect.schedule",
+        "message": "Android 应用壳已安排自动重连",
+        "details": {
+          "reason": "bootstrap-manifest-pending",
+          "delayMs": 3600,
+          "attempt": 0,
+          "lastPageError": "",
+          "lastResolvedUpstreamBaseUrl": "https:\/\/tuning-automobile-copper-tied.trycloudflare.com",
+          "scheduledReconnectAtMs": 1776333850046,
+          "nativeContext": {
+            "lifecycleState": "stopped",
+            "loadGeneration": 14,
+            "hasWindowFocus": false,
+            "isFinishing": false,
+            "isDestroyed": false,
+            "currentUrl": "http:\/\/127.0.0.1:3180\/?_pcv=0.1.17-18-10-1776333825786",
+            "recordAudioPermissionGranted": true,
+            "proxyReady": false,
+            "bootstrapLoadInProgress": false,
+            "bootstrapLoadGeneration": 0,
+            "activeBootstrapReason": "",
+            "reconnectDispatchPending": false,
+            "reconnectDispatchReason": "",
+            "scheduledReconnectReason": "bootstrap-manifest-pending",
+            "scheduledReconnectAtMs": 1776333850046,
+            "scheduledReconnectWaitMs": 3599,
+            "lastProxySource": "bootstrap-manifest:configured",
+            "lastResolvedUpstreamBaseUrl": "https:\/\/tuning-automobile-copper-tied.trycloudflare.com",
+            "sdkInt": 34,
+            "manufacturer": "HONOR",
+            "model": "CLK-AN00",
+            "app": {
+              "applicationId": "com.pocketcodex.shell",
+              "versionName": "0.1.17",
+              "versionCode": 18,
+              "localProxyPort": 3180,
+              "githubDiagnostic": {
+                "configured": true,
+                "owner": "wishforgood",
+                "repo": "pocket-codex-bootstrap",
+                "branch": "main",
+                "pathPrefix": "pocket-codex\/device-logs",
+                "proxyPrefix": "https:\/\/ghproxy.vip\/",
+                "deviceId": "5e740ae166b533fb",
+                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
+              }
+            },
+            "network": {
+              "available": true,
+              "activeNetworkPresent": true,
+              "transports": [
+                "CELLULAR"
+              ],
+              "hasInternet": true,
+              "isValidated": true,
+              "isCaptivePortal": false,
+              "interfaceName": "ccmni2",
+              "addresses": [
+                "10.204.27.116",
+                "2408:8411:6070:1e5d::1"
+              ],
+              "dnsServers": [
+                "\/2408:8888:0:8888::8",
+                "\/2408:8899:0:8899::8",
+                "\/202.99.96.68",
+                "\/202.99.104.68"
+              ],
+              "hasIpv4": true,
+              "hasIpv6": true
+            },
+            "bootstrap": {
+              "packagedManifestUrls": [
+                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
+              ],
+              "lastBootstrapReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
+              "lastRemoteUrl": "",
+              "lastUpstreamStaleUrl": "https:\/\/tuning-automobile-copper-tied.trycloudflare.com\/",
+              "lastUpstreamStaleAt": "2026-04-16T10:03:55.914721Z",
+              "lastConfigSyncAt": "2026-04-16T10:03:49.051717Z"
+            }
+          }
+        },
+        "capturedAt": "2026-04-16T10:04:06.450953Z",
+        "nativeSequence": 12611
+      },
+      {
+        "source": "android-shell",
+        "category": "proxy.reload",
+        "message": "准备重新解析并加载 Pocket Codex 页面",
+        "details": {
+          "generation": 15,
+          "triggerReason": "bootstrap-manifest-pending",
+          "nativeContext": {
+            "lifecycleState": "stopped",
+            "loadGeneration": 15,
+            "hasWindowFocus": false,
+            "isFinishing": false,
+            "isDestroyed": false,
+            "currentUrl": "http:\/\/127.0.0.1:3180\/?_pcv=0.1.17-18-10-1776333825786",
+            "recordAudioPermissionGranted": true,
+            "proxyReady": false,
+            "bootstrapLoadInProgress": true,
+            "bootstrapLoadGeneration": 15,
+            "activeBootstrapReason": "bootstrap-manifest-pending",
+            "reconnectDispatchPending": false,
+            "reconnectDispatchReason": "",
+            "scheduledReconnectReason": "",
+            "scheduledReconnectAtMs": 0,
+            "scheduledReconnectWaitMs": 0,
+            "lastProxySource": "bootstrap-manifest:configured",
+            "lastResolvedUpstreamBaseUrl": "https:\/\/tuning-automobile-copper-tied.trycloudflare.com",
+            "sdkInt": 34,
+            "manufacturer": "HONOR",
+            "model": "CLK-AN00",
+            "app": {
+              "applicationId": "com.pocketcodex.shell",
+              "versionName": "0.1.17",
+              "versionCode": 18,
+              "localProxyPort": 3180,
+              "githubDiagnostic": {
+                "configured": true,
+                "owner": "wishforgood",
+                "repo": "pocket-codex-bootstrap",
+                "branch": "main",
+                "pathPrefix": "pocket-codex\/device-logs",
+                "proxyPrefix": "https:\/\/ghproxy.vip\/",
+                "deviceId": "5e740ae166b533fb",
+                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
+              }
+            },
+            "network": {
+              "available": true,
+              "activeNetworkPresent": true,
+              "transports": [
+                "CELLULAR"
+              ],
+              "hasInternet": true,
+              "isValidated": true,
+              "isCaptivePortal": false,
+              "interfaceName": "ccmni2",
+              "addresses": [
+                "10.204.27.116",
+                "2408:8411:6070:1e5d::1"
+              ],
+              "dnsServers": [
+                "\/2408:8888:0:8888::8",
+                "\/2408:8899:0:8899::8",
+                "\/202.99.96.68",
+                "\/202.99.104.68"
+              ],
+              "hasIpv4": true,
+              "hasIpv6": true
+            },
+            "bootstrap": {
+              "packagedManifestUrls": [
+                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
+              ],
+              "lastBootstrapReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
+              "lastRemoteUrl": "",
+              "lastUpstreamStaleUrl": "https:\/\/tuning-automobile-copper-tied.trycloudflare.com\/",
+              "lastUpstreamStaleAt": "2026-04-16T10:03:55.914721Z",
+              "lastConfigSyncAt": "2026-04-16T10:03:49.051717Z"
+            }
+          }
+        },
+        "capturedAt": "2026-04-16T10:07:23.750269Z",
+        "nativeSequence": 12612
+      },
+      {
+        "source": "android-shell",
+        "category": "diagnostic.github.publish.error",
+        "message": "诊断日志上传失败",
+        "details": {
+          "error": "SocketTimeoutException",
+          "message": "timeout",
+          "cause": "SocketException",
+          "causeMessage": "Socket closed",
+          "stack": [
+            "com.android.okhttp.okio.Okio$3.newTimeoutException(Okio.java:214)",
+            "com.android.okhttp.okio.AsyncTimeout.exit(AsyncTimeout.java:263)",
+            "com.android.okhttp.okio.AsyncTimeout$2.read(AsyncTimeout.java:217)",
+            "com.android.okhttp.okio.RealBufferedSource.indexOf(RealBufferedSource.java:307)",
+            "com.android.okhttp.okio.RealBufferedSource.indexOf(RealBufferedSource.java:301)",
+            "com.android.okhttp.okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:197)",
+            "com.android.okhttp.internal.http.Http1xStream.readResponse(Http1xStream.java:188)",
+            "com.android.okhttp.internal.http.Http1xStream.readResponseHeaders(Http1xStream.java:129)",
+            "com.android.okhttp.internal.http.HttpEngine.readNetworkResponse(HttpEngine.java:750)",
+            "com.android.okhttp.internal.http.HttpEngine.readResponse(HttpEngine.java:622)"
+          ],
+          "triggerCategory": "bootstrap.manifest.pending",
+          "nativeContext": {
+            "lifecycleState": "stopped",
+            "loadGeneration": 15,
+            "hasWindowFocus": false,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-16T10:07:23.786133Z",
+        "nativeSequence": 12613
+      },
+      {
+        "source": "android-shell",
+        "category": "activity.start",
+        "message": "Android 应用壳进入 started",
+        "details": {
+          "nativeContext": {
+            "lifecycleState": "started",
+            "loadGeneration": 15,
+            "hasWindowFocus": false,
+            "isFinishing": false,
+            "isDestroyed": false,
+            "currentUrl": "http:\/\/127.0.0.1:3180\/?_pcv=0.1.17-18-10-1776333825786",
+            "recordAudioPermissionGranted": true,
+            "proxyReady": false,
+            "bootstrapLoadInProgress": true,
+            "bootstrapLoadGeneration": 15,
+            "activeBootstrapReason": "bootstrap-manifest-pending",
+            "reconnectDispatchPending": false,
+            "reconnectDispatchReason": "",
+            "scheduledReconnectReason": "",
+            "scheduledReconnectAtMs": 0,
+            "scheduledReconnectWaitMs": 0,
+            "lastProxySource": "bootstrap-manifest:configured",
+            "lastResolvedUpstreamBaseUrl": "https:\/\/tuning-automobile-copper-tied.trycloudflare.com",
+            "sdkInt": 34,
+            "manufacturer": "HONOR",
+            "model": "CLK-AN00",
+            "app": {
+              "applicationId": "com.pocketcodex.shell",
+              "versionName": "0.1.17",
+              "versionCode": 18,
+              "localProxyPort": 3180,
+              "githubDiagnostic": {
+                "configured": true,
+                "owner": "wishforgood",
+                "repo": "pocket-codex-bootstrap",
+                "branch": "main",
+                "pathPrefix": "pocket-codex\/device-logs",
+                "proxyPrefix": "https:\/\/ghproxy.vip\/",
+                "deviceId": "5e740ae166b533fb",
+                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
+              }
+            },
+            "network": {
+              "available": true,
+              "activeNetworkPresent": true,
+              "transports": [
+                "CELLULAR"
+              ],
+              "hasInternet": true,
+              "isValidated": true,
+              "isCaptivePortal": false,
+              "interfaceName": "ccmni2",
+              "addresses": [
+                "10.204.27.116",
+                "2408:8411:6070:1e5d::1"
+              ],
+              "dnsServers": [
+                "\/2408:8888:0:8888::8",
+                "\/2408:8899:0:8899::8",
+                "\/202.99.96.68",
+                "\/202.99.104.68"
+              ],
+              "hasIpv4": true,
+              "hasIpv6": true
+            },
+            "bootstrap": {
+              "packagedManifestUrls": [
+                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
+              ],
+              "lastBootstrapReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
+              "lastRemoteUrl": "",
+              "lastUpstreamStaleUrl": "https:\/\/tuning-automobile-copper-tied.trycloudflare.com\/",
+              "lastUpstreamStaleAt": "2026-04-16T10:03:55.914721Z",
+              "lastConfigSyncAt": "2026-04-16T10:03:49.051717Z"
+            }
+          }
+        },
+        "capturedAt": "2026-04-16T10:07:23.843775Z",
+        "nativeSequence": 12614
+      },
+      {
+        "source": "android-shell",
+        "category": "bootstrap.resolve.start",
+        "message": "开始从 GitHub 引导清单解析最新地址",
+        "details": {
+          "manifestCandidates": [
+            "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
+          ],
+          "manifestCandidateCount": 1,
+          "nativeContext": {
+            "lifecycleState": "started",
+            "loadGeneration": 15,
+            "hasWindowFocus": false,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-16T10:07:23.857434Z",
+        "nativeSequence": 12615
+      },
+      {
+        "source": "android-shell",
+        "category": "bootstrap.manifest.fetch.start",
+        "message": "开始读取 GitHub 引导清单",
+        "details": {
+          "manifestUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 15,
+            "hasWindowFocus": false,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-16T10:07:23.874029Z",
+        "nativeSequence": 12616
+      },
+      {
+        "source": "android-shell",
+        "category": "activity.resume",
+        "message": "Android 应用壳进入 resumed",
+        "details": {
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 15,
+            "hasWindowFocus": false,
+            "isFinishing": false,
+            "isDestroyed": false,
+            "currentUrl": "http:\/\/127.0.0.1:3180\/?_pcv=0.1.17-18-10-1776333825786",
+            "recordAudioPermissionGranted": true,
+            "proxyReady": false,
+            "bootstrapLoadInProgress": true,
+            "bootstrapLoadGeneration": 15,
+            "activeBootstrapReason": "bootstrap-manifest-pending",
+            "reconnectDispatchPending": false,
+            "reconnectDispatchReason": "",
+            "scheduledReconnectReason": "",
+            "scheduledReconnectAtMs": 0,
+            "scheduledReconnectWaitMs": 0,
+            "lastProxySource": "bootstrap-manifest:configured",
+            "lastResolvedUpstreamBaseUrl": "https:\/\/tuning-automobile-copper-tied.trycloudflare.com",
+            "sdkInt": 34,
+            "manufacturer": "HONOR",
+            "model": "CLK-AN00",
+            "app": {
+              "applicationId": "com.pocketcodex.shell",
+              "versionName": "0.1.17",
+              "versionCode": 18,
+              "localProxyPort": 3180,
+              "githubDiagnostic": {
+                "configured": true,
+                "owner": "wishforgood",
+                "repo": "pocket-codex-bootstrap",
+                "branch": "main",
+                "pathPrefix": "pocket-codex\/device-logs",
+                "proxyPrefix": "https:\/\/ghproxy.vip\/",
+                "deviceId": "5e740ae166b533fb",
+                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
+              }
+            },
+            "network": {
+              "available": true,
+              "activeNetworkPresent": true,
+              "transports": [
+                "CELLULAR"
+              ],
+              "hasInternet": true,
+              "isValidated": true,
+              "isCaptivePortal": false,
+              "interfaceName": "ccmni2",
+              "addresses": [
+                "10.204.27.116",
+                "2408:8411:6070:1e5d::1"
+              ],
+              "dnsServers": [
+                "\/2408:8888:0:8888::8",
+                "\/2408:8899:0:8899::8",
+                "\/202.99.96.68",
+                "\/202.99.104.68"
+              ],
+              "hasIpv4": true,
+              "hasIpv6": true
+            },
+            "bootstrap": {
+              "packagedManifestUrls": [
+                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
+              ],
+              "lastBootstrapReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
+              "lastRemoteUrl": "",
+              "lastUpstreamStaleUrl": "https:\/\/tuning-automobile-copper-tied.trycloudflare.com\/",
+              "lastUpstreamStaleAt": "2026-04-16T10:03:55.914721Z",
+              "lastConfigSyncAt": "2026-04-16T10:03:49.051717Z"
+            }
+          }
+        },
+        "capturedAt": "2026-04-16T10:07:23.894588Z",
+        "nativeSequence": 12617
       }
     ]
   }
