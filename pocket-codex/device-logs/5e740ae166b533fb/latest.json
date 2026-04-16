@@ -1,27 +1,85 @@
 {
-  "capturedAt": "2026-04-16T05:06:50.669870Z",
+  "capturedAt": "2026-04-16T05:06:53.437579Z",
   "trigger": {
-    "category": "proxy.resolve.error",
-    "message": "Android 应用壳解析上游地址失败",
+    "category": "webview.page.error",
+    "message": "WebView 页面加载失败",
     "details": {
-      "error": "ManifestPendingException",
-      "message": "电脑端当前外网入口状态为：在线",
-      "stack": [
-        "com.pocketcodex.shell.PocketCodexBootstrapResolver.resolveFromManifest(PocketCodexBootstrapResolver.java:238)",
-        "com.pocketcodex.shell.PocketCodexBootstrapResolver.resolve(PocketCodexBootstrapResolver.java:63)",
-        "com.pocketcodex.shell.MainActivity.startOrReloadProxy(MainActivity.java:495)",
-        "com.pocketcodex.shell.MainActivity.lambda$loadPocketCodex$4(MainActivity.java:361)",
-        "com.pocketcodex.shell.MainActivity.$r8$lambda$vnP4WSy9edJ98qcrNny_BZ_mtkY(Unknown Source:0)",
-        "com.pocketcodex.shell.MainActivity$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)",
-        "java.lang.Thread.run(Thread.java:1019)"
-      ],
-      "generation": 9,
+      "url": "http:\/\/127.0.0.1:3180\/api\/auth\/status",
+      "isMainFrame": false,
+      "errorCode": -6,
+      "description": "net::ERR_CONNECTION_REFUSED",
+      "countsAsPageError": false,
       "nativeContext": {
         "lifecycleState": "resumed",
         "loadGeneration": 9,
         "hasWindowFocus": true,
         "isFinishing": false,
-        "isDestroyed": false
+        "isDestroyed": false,
+        "currentUrl": "http:\/\/127.0.0.1:3180\/?_pcv=0.1.17-18-6-1776315969151",
+        "recordAudioPermissionGranted": true,
+        "proxyReady": false,
+        "bootstrapLoadInProgress": false,
+        "bootstrapLoadGeneration": 0,
+        "activeBootstrapReason": "",
+        "reconnectDispatchPending": false,
+        "reconnectDispatchReason": "",
+        "scheduledReconnectReason": "bootstrap-manifest-pending",
+        "scheduledReconnectAtMs": 1776315988259,
+        "scheduledReconnectWaitMs": 3169,
+        "lastProxySource": "bootstrap-manifest:configured",
+        "lastResolvedUpstreamBaseUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com",
+        "sdkInt": 34,
+        "manufacturer": "HONOR",
+        "model": "CLK-AN00",
+        "app": {
+          "applicationId": "com.pocketcodex.shell",
+          "versionName": "0.1.17",
+          "versionCode": 18,
+          "localProxyPort": 3180,
+          "githubDiagnostic": {
+            "configured": true,
+            "owner": "wishforgood",
+            "repo": "pocket-codex-bootstrap",
+            "branch": "main",
+            "pathPrefix": "pocket-codex\/device-logs",
+            "proxyPrefix": "https:\/\/ghproxy.vip\/",
+            "deviceId": "5e740ae166b533fb",
+            "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
+          }
+        },
+        "network": {
+          "available": true,
+          "activeNetworkPresent": true,
+          "transports": [
+            "CELLULAR"
+          ],
+          "hasInternet": true,
+          "isValidated": true,
+          "isCaptivePortal": false,
+          "interfaceName": "ccmni3",
+          "addresses": [
+            "10.227.130.79",
+            "2408:8411:60a1:b697::1"
+          ],
+          "dnsServers": [
+            "\/2408:8888:0:8888::8",
+            "\/2408:8899:0:8899::8",
+            "\/202.99.96.68",
+            "\/202.99.104.68"
+          ],
+          "hasIpv4": true,
+          "hasIpv6": true
+        },
+        "bootstrap": {
+          "packagedManifestUrls": [
+            "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
+          ],
+          "lastBootstrapReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
+          "lastRemoteUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com",
+          "lastUpstreamStaleUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com\/",
+          "lastUpstreamStaleAt": "2026-04-16T05:06:17.824971Z",
+          "lastConfigSyncAt": "2026-04-16T05:06:08.976517Z"
+        }
       }
     }
   },
@@ -42,7 +100,7 @@
     }
   },
   "nativeSnapshot": {
-    "capturedAt": "2026-04-16T05:06:50.670042Z",
+    "capturedAt": "2026-04-16T05:06:53.437790Z",
     "app": {
       "applicationId": "com.pocketcodex.shell",
       "versionName": "0.1.17",
@@ -61,7 +119,7 @@
     },
     "summary": {
       "lifecycleState": "resumed",
-      "loadGeneration": 22,
+      "loadGeneration": 23,
       "hasWindowFocus": false,
       "isFinishing": false,
       "isDestroyed": false
@@ -102,578 +160,9 @@
     }
   },
   "recentLogs": {
-    "pendingCount": 324,
-    "lastSequence": 10858,
+    "pendingCount": 339,
+    "lastSequence": 10873,
     "recent": [
-      {
-        "source": "android-shell",
-        "category": "bootstrap.manifest.pending",
-        "message": "GitHub 引导清单返回了等待状态",
-        "details": {
-          "error": "ManifestPendingException",
-          "message": "电脑端当前外网入口状态为：在线",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 21,
-            "hasWindowFocus": false,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-16T05:06:48.840345Z",
-        "nativeSequence": 10839
-      },
-      {
-        "source": "android-shell",
-        "category": "bootstrap.manifest.fetch.error",
-        "message": "读取 GitHub 引导清单失败",
-        "details": {
-          "error": "ManifestPendingException",
-          "message": "电脑端当前外网入口状态为：在线",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 21,
-            "hasWindowFocus": false,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-16T05:06:48.900411Z",
-        "nativeSequence": 10840
-      },
-      {
-        "source": "android-shell",
-        "category": "bootstrap.resolve.pending",
-        "message": "GitHub 引导清单已响应，但最新地址暂不可用",
-        "details": {
-          "error": "ManifestPendingException",
-          "message": "电脑端当前外网入口状态为：在线",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 21,
-            "hasWindowFocus": false,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-16T05:06:48.966810Z",
-        "nativeSequence": 10841
-      },
-      {
-        "source": "android-shell",
-        "category": "proxy.resolve.error",
-        "message": "Android 应用壳解析上游地址失败",
-        "details": {
-          "error": "ManifestPendingException",
-          "message": "电脑端当前外网入口状态为：在线",
-          "stack": [
-            "com.pocketcodex.shell.PocketCodexBootstrapResolver.resolveFromManifest(PocketCodexBootstrapResolver.java:238)",
-            "com.pocketcodex.shell.PocketCodexBootstrapResolver.resolve(PocketCodexBootstrapResolver.java:63)",
-            "com.pocketcodex.shell.MainActivity.startOrReloadProxy(MainActivity.java:495)",
-            "com.pocketcodex.shell.MainActivity.lambda$loadPocketCodex$4(MainActivity.java:361)",
-            "com.pocketcodex.shell.MainActivity.$r8$lambda$vnP4WSy9edJ98qcrNny_BZ_mtkY(Unknown Source:0)",
-            "com.pocketcodex.shell.MainActivity$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)",
-            "java.lang.Thread.run(Thread.java:1019)"
-          ],
-          "generation": 21,
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 21,
-            "hasWindowFocus": false,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-16T05:06:49.041827Z",
-        "nativeSequence": 10842
-      },
-      {
-        "source": "android-shell",
-        "category": "proxy.auto-reconnect.schedule",
-        "message": "Android 应用壳已安排自动重连",
-        "details": {
-          "reason": "bootstrap-manifest-pending",
-          "delayMs": 3600,
-          "attempt": 0,
-          "lastPageError": "HTTP 530",
-          "lastResolvedUpstreamBaseUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com",
-          "scheduledReconnectAtMs": 1776316012682,
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 21,
-            "hasWindowFocus": false,
-            "isFinishing": false,
-            "isDestroyed": false,
-            "currentUrl": "http:\/\/127.0.0.1:3180\/?_pcv=0.1.17-18-6-1776315969151",
-            "recordAudioPermissionGranted": true,
-            "proxyReady": false,
-            "bootstrapLoadInProgress": false,
-            "bootstrapLoadGeneration": 0,
-            "activeBootstrapReason": "",
-            "reconnectDispatchPending": false,
-            "reconnectDispatchReason": "",
-            "scheduledReconnectReason": "bootstrap-manifest-pending",
-            "scheduledReconnectAtMs": 1776316012682,
-            "scheduledReconnectWaitMs": 3600,
-            "lastProxySource": "bootstrap-manifest:configured",
-            "lastResolvedUpstreamBaseUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com",
-            "sdkInt": 34,
-            "manufacturer": "HONOR",
-            "model": "CLK-AN00",
-            "app": {
-              "applicationId": "com.pocketcodex.shell",
-              "versionName": "0.1.17",
-              "versionCode": 18,
-              "localProxyPort": 3180,
-              "githubDiagnostic": {
-                "configured": true,
-                "owner": "wishforgood",
-                "repo": "pocket-codex-bootstrap",
-                "branch": "main",
-                "pathPrefix": "pocket-codex\/device-logs",
-                "proxyPrefix": "https:\/\/ghproxy.vip\/",
-                "deviceId": "5e740ae166b533fb",
-                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
-              }
-            },
-            "network": {
-              "available": true,
-              "activeNetworkPresent": true,
-              "transports": [
-                "CELLULAR"
-              ],
-              "hasInternet": true,
-              "isValidated": true,
-              "isCaptivePortal": false,
-              "interfaceName": "ccmni3",
-              "addresses": [
-                "10.227.130.79",
-                "2408:8411:60a1:b697::1"
-              ],
-              "dnsServers": [
-                "\/2408:8888:0:8888::8",
-                "\/2408:8899:0:8899::8",
-                "\/202.99.96.68",
-                "\/202.99.104.68"
-              ],
-              "hasIpv4": true,
-              "hasIpv6": true
-            },
-            "bootstrap": {
-              "packagedManifestUrls": [
-                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
-              ],
-              "lastBootstrapReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
-              "lastRemoteUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com",
-              "lastUpstreamStaleUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com\/",
-              "lastUpstreamStaleAt": "2026-04-16T05:06:17.824971Z",
-              "lastConfigSyncAt": "2026-04-16T05:06:08.976517Z"
-            }
-          }
-        },
-        "capturedAt": "2026-04-16T05:06:49.109461Z",
-        "nativeSequence": 10843
-      },
-      {
-        "source": "android-shell",
-        "category": "webview.page.error",
-        "message": "WebView 页面加载失败",
-        "details": {
-          "url": "http:\/\/127.0.0.1:3180\/api\/auth\/status",
-          "isMainFrame": false,
-          "errorCode": -6,
-          "description": "net::ERR_CONNECTION_REFUSED",
-          "countsAsPageError": false,
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 21,
-            "hasWindowFocus": false,
-            "isFinishing": false,
-            "isDestroyed": false,
-            "currentUrl": "http:\/\/127.0.0.1:3180\/?_pcv=0.1.17-18-6-1776315969151",
-            "recordAudioPermissionGranted": true,
-            "proxyReady": false,
-            "bootstrapLoadInProgress": false,
-            "bootstrapLoadGeneration": 0,
-            "activeBootstrapReason": "",
-            "reconnectDispatchPending": false,
-            "reconnectDispatchReason": "",
-            "scheduledReconnectReason": "bootstrap-manifest-pending",
-            "scheduledReconnectAtMs": 1776316012682,
-            "scheduledReconnectWaitMs": 3458,
-            "lastProxySource": "bootstrap-manifest:configured",
-            "lastResolvedUpstreamBaseUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com",
-            "sdkInt": 34,
-            "manufacturer": "HONOR",
-            "model": "CLK-AN00",
-            "app": {
-              "applicationId": "com.pocketcodex.shell",
-              "versionName": "0.1.17",
-              "versionCode": 18,
-              "localProxyPort": 3180,
-              "githubDiagnostic": {
-                "configured": true,
-                "owner": "wishforgood",
-                "repo": "pocket-codex-bootstrap",
-                "branch": "main",
-                "pathPrefix": "pocket-codex\/device-logs",
-                "proxyPrefix": "https:\/\/ghproxy.vip\/",
-                "deviceId": "5e740ae166b533fb",
-                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
-              }
-            },
-            "network": {
-              "available": true,
-              "activeNetworkPresent": true,
-              "transports": [
-                "CELLULAR"
-              ],
-              "hasInternet": true,
-              "isValidated": true,
-              "isCaptivePortal": false,
-              "interfaceName": "ccmni3",
-              "addresses": [
-                "10.227.130.79",
-                "2408:8411:60a1:b697::1"
-              ],
-              "dnsServers": [
-                "\/2408:8888:0:8888::8",
-                "\/2408:8899:0:8899::8",
-                "\/202.99.96.68",
-                "\/202.99.104.68"
-              ],
-              "hasIpv4": true,
-              "hasIpv6": true
-            },
-            "bootstrap": {
-              "packagedManifestUrls": [
-                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
-              ],
-              "lastBootstrapReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
-              "lastRemoteUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com",
-              "lastUpstreamStaleUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com\/",
-              "lastUpstreamStaleAt": "2026-04-16T05:06:17.824971Z",
-              "lastConfigSyncAt": "2026-04-16T05:06:08.976517Z"
-            }
-          }
-        },
-        "capturedAt": "2026-04-16T05:06:49.234989Z",
-        "nativeSequence": 10844
-      },
-      {
-        "source": "android-shell",
-        "category": "proxy.web-reconnect.request",
-        "message": "网页已请求 Android 应用壳重新连接电脑端服务",
-        "details": {
-          "reason": "auth-status-request-failed",
-          "payload": {
-            "reason": "auth-status-request-failed",
-            "connectionLabel": "等待登录",
-            "hasActiveRun": false,
-            "currentUrl": "http:\/\/127.0.0.1:3180\/?_pcv=0.1.17-18-6-1776315969151",
-            "lastStateSyncAt": "",
-            "failureCount": 23,
-            "offlineForMs": 31646,
-            "endpoint": "\/api\/auth\/status",
-            "message": "Failed to fetch"
-          },
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 21,
-            "hasWindowFocus": false,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-16T05:06:49.270356Z",
-        "nativeSequence": 10845
-      },
-      {
-        "source": "android-shell",
-        "category": "webview.console",
-        "message": "TypeError: Failed to fetch",
-        "details": {
-          "pageUrl": "http:\/\/127.0.0.1:3180\/?_pcv=0.1.17-18-6-1776315969151",
-          "messageLevel": "ERROR",
-          "sourceId": "http:\/\/127.0.0.1:3180\/app.js",
-          "lineNumber": 1957,
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 21,
-            "hasWindowFocus": false,
-            "isFinishing": false,
-            "isDestroyed": false,
-            "currentUrl": "http:\/\/127.0.0.1:3180\/?_pcv=0.1.17-18-6-1776315969151",
-            "recordAudioPermissionGranted": true,
-            "proxyReady": false,
-            "bootstrapLoadInProgress": false,
-            "bootstrapLoadGeneration": 0,
-            "activeBootstrapReason": "",
-            "reconnectDispatchPending": false,
-            "reconnectDispatchReason": "",
-            "scheduledReconnectReason": "bootstrap-manifest-pending",
-            "scheduledReconnectAtMs": 1776316012682,
-            "scheduledReconnectWaitMs": 3411,
-            "lastProxySource": "bootstrap-manifest:configured",
-            "lastResolvedUpstreamBaseUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com",
-            "sdkInt": 34,
-            "manufacturer": "HONOR",
-            "model": "CLK-AN00",
-            "app": {
-              "applicationId": "com.pocketcodex.shell",
-              "versionName": "0.1.17",
-              "versionCode": 18,
-              "localProxyPort": 3180,
-              "githubDiagnostic": {
-                "configured": true,
-                "owner": "wishforgood",
-                "repo": "pocket-codex-bootstrap",
-                "branch": "main",
-                "pathPrefix": "pocket-codex\/device-logs",
-                "proxyPrefix": "https:\/\/ghproxy.vip\/",
-                "deviceId": "5e740ae166b533fb",
-                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
-              }
-            },
-            "network": {
-              "available": true,
-              "activeNetworkPresent": true,
-              "transports": [
-                "CELLULAR"
-              ],
-              "hasInternet": true,
-              "isValidated": true,
-              "isCaptivePortal": false,
-              "interfaceName": "ccmni3",
-              "addresses": [
-                "10.227.130.79",
-                "2408:8411:60a1:b697::1"
-              ],
-              "dnsServers": [
-                "\/2408:8888:0:8888::8",
-                "\/2408:8899:0:8899::8",
-                "\/202.99.96.68",
-                "\/202.99.104.68"
-              ],
-              "hasIpv4": true,
-              "hasIpv6": true
-            },
-            "bootstrap": {
-              "packagedManifestUrls": [
-                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
-              ],
-              "lastBootstrapReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
-              "lastRemoteUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com",
-              "lastUpstreamStaleUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com\/",
-              "lastUpstreamStaleAt": "2026-04-16T05:06:17.824971Z",
-              "lastConfigSyncAt": "2026-04-16T05:06:08.976517Z"
-            }
-          }
-        },
-        "capturedAt": "2026-04-16T05:06:49.354244Z",
-        "nativeSequence": 10846
-      },
-      {
-        "source": "android-shell",
-        "category": "proxy.reconnect.dispatch",
-        "message": "Android 应用壳准备立即重新解析电脑端最新地址",
-        "details": {
-          "reason": "web-client-request:auth-status-request-failed",
-          "message": "正在重新连接电脑端服务…",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 21,
-            "hasWindowFocus": false,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-16T05:06:49.388720Z",
-        "nativeSequence": 10847
-      },
-      {
-        "source": "android-shell",
-        "category": "proxy.reload",
-        "message": "准备重新解析并加载 Pocket Codex 页面",
-        "details": {
-          "generation": 22,
-          "triggerReason": "web-client-request:auth-status-request-failed",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 22,
-            "hasWindowFocus": false,
-            "isFinishing": false,
-            "isDestroyed": false,
-            "currentUrl": "http:\/\/127.0.0.1:3180\/?_pcv=0.1.17-18-6-1776315969151",
-            "recordAudioPermissionGranted": true,
-            "proxyReady": false,
-            "bootstrapLoadInProgress": true,
-            "bootstrapLoadGeneration": 22,
-            "activeBootstrapReason": "web-client-request:auth-status-request-failed",
-            "reconnectDispatchPending": false,
-            "reconnectDispatchReason": "",
-            "scheduledReconnectReason": "",
-            "scheduledReconnectAtMs": 0,
-            "scheduledReconnectWaitMs": 0,
-            "lastProxySource": "bootstrap-manifest:configured",
-            "lastResolvedUpstreamBaseUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com",
-            "sdkInt": 34,
-            "manufacturer": "HONOR",
-            "model": "CLK-AN00",
-            "app": {
-              "applicationId": "com.pocketcodex.shell",
-              "versionName": "0.1.17",
-              "versionCode": 18,
-              "localProxyPort": 3180,
-              "githubDiagnostic": {
-                "configured": true,
-                "owner": "wishforgood",
-                "repo": "pocket-codex-bootstrap",
-                "branch": "main",
-                "pathPrefix": "pocket-codex\/device-logs",
-                "proxyPrefix": "https:\/\/ghproxy.vip\/",
-                "deviceId": "5e740ae166b533fb",
-                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
-              }
-            },
-            "network": {
-              "available": true,
-              "activeNetworkPresent": true,
-              "transports": [
-                "CELLULAR"
-              ],
-              "hasInternet": true,
-              "isValidated": true,
-              "isCaptivePortal": false,
-              "interfaceName": "ccmni3",
-              "addresses": [
-                "10.227.130.79",
-                "2408:8411:60a1:b697::1"
-              ],
-              "dnsServers": [
-                "\/2408:8888:0:8888::8",
-                "\/2408:8899:0:8899::8",
-                "\/202.99.96.68",
-                "\/202.99.104.68"
-              ],
-              "hasIpv4": true,
-              "hasIpv6": true
-            },
-            "bootstrap": {
-              "packagedManifestUrls": [
-                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
-              ],
-              "lastBootstrapReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
-              "lastRemoteUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com",
-              "lastUpstreamStaleUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com\/",
-              "lastUpstreamStaleAt": "2026-04-16T05:06:17.824971Z",
-              "lastConfigSyncAt": "2026-04-16T05:06:08.976517Z"
-            }
-          }
-        },
-        "capturedAt": "2026-04-16T05:06:49.465961Z",
-        "nativeSequence": 10848
-      },
-      {
-        "source": "android-shell",
-        "category": "bootstrap.resolve.start",
-        "message": "开始从 GitHub 引导清单解析最新地址",
-        "details": {
-          "manifestCandidates": [
-            "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
-          ],
-          "manifestCandidateCount": 1,
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 22,
-            "hasWindowFocus": false,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-16T05:06:49.524416Z",
-        "nativeSequence": 10849
-      },
-      {
-        "source": "android-shell",
-        "category": "bootstrap.manifest.fetch.start",
-        "message": "开始读取 GitHub 引导清单",
-        "details": {
-          "manifestUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 22,
-            "hasWindowFocus": false,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-16T05:06:49.599669Z",
-        "nativeSequence": 10850
-      },
-      {
-        "source": "android-shell",
-        "category": "bootstrap.manifest.fetch.success",
-        "message": "GitHub 引导清单读取成功",
-        "details": {
-          "manifestUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
-          "requestUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json?_pcv=1776316009650-c14r9nu0dq",
-          "statusCode": 200,
-          "bodyPreview": "{   \"schemaVersion\": 1,   \"generatedAt\": \"2026-04-15T16:51:15.888Z\",   \"appName\": \"Pocket Codex\",   \"provider\": \"github-repo\",   \"status\": \"在线\",   \"publicUrl\": \"https:\/\/planned-gym-hispanic-networking.trycloudflare.com\",   \"preferredUpstrea...",
-          "candidateCount": 1,
-          "publicUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com",
-          "preferredUpstreamUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 22,
-            "hasWindowFocus": false,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-16T05:06:50.043020Z",
-        "nativeSequence": 10851
-      },
-      {
-        "source": "android-shell",
-        "category": "bootstrap.candidate.probe.start",
-        "message": "开始探测 GitHub 清单里的公网地址是否可用",
-        "details": {
-          "upstreamBaseUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com",
-          "source": "bootstrap-manifest:configured",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 22,
-            "hasWindowFocus": false,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-16T05:06:50.116942Z",
-        "nativeSequence": 10852
-      },
-      {
-        "source": "android-shell",
-        "category": "bootstrap.candidate.probe.pending",
-        "message": "GitHub 清单里的公网地址暂时还没准备好",
-        "details": {
-          "upstreamBaseUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com",
-          "source": "bootstrap-manifest:configured",
-          "probeUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com\/downloads\/pocket-codex.json",
-          "statusCode": 530,
-          "responsePreview": "530  The origin has been unregistered from Argo Tunnel",
-          "ready": false,
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 22,
-            "hasWindowFocus": false,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-16T05:06:50.424810Z",
-        "nativeSequence": 10853
-      },
       {
         "source": "android-shell",
         "category": "bootstrap.manifest.pending",
@@ -833,6 +322,656 @@
         },
         "capturedAt": "2026-04-16T05:06:50.749948Z",
         "nativeSequence": 10858
+      },
+      {
+        "source": "android-shell",
+        "category": "proxy.web-reconnect.waiting",
+        "message": "网页已请求重连，但应用壳当前正在等待电脑端服务恢复",
+        "details": {
+          "reason": "auth-status-request-failed",
+          "payload": {
+            "reason": "auth-status-request-failed",
+            "connectionLabel": "等待登录",
+            "hasActiveRun": false,
+            "currentUrl": "http:\/\/127.0.0.1:3180\/?_pcv=0.1.17-18-6-1776315969151",
+            "lastStateSyncAt": "",
+            "failureCount": 24,
+            "offlineForMs": 33008,
+            "endpoint": "\/api\/auth\/status",
+            "message": "Failed to fetch"
+          },
+          "bootstrapLoadGeneration": 22,
+          "reconnectDispatchPending": false,
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 22,
+            "hasWindowFocus": false,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-16T05:06:50.802759Z",
+        "nativeSequence": 10859
+      },
+      {
+        "source": "android-shell",
+        "category": "proxy.resolve.error",
+        "message": "Android 应用壳解析上游地址失败",
+        "details": {
+          "error": "ManifestPendingException",
+          "message": "电脑端当前外网入口状态为：在线",
+          "stack": [
+            "com.pocketcodex.shell.PocketCodexBootstrapResolver.resolveFromManifest(PocketCodexBootstrapResolver.java:238)",
+            "com.pocketcodex.shell.PocketCodexBootstrapResolver.resolve(PocketCodexBootstrapResolver.java:63)",
+            "com.pocketcodex.shell.MainActivity.startOrReloadProxy(MainActivity.java:495)",
+            "com.pocketcodex.shell.MainActivity.lambda$loadPocketCodex$4(MainActivity.java:361)",
+            "com.pocketcodex.shell.MainActivity.$r8$lambda$vnP4WSy9edJ98qcrNny_BZ_mtkY(Unknown Source:0)",
+            "com.pocketcodex.shell.MainActivity$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)",
+            "java.lang.Thread.run(Thread.java:1019)"
+          ],
+          "generation": 22,
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 22,
+            "hasWindowFocus": false,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-16T05:06:50.859721Z",
+        "nativeSequence": 10860
+      },
+      {
+        "source": "android-shell",
+        "category": "webview.console",
+        "message": "TypeError: Failed to fetch",
+        "details": {
+          "pageUrl": "http:\/\/127.0.0.1:3180\/?_pcv=0.1.17-18-6-1776315969151",
+          "messageLevel": "ERROR",
+          "sourceId": "http:\/\/127.0.0.1:3180\/app.js",
+          "lineNumber": 1957,
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 22,
+            "hasWindowFocus": false,
+            "isFinishing": false,
+            "isDestroyed": false,
+            "currentUrl": "http:\/\/127.0.0.1:3180\/?_pcv=0.1.17-18-6-1776315969151",
+            "recordAudioPermissionGranted": true,
+            "proxyReady": false,
+            "bootstrapLoadInProgress": true,
+            "bootstrapLoadGeneration": 22,
+            "activeBootstrapReason": "web-client-request:auth-status-request-failed",
+            "reconnectDispatchPending": false,
+            "reconnectDispatchReason": "",
+            "scheduledReconnectReason": "",
+            "scheduledReconnectAtMs": 0,
+            "scheduledReconnectWaitMs": 0,
+            "lastProxySource": "bootstrap-manifest:configured",
+            "lastResolvedUpstreamBaseUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com",
+            "sdkInt": 34,
+            "manufacturer": "HONOR",
+            "model": "CLK-AN00",
+            "app": {
+              "applicationId": "com.pocketcodex.shell",
+              "versionName": "0.1.17",
+              "versionCode": 18,
+              "localProxyPort": 3180,
+              "githubDiagnostic": {
+                "configured": true,
+                "owner": "wishforgood",
+                "repo": "pocket-codex-bootstrap",
+                "branch": "main",
+                "pathPrefix": "pocket-codex\/device-logs",
+                "proxyPrefix": "https:\/\/ghproxy.vip\/",
+                "deviceId": "5e740ae166b533fb",
+                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
+              }
+            },
+            "network": {
+              "available": true,
+              "activeNetworkPresent": true,
+              "transports": [
+                "CELLULAR"
+              ],
+              "hasInternet": true,
+              "isValidated": true,
+              "isCaptivePortal": false,
+              "interfaceName": "ccmni3",
+              "addresses": [
+                "10.227.130.79",
+                "2408:8411:60a1:b697::1"
+              ],
+              "dnsServers": [
+                "\/2408:8888:0:8888::8",
+                "\/2408:8899:0:8899::8",
+                "\/202.99.96.68",
+                "\/202.99.104.68"
+              ],
+              "hasIpv4": true,
+              "hasIpv6": true
+            },
+            "bootstrap": {
+              "packagedManifestUrls": [
+                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
+              ],
+              "lastBootstrapReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
+              "lastRemoteUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com",
+              "lastUpstreamStaleUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com\/",
+              "lastUpstreamStaleAt": "2026-04-16T05:06:17.824971Z",
+              "lastConfigSyncAt": "2026-04-16T05:06:08.976517Z"
+            }
+          }
+        },
+        "capturedAt": "2026-04-16T05:06:50.917822Z",
+        "nativeSequence": 10861
+      },
+      {
+        "source": "android-shell",
+        "category": "proxy.auto-reconnect.schedule",
+        "message": "Android 应用壳已安排自动重连",
+        "details": {
+          "reason": "bootstrap-manifest-pending",
+          "delayMs": 3600,
+          "attempt": 0,
+          "lastPageError": "HTTP 530",
+          "lastResolvedUpstreamBaseUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com",
+          "scheduledReconnectAtMs": 1776316014554,
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 22,
+            "hasWindowFocus": false,
+            "isFinishing": false,
+            "isDestroyed": false,
+            "currentUrl": "http:\/\/127.0.0.1:3180\/?_pcv=0.1.17-18-6-1776315969151",
+            "recordAudioPermissionGranted": true,
+            "proxyReady": false,
+            "bootstrapLoadInProgress": false,
+            "bootstrapLoadGeneration": 0,
+            "activeBootstrapReason": "",
+            "reconnectDispatchPending": false,
+            "reconnectDispatchReason": "",
+            "scheduledReconnectReason": "bootstrap-manifest-pending",
+            "scheduledReconnectAtMs": 1776316014554,
+            "scheduledReconnectWaitMs": 3600,
+            "lastProxySource": "bootstrap-manifest:configured",
+            "lastResolvedUpstreamBaseUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com",
+            "sdkInt": 34,
+            "manufacturer": "HONOR",
+            "model": "CLK-AN00",
+            "app": {
+              "applicationId": "com.pocketcodex.shell",
+              "versionName": "0.1.17",
+              "versionCode": 18,
+              "localProxyPort": 3180,
+              "githubDiagnostic": {
+                "configured": true,
+                "owner": "wishforgood",
+                "repo": "pocket-codex-bootstrap",
+                "branch": "main",
+                "pathPrefix": "pocket-codex\/device-logs",
+                "proxyPrefix": "https:\/\/ghproxy.vip\/",
+                "deviceId": "5e740ae166b533fb",
+                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
+              }
+            },
+            "network": {
+              "available": true,
+              "activeNetworkPresent": true,
+              "transports": [
+                "CELLULAR"
+              ],
+              "hasInternet": true,
+              "isValidated": true,
+              "isCaptivePortal": false,
+              "interfaceName": "ccmni3",
+              "addresses": [
+                "10.227.130.79",
+                "2408:8411:60a1:b697::1"
+              ],
+              "dnsServers": [
+                "\/2408:8888:0:8888::8",
+                "\/2408:8899:0:8899::8",
+                "\/202.99.96.68",
+                "\/202.99.104.68"
+              ],
+              "hasIpv4": true,
+              "hasIpv6": true
+            },
+            "bootstrap": {
+              "packagedManifestUrls": [
+                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
+              ],
+              "lastBootstrapReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
+              "lastRemoteUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com",
+              "lastUpstreamStaleUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com\/",
+              "lastUpstreamStaleAt": "2026-04-16T05:06:17.824971Z",
+              "lastConfigSyncAt": "2026-04-16T05:06:08.976517Z"
+            }
+          }
+        },
+        "capturedAt": "2026-04-16T05:06:50.977318Z",
+        "nativeSequence": 10862
+      },
+      {
+        "source": "android-shell",
+        "category": "webview.page.error",
+        "message": "WebView 页面加载失败",
+        "details": {
+          "url": "http:\/\/127.0.0.1:3180\/api\/auth\/status",
+          "isMainFrame": false,
+          "errorCode": -6,
+          "description": "net::ERR_CONNECTION_REFUSED",
+          "countsAsPageError": false,
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 22,
+            "hasWindowFocus": false,
+            "isFinishing": false,
+            "isDestroyed": false,
+            "currentUrl": "http:\/\/127.0.0.1:3180\/?_pcv=0.1.17-18-6-1776315969151",
+            "recordAudioPermissionGranted": true,
+            "proxyReady": false,
+            "bootstrapLoadInProgress": false,
+            "bootstrapLoadGeneration": 0,
+            "activeBootstrapReason": "",
+            "reconnectDispatchPending": false,
+            "reconnectDispatchReason": "",
+            "scheduledReconnectReason": "bootstrap-manifest-pending",
+            "scheduledReconnectAtMs": 1776316014554,
+            "scheduledReconnectWaitMs": 2448,
+            "lastProxySource": "bootstrap-manifest:configured",
+            "lastResolvedUpstreamBaseUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com",
+            "sdkInt": 34,
+            "manufacturer": "HONOR",
+            "model": "CLK-AN00",
+            "app": {
+              "applicationId": "com.pocketcodex.shell",
+              "versionName": "0.1.17",
+              "versionCode": 18,
+              "localProxyPort": 3180,
+              "githubDiagnostic": {
+                "configured": true,
+                "owner": "wishforgood",
+                "repo": "pocket-codex-bootstrap",
+                "branch": "main",
+                "pathPrefix": "pocket-codex\/device-logs",
+                "proxyPrefix": "https:\/\/ghproxy.vip\/",
+                "deviceId": "5e740ae166b533fb",
+                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
+              }
+            },
+            "network": {
+              "available": true,
+              "activeNetworkPresent": true,
+              "transports": [
+                "CELLULAR"
+              ],
+              "hasInternet": true,
+              "isValidated": true,
+              "isCaptivePortal": false,
+              "interfaceName": "ccmni3",
+              "addresses": [
+                "10.227.130.79",
+                "2408:8411:60a1:b697::1"
+              ],
+              "dnsServers": [
+                "\/2408:8888:0:8888::8",
+                "\/2408:8899:0:8899::8",
+                "\/202.99.96.68",
+                "\/202.99.104.68"
+              ],
+              "hasIpv4": true,
+              "hasIpv6": true
+            },
+            "bootstrap": {
+              "packagedManifestUrls": [
+                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
+              ],
+              "lastBootstrapReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
+              "lastRemoteUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com",
+              "lastUpstreamStaleUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com\/",
+              "lastUpstreamStaleAt": "2026-04-16T05:06:17.824971Z",
+              "lastConfigSyncAt": "2026-04-16T05:06:08.976517Z"
+            }
+          }
+        },
+        "capturedAt": "2026-04-16T05:06:52.109237Z",
+        "nativeSequence": 10863
+      },
+      {
+        "source": "android-shell",
+        "category": "proxy.web-reconnect.request",
+        "message": "网页已请求 Android 应用壳重新连接电脑端服务",
+        "details": {
+          "reason": "auth-status-request-failed",
+          "payload": {
+            "reason": "auth-status-request-failed",
+            "connectionLabel": "等待登录",
+            "hasActiveRun": false,
+            "currentUrl": "http:\/\/127.0.0.1:3180\/?_pcv=0.1.17-18-6-1776315969151",
+            "lastStateSyncAt": "",
+            "failureCount": 25,
+            "offlineForMs": 34532,
+            "endpoint": "\/api\/auth\/status",
+            "message": "Failed to fetch"
+          },
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 22,
+            "hasWindowFocus": false,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-16T05:06:52.193091Z",
+        "nativeSequence": 10864
+      },
+      {
+        "source": "android-shell",
+        "category": "webview.console",
+        "message": "TypeError: Failed to fetch",
+        "details": {
+          "pageUrl": "http:\/\/127.0.0.1:3180\/?_pcv=0.1.17-18-6-1776315969151",
+          "messageLevel": "ERROR",
+          "sourceId": "http:\/\/127.0.0.1:3180\/app.js",
+          "lineNumber": 1957,
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 22,
+            "hasWindowFocus": false,
+            "isFinishing": false,
+            "isDestroyed": false,
+            "currentUrl": "http:\/\/127.0.0.1:3180\/?_pcv=0.1.17-18-6-1776315969151",
+            "recordAudioPermissionGranted": true,
+            "proxyReady": false,
+            "bootstrapLoadInProgress": false,
+            "bootstrapLoadGeneration": 0,
+            "activeBootstrapReason": "",
+            "reconnectDispatchPending": false,
+            "reconnectDispatchReason": "",
+            "scheduledReconnectReason": "bootstrap-manifest-pending",
+            "scheduledReconnectAtMs": 1776316014554,
+            "scheduledReconnectWaitMs": 2361,
+            "lastProxySource": "bootstrap-manifest:configured",
+            "lastResolvedUpstreamBaseUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com",
+            "sdkInt": 34,
+            "manufacturer": "HONOR",
+            "model": "CLK-AN00",
+            "app": {
+              "applicationId": "com.pocketcodex.shell",
+              "versionName": "0.1.17",
+              "versionCode": 18,
+              "localProxyPort": 3180,
+              "githubDiagnostic": {
+                "configured": true,
+                "owner": "wishforgood",
+                "repo": "pocket-codex-bootstrap",
+                "branch": "main",
+                "pathPrefix": "pocket-codex\/device-logs",
+                "proxyPrefix": "https:\/\/ghproxy.vip\/",
+                "deviceId": "5e740ae166b533fb",
+                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
+              }
+            },
+            "network": {
+              "available": true,
+              "activeNetworkPresent": true,
+              "transports": [
+                "CELLULAR"
+              ],
+              "hasInternet": true,
+              "isValidated": true,
+              "isCaptivePortal": false,
+              "interfaceName": "ccmni3",
+              "addresses": [
+                "10.227.130.79",
+                "2408:8411:60a1:b697::1"
+              ],
+              "dnsServers": [
+                "\/2408:8888:0:8888::8",
+                "\/2408:8899:0:8899::8",
+                "\/202.99.96.68",
+                "\/202.99.104.68"
+              ],
+              "hasIpv4": true,
+              "hasIpv6": true
+            },
+            "bootstrap": {
+              "packagedManifestUrls": [
+                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
+              ],
+              "lastBootstrapReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
+              "lastRemoteUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com",
+              "lastUpstreamStaleUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com\/",
+              "lastUpstreamStaleAt": "2026-04-16T05:06:17.824971Z",
+              "lastConfigSyncAt": "2026-04-16T05:06:08.976517Z"
+            }
+          }
+        },
+        "capturedAt": "2026-04-16T05:06:52.265871Z",
+        "nativeSequence": 10865
+      },
+      {
+        "source": "android-shell",
+        "category": "proxy.reconnect.dispatch",
+        "message": "Android 应用壳准备立即重新解析电脑端最新地址",
+        "details": {
+          "reason": "web-client-request:auth-status-request-failed",
+          "message": "正在重新连接电脑端服务…",
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 22,
+            "hasWindowFocus": false,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-16T05:06:52.346962Z",
+        "nativeSequence": 10866
+      },
+      {
+        "source": "android-shell",
+        "category": "proxy.reload",
+        "message": "准备重新解析并加载 Pocket Codex 页面",
+        "details": {
+          "generation": 23,
+          "triggerReason": "web-client-request:auth-status-request-failed",
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 23,
+            "hasWindowFocus": false,
+            "isFinishing": false,
+            "isDestroyed": false,
+            "currentUrl": "http:\/\/127.0.0.1:3180\/?_pcv=0.1.17-18-6-1776315969151",
+            "recordAudioPermissionGranted": true,
+            "proxyReady": false,
+            "bootstrapLoadInProgress": true,
+            "bootstrapLoadGeneration": 23,
+            "activeBootstrapReason": "web-client-request:auth-status-request-failed",
+            "reconnectDispatchPending": false,
+            "reconnectDispatchReason": "",
+            "scheduledReconnectReason": "",
+            "scheduledReconnectAtMs": 0,
+            "scheduledReconnectWaitMs": 0,
+            "lastProxySource": "bootstrap-manifest:configured",
+            "lastResolvedUpstreamBaseUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com",
+            "sdkInt": 34,
+            "manufacturer": "HONOR",
+            "model": "CLK-AN00",
+            "app": {
+              "applicationId": "com.pocketcodex.shell",
+              "versionName": "0.1.17",
+              "versionCode": 18,
+              "localProxyPort": 3180,
+              "githubDiagnostic": {
+                "configured": true,
+                "owner": "wishforgood",
+                "repo": "pocket-codex-bootstrap",
+                "branch": "main",
+                "pathPrefix": "pocket-codex\/device-logs",
+                "proxyPrefix": "https:\/\/ghproxy.vip\/",
+                "deviceId": "5e740ae166b533fb",
+                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
+              }
+            },
+            "network": {
+              "available": true,
+              "activeNetworkPresent": true,
+              "transports": [
+                "CELLULAR"
+              ],
+              "hasInternet": true,
+              "isValidated": true,
+              "isCaptivePortal": false,
+              "interfaceName": "ccmni3",
+              "addresses": [
+                "10.227.130.79",
+                "2408:8411:60a1:b697::1"
+              ],
+              "dnsServers": [
+                "\/2408:8888:0:8888::8",
+                "\/2408:8899:0:8899::8",
+                "\/202.99.96.68",
+                "\/202.99.104.68"
+              ],
+              "hasIpv4": true,
+              "hasIpv6": true
+            },
+            "bootstrap": {
+              "packagedManifestUrls": [
+                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
+              ],
+              "lastBootstrapReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
+              "lastRemoteUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com",
+              "lastUpstreamStaleUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com\/",
+              "lastUpstreamStaleAt": "2026-04-16T05:06:17.824971Z",
+              "lastConfigSyncAt": "2026-04-16T05:06:08.976517Z"
+            }
+          }
+        },
+        "capturedAt": "2026-04-16T05:06:52.420489Z",
+        "nativeSequence": 10867
+      },
+      {
+        "source": "android-shell",
+        "category": "bootstrap.resolve.start",
+        "message": "开始从 GitHub 引导清单解析最新地址",
+        "details": {
+          "manifestCandidates": [
+            "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
+          ],
+          "manifestCandidateCount": 1,
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 23,
+            "hasWindowFocus": false,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-16T05:06:52.493632Z",
+        "nativeSequence": 10868
+      },
+      {
+        "source": "android-shell",
+        "category": "bootstrap.manifest.fetch.start",
+        "message": "开始读取 GitHub 引导清单",
+        "details": {
+          "manifestUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 23,
+            "hasWindowFocus": false,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-16T05:06:52.600288Z",
+        "nativeSequence": 10869
+      },
+      {
+        "source": "android-shell",
+        "category": "bootstrap.manifest.fetch.success",
+        "message": "GitHub 引导清单读取成功",
+        "details": {
+          "manifestUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
+          "requestUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json?_pcv=1776316012658-c14snepjou",
+          "statusCode": 200,
+          "bodyPreview": "{   \"schemaVersion\": 1,   \"generatedAt\": \"2026-04-15T16:51:15.888Z\",   \"appName\": \"Pocket Codex\",   \"provider\": \"github-repo\",   \"status\": \"在线\",   \"publicUrl\": \"https:\/\/planned-gym-hispanic-networking.trycloudflare.com\",   \"preferredUpstrea...",
+          "candidateCount": 1,
+          "publicUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com",
+          "preferredUpstreamUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com",
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 23,
+            "hasWindowFocus": false,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-16T05:06:52.943433Z",
+        "nativeSequence": 10870
+      },
+      {
+        "source": "android-shell",
+        "category": "bootstrap.candidate.probe.start",
+        "message": "开始探测 GitHub 清单里的公网地址是否可用",
+        "details": {
+          "upstreamBaseUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com",
+          "source": "bootstrap-manifest:configured",
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 23,
+            "hasWindowFocus": false,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-16T05:06:53.056141Z",
+        "nativeSequence": 10871
+      },
+      {
+        "source": "android-shell",
+        "category": "diagnostic.github.publish.success",
+        "message": "诊断日志已通过 ghproxy 上传到 GitHub",
+        "details": {
+          "triggerCategory": "proxy.resolve.error",
+          "filePath": "pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
+          "readUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
+          "statusCode": 200,
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 23,
+            "hasWindowFocus": false,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-16T05:06:53.335086Z",
+        "nativeSequence": 10872
+      },
+      {
+        "source": "android-shell",
+        "category": "bootstrap.candidate.probe.pending",
+        "message": "GitHub 清单里的公网地址暂时还没准备好",
+        "details": {
+          "upstreamBaseUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com",
+          "source": "bootstrap-manifest:configured",
+          "probeUrl": "https:\/\/planned-gym-hispanic-networking.trycloudflare.com\/downloads\/pocket-codex.json",
+          "statusCode": 530,
+          "responsePreview": "530  The origin has been unregistered from Argo Tunnel",
+          "ready": false,
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 23,
+            "hasWindowFocus": false,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-16T05:06:53.437480Z",
+        "nativeSequence": 10873
       }
     ]
   }
