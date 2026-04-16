@@ -1,26 +1,26 @@
 {
-  "capturedAt": "2026-04-16T09:08:04.102312Z",
+  "capturedAt": "2026-04-16T09:27:47.701703Z",
   "trigger": {
     "category": "webview.page.error",
     "message": "WebView 页面加载失败",
     "details": {
-      "url": "http:\/\/127.0.0.1:3180\/api\/events",
+      "url": "http:\/\/127.0.0.1:3180\/api\/state",
       "isMainFrame": false,
-      "errorCode": -1,
-      "description": "net::ERR_FAILED",
+      "errorCode": -6,
+      "description": "net::ERR_CONNECTION_REFUSED",
       "countsAsPageError": false,
       "nativeContext": {
         "lifecycleState": "resumed",
-        "loadGeneration": 6,
+        "loadGeneration": 14,
         "hasWindowFocus": true,
         "isFinishing": false,
         "isDestroyed": false,
-        "currentUrl": "http:\/\/127.0.0.1:3180\/?_pcv=0.1.17-18-6-1776330442172",
+        "currentUrl": "http:\/\/127.0.0.1:3180\/?_pcv=0.1.17-18-9-1776331655002",
         "recordAudioPermissionGranted": true,
-        "proxyReady": true,
-        "bootstrapLoadInProgress": false,
-        "bootstrapLoadGeneration": 0,
-        "activeBootstrapReason": "",
+        "proxyReady": false,
+        "bootstrapLoadInProgress": true,
+        "bootstrapLoadGeneration": 14,
+        "activeBootstrapReason": "web-client-request:auth-status-request-failed",
         "reconnectDispatchPending": false,
         "reconnectDispatchReason": "",
         "scheduledReconnectReason": "",
@@ -75,10 +75,10 @@
             "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
           ],
           "lastBootstrapReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
-          "lastRemoteUrl": "",
-          "lastUpstreamStaleUrl": "https:\/\/pen-pond-metabolism-warranties.trycloudflare.com\/",
-          "lastUpstreamStaleAt": "2026-04-16T05:31:44.842997Z",
-          "lastConfigSyncAt": "2026-04-16T09:07:51.981032Z"
+          "lastRemoteUrl": "https:\/\/champion-snowboard-princeton-subscribers.trycloudflare.com",
+          "lastUpstreamStaleUrl": "https:\/\/champion-snowboard-princeton-subscribers.trycloudflare.com\/",
+          "lastUpstreamStaleAt": "2026-04-16T09:27:44.594601Z",
+          "lastConfigSyncAt": "2026-04-16T09:27:34.918422Z"
         }
       }
     }
@@ -100,7 +100,7 @@
     }
   },
   "nativeSnapshot": {
-    "capturedAt": "2026-04-16T09:08:04.102732Z",
+    "capturedAt": "2026-04-16T09:27:47.702199Z",
     "app": {
       "applicationId": "com.pocketcodex.shell",
       "versionName": "0.1.17",
@@ -119,7 +119,7 @@
     },
     "summary": {
       "lifecycleState": "resumed",
-      "loadGeneration": 6,
+      "loadGeneration": 14,
       "hasWindowFocus": true,
       "isFinishing": false,
       "isDestroyed": false
@@ -153,38 +153,567 @@
         "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
       ],
       "lastBootstrapReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
-      "lastRemoteUrl": "",
-      "lastUpstreamStaleUrl": "https:\/\/pen-pond-metabolism-warranties.trycloudflare.com\/",
-      "lastUpstreamStaleAt": "2026-04-16T05:31:44.842997Z",
-      "lastConfigSyncAt": "2026-04-16T09:07:51.981032Z"
+      "lastRemoteUrl": "https:\/\/champion-snowboard-princeton-subscribers.trycloudflare.com",
+      "lastUpstreamStaleUrl": "https:\/\/champion-snowboard-princeton-subscribers.trycloudflare.com\/",
+      "lastUpstreamStaleAt": "2026-04-16T09:27:44.594601Z",
+      "lastConfigSyncAt": "2026-04-16T09:27:34.918422Z"
     }
   },
   "recentLogs": {
-    "pendingCount": 1,
-    "lastSequence": 12055,
+    "pendingCount": 72,
+    "lastSequence": 12181,
     "recent": [
+      {
+        "source": "android-shell",
+        "category": "bootstrap.resolve.start",
+        "message": "开始从 GitHub 引导清单解析最新地址",
+        "details": {
+          "manifestCandidates": [
+            "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
+          ],
+          "manifestCandidateCount": 1,
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 13,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-16T09:27:46.281389Z",
+        "nativeSequence": 12162
+      },
+      {
+        "source": "android-shell",
+        "category": "bootstrap.manifest.fetch.start",
+        "message": "开始读取 GitHub 引导清单",
+        "details": {
+          "manifestUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 13,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-16T09:27:46.308280Z",
+        "nativeSequence": 12163
+      },
+      {
+        "source": "android-shell",
+        "category": "bootstrap.manifest.fetch.error",
+        "message": "读取 GitHub 引导清单失败",
+        "details": {
+          "error": "UnknownHostException",
+          "message": "Unable to resolve host \"ghproxy.vip\": No address associated with hostname",
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 13,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-16T09:27:46.334974Z",
+        "nativeSequence": 12164
+      },
+      {
+        "source": "android-shell",
+        "category": "bootstrap.resolve.error",
+        "message": "读取 GitHub 引导清单失败",
+        "details": {
+          "error": "UnknownHostException",
+          "message": "Unable to resolve host \"ghproxy.vip\": No address associated with hostname",
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 13,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-16T09:27:46.349992Z",
+        "nativeSequence": 12165
+      },
+      {
+        "source": "android-shell",
+        "category": "proxy.resolve.error",
+        "message": "Android 应用壳解析上游地址失败",
+        "details": {
+          "error": "UnknownHostException",
+          "message": "Unable to resolve host \"ghproxy.vip\": No address associated with hostname",
+          "stack": [
+            "java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:124)",
+            "java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:103)",
+            "java.net.InetAddress.getAllByName(InetAddress.java:1152)",
+            "com.android.okhttp.Dns$1.lookup(Dns.java:41)",
+            "com.android.okhttp.internal.http.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:178)",
+            "com.android.okhttp.internal.http.RouteSelector.nextProxy(RouteSelector.java:144)",
+            "com.android.okhttp.internal.http.RouteSelector.next(RouteSelector.java:86)",
+            "com.android.okhttp.internal.http.StreamAllocation.findConnection(StreamAllocation.java:176)",
+            "com.android.okhttp.internal.http.StreamAllocation.findHealthyConnection(StreamAllocation.java:128)",
+            "com.android.okhttp.internal.http.StreamAllocation.newStream(StreamAllocation.java:97)"
+          ],
+          "generation": 13,
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 13,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-16T09:27:46.367053Z",
+        "nativeSequence": 12166
+      },
+      {
+        "source": "android-shell",
+        "category": "diagnostic.github.publish.error",
+        "message": "诊断日志上传失败",
+        "details": {
+          "error": "UnknownHostException",
+          "message": "Unable to resolve host \"ghproxy.vip\": No address associated with hostname",
+          "stack": [
+            "java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:124)",
+            "java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:103)",
+            "java.net.InetAddress.getAllByName(InetAddress.java:1152)",
+            "com.android.okhttp.Dns$1.lookup(Dns.java:41)",
+            "com.android.okhttp.internal.http.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:178)",
+            "com.android.okhttp.internal.http.RouteSelector.nextProxy(RouteSelector.java:144)",
+            "com.android.okhttp.internal.http.RouteSelector.next(RouteSelector.java:86)",
+            "com.android.okhttp.internal.http.StreamAllocation.findConnection(StreamAllocation.java:176)",
+            "com.android.okhttp.internal.http.StreamAllocation.findHealthyConnection(StreamAllocation.java:128)",
+            "com.android.okhttp.internal.http.StreamAllocation.newStream(StreamAllocation.java:97)"
+          ],
+          "triggerCategory": "bootstrap.manifest.fetch.error",
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 13,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-16T09:27:46.380579Z",
+        "nativeSequence": 12167
+      },
+      {
+        "source": "android-shell",
+        "category": "proxy.auto-reconnect.schedule",
+        "message": "Android 应用壳已安排自动重连",
+        "details": {
+          "reason": "show-error",
+          "delayMs": 7000,
+          "attempt": 4,
+          "lastPageError": "HTTP 530",
+          "lastResolvedUpstreamBaseUrl": "https:\/\/champion-snowboard-princeton-subscribers.trycloudflare.com",
+          "scheduledReconnectAtMs": 1776331673380,
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 13,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false,
+            "currentUrl": "http:\/\/127.0.0.1:3180\/?_pcv=0.1.17-18-9-1776331655002",
+            "recordAudioPermissionGranted": true,
+            "proxyReady": false,
+            "bootstrapLoadInProgress": false,
+            "bootstrapLoadGeneration": 0,
+            "activeBootstrapReason": "",
+            "reconnectDispatchPending": false,
+            "reconnectDispatchReason": "",
+            "scheduledReconnectReason": "show-error",
+            "scheduledReconnectAtMs": 1776331673380,
+            "scheduledReconnectWaitMs": 7000,
+            "lastProxySource": "bootstrap-manifest:configured",
+            "lastResolvedUpstreamBaseUrl": "https:\/\/champion-snowboard-princeton-subscribers.trycloudflare.com",
+            "sdkInt": 34,
+            "manufacturer": "HONOR",
+            "model": "CLK-AN00",
+            "app": {
+              "applicationId": "com.pocketcodex.shell",
+              "versionName": "0.1.17",
+              "versionCode": 18,
+              "localProxyPort": 3180,
+              "githubDiagnostic": {
+                "configured": true,
+                "owner": "wishforgood",
+                "repo": "pocket-codex-bootstrap",
+                "branch": "main",
+                "pathPrefix": "pocket-codex\/device-logs",
+                "proxyPrefix": "https:\/\/ghproxy.vip\/",
+                "deviceId": "5e740ae166b533fb",
+                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
+              }
+            },
+            "network": {
+              "available": true,
+              "activeNetworkPresent": true,
+              "transports": [
+                "CELLULAR"
+              ],
+              "hasInternet": true,
+              "isValidated": true,
+              "isCaptivePortal": false,
+              "interfaceName": "ccmni3",
+              "addresses": [
+                "10.227.130.79",
+                "2408:8411:60a1:b697::1"
+              ],
+              "dnsServers": [
+                "\/2408:8888:0:8888::8",
+                "\/2408:8899:0:8899::8",
+                "\/202.99.96.68",
+                "\/202.99.104.68"
+              ],
+              "hasIpv4": true,
+              "hasIpv6": true
+            },
+            "bootstrap": {
+              "packagedManifestUrls": [
+                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
+              ],
+              "lastBootstrapReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
+              "lastRemoteUrl": "https:\/\/champion-snowboard-princeton-subscribers.trycloudflare.com",
+              "lastUpstreamStaleUrl": "https:\/\/champion-snowboard-princeton-subscribers.trycloudflare.com\/",
+              "lastUpstreamStaleAt": "2026-04-16T09:27:44.594601Z",
+              "lastConfigSyncAt": "2026-04-16T09:27:34.918422Z"
+            }
+          }
+        },
+        "capturedAt": "2026-04-16T09:27:46.392214Z",
+        "nativeSequence": 12168
+      },
+      {
+        "source": "android-shell",
+        "category": "diagnostic.github.publish.error",
+        "message": "诊断日志上传失败",
+        "details": {
+          "error": "UnknownHostException",
+          "message": "Unable to resolve host \"ghproxy.vip\": No address associated with hostname",
+          "stack": [
+            "java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:124)",
+            "java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:103)",
+            "java.net.InetAddress.getAllByName(InetAddress.java:1152)",
+            "com.android.okhttp.Dns$1.lookup(Dns.java:41)",
+            "com.android.okhttp.internal.http.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:178)",
+            "com.android.okhttp.internal.http.RouteSelector.nextProxy(RouteSelector.java:144)",
+            "com.android.okhttp.internal.http.RouteSelector.next(RouteSelector.java:86)",
+            "com.android.okhttp.internal.http.StreamAllocation.findConnection(StreamAllocation.java:176)",
+            "com.android.okhttp.internal.http.StreamAllocation.findHealthyConnection(StreamAllocation.java:128)",
+            "com.android.okhttp.internal.http.StreamAllocation.newStream(StreamAllocation.java:97)"
+          ],
+          "triggerCategory": "bootstrap.resolve.error",
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 13,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-16T09:27:46.415180Z",
+        "nativeSequence": 12169
+      },
+      {
+        "source": "android-shell",
+        "category": "diagnostic.github.publish.error",
+        "message": "诊断日志上传失败",
+        "details": {
+          "error": "UnknownHostException",
+          "message": "Unable to resolve host \"ghproxy.vip\": No address associated with hostname",
+          "stack": [
+            "java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:124)",
+            "java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:103)",
+            "java.net.InetAddress.getAllByName(InetAddress.java:1152)",
+            "com.android.okhttp.Dns$1.lookup(Dns.java:41)",
+            "com.android.okhttp.internal.http.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:178)",
+            "com.android.okhttp.internal.http.RouteSelector.nextProxy(RouteSelector.java:144)",
+            "com.android.okhttp.internal.http.RouteSelector.next(RouteSelector.java:86)",
+            "com.android.okhttp.internal.http.StreamAllocation.findConnection(StreamAllocation.java:176)",
+            "com.android.okhttp.internal.http.StreamAllocation.findHealthyConnection(StreamAllocation.java:128)",
+            "com.android.okhttp.internal.http.StreamAllocation.newStream(StreamAllocation.java:97)"
+          ],
+          "triggerCategory": "proxy.resolve.error",
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 13,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-16T09:27:46.437314Z",
+        "nativeSequence": 12170
+      },
       {
         "source": "android-shell",
         "category": "webview.page.error",
         "message": "WebView 页面加载失败",
         "details": {
-          "url": "http:\/\/127.0.0.1:3180\/api\/events",
+          "url": "http:\/\/127.0.0.1:3180\/api\/auth\/status",
           "isMainFrame": false,
-          "errorCode": -1,
-          "description": "net::ERR_FAILED",
+          "errorCode": -6,
+          "description": "net::ERR_CONNECTION_REFUSED",
           "countsAsPageError": false,
           "nativeContext": {
             "lifecycleState": "resumed",
-            "loadGeneration": 6,
+            "loadGeneration": 13,
             "hasWindowFocus": true,
             "isFinishing": false,
             "isDestroyed": false,
-            "currentUrl": "http:\/\/127.0.0.1:3180\/?_pcv=0.1.17-18-6-1776330442172",
+            "currentUrl": "http:\/\/127.0.0.1:3180\/?_pcv=0.1.17-18-9-1776331655002",
             "recordAudioPermissionGranted": true,
-            "proxyReady": true,
+            "proxyReady": false,
             "bootstrapLoadInProgress": false,
             "bootstrapLoadGeneration": 0,
             "activeBootstrapReason": "",
+            "reconnectDispatchPending": false,
+            "reconnectDispatchReason": "",
+            "scheduledReconnectReason": "show-error",
+            "scheduledReconnectAtMs": 1776331673380,
+            "scheduledReconnectWaitMs": 6580,
+            "lastProxySource": "bootstrap-manifest:configured",
+            "lastResolvedUpstreamBaseUrl": "https:\/\/champion-snowboard-princeton-subscribers.trycloudflare.com",
+            "sdkInt": 34,
+            "manufacturer": "HONOR",
+            "model": "CLK-AN00",
+            "app": {
+              "applicationId": "com.pocketcodex.shell",
+              "versionName": "0.1.17",
+              "versionCode": 18,
+              "localProxyPort": 3180,
+              "githubDiagnostic": {
+                "configured": true,
+                "owner": "wishforgood",
+                "repo": "pocket-codex-bootstrap",
+                "branch": "main",
+                "pathPrefix": "pocket-codex\/device-logs",
+                "proxyPrefix": "https:\/\/ghproxy.vip\/",
+                "deviceId": "5e740ae166b533fb",
+                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
+              }
+            },
+            "network": {
+              "available": true,
+              "activeNetworkPresent": true,
+              "transports": [
+                "CELLULAR"
+              ],
+              "hasInternet": true,
+              "isValidated": true,
+              "isCaptivePortal": false,
+              "interfaceName": "ccmni3",
+              "addresses": [
+                "10.227.130.79",
+                "2408:8411:60a1:b697::1"
+              ],
+              "dnsServers": [
+                "\/2408:8888:0:8888::8",
+                "\/2408:8899:0:8899::8",
+                "\/202.99.96.68",
+                "\/202.99.104.68"
+              ],
+              "hasIpv4": true,
+              "hasIpv6": true
+            },
+            "bootstrap": {
+              "packagedManifestUrls": [
+                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
+              ],
+              "lastBootstrapReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
+              "lastRemoteUrl": "https:\/\/champion-snowboard-princeton-subscribers.trycloudflare.com",
+              "lastUpstreamStaleUrl": "https:\/\/champion-snowboard-princeton-subscribers.trycloudflare.com\/",
+              "lastUpstreamStaleAt": "2026-04-16T09:27:44.594601Z",
+              "lastConfigSyncAt": "2026-04-16T09:27:34.918422Z"
+            }
+          }
+        },
+        "capturedAt": "2026-04-16T09:27:46.802869Z",
+        "nativeSequence": 12171
+      },
+      {
+        "source": "android-shell",
+        "category": "proxy.web-reconnect.request",
+        "message": "网页已请求 Android 应用壳重新连接电脑端服务",
+        "details": {
+          "reason": "auth-status-request-failed",
+          "payload": {
+            "reason": "auth-status-request-failed",
+            "connectionLabel": "重连中",
+            "hasActiveRun": false,
+            "currentUrl": "http:\/\/127.0.0.1:3180\/?_pcv=0.1.17-18-9-1776331655002",
+            "lastStateSyncAt": "2026-04-16T09:27:44.658Z",
+            "failureCount": 6,
+            "offlineForMs": 2144,
+            "endpoint": "\/api\/auth\/status",
+            "message": "Failed to fetch"
+          },
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 13,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-16T09:27:46.823763Z",
+        "nativeSequence": 12172
+      },
+      {
+        "source": "android-shell",
+        "category": "webview.console",
+        "message": "TypeError: Failed to fetch",
+        "details": {
+          "pageUrl": "http:\/\/127.0.0.1:3180\/?_pcv=0.1.17-18-9-1776331655002",
+          "messageLevel": "ERROR",
+          "sourceId": "http:\/\/127.0.0.1:3180\/app.js",
+          "lineNumber": 1957,
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 13,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false,
+            "currentUrl": "http:\/\/127.0.0.1:3180\/?_pcv=0.1.17-18-9-1776331655002",
+            "recordAudioPermissionGranted": true,
+            "proxyReady": false,
+            "bootstrapLoadInProgress": false,
+            "bootstrapLoadGeneration": 0,
+            "activeBootstrapReason": "",
+            "reconnectDispatchPending": false,
+            "reconnectDispatchReason": "",
+            "scheduledReconnectReason": "show-error",
+            "scheduledReconnectAtMs": 1776331673380,
+            "scheduledReconnectWaitMs": 6556,
+            "lastProxySource": "bootstrap-manifest:configured",
+            "lastResolvedUpstreamBaseUrl": "https:\/\/champion-snowboard-princeton-subscribers.trycloudflare.com",
+            "sdkInt": 34,
+            "manufacturer": "HONOR",
+            "model": "CLK-AN00",
+            "app": {
+              "applicationId": "com.pocketcodex.shell",
+              "versionName": "0.1.17",
+              "versionCode": 18,
+              "localProxyPort": 3180,
+              "githubDiagnostic": {
+                "configured": true,
+                "owner": "wishforgood",
+                "repo": "pocket-codex-bootstrap",
+                "branch": "main",
+                "pathPrefix": "pocket-codex\/device-logs",
+                "proxyPrefix": "https:\/\/ghproxy.vip\/",
+                "deviceId": "5e740ae166b533fb",
+                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
+              }
+            },
+            "network": {
+              "available": true,
+              "activeNetworkPresent": true,
+              "transports": [
+                "CELLULAR"
+              ],
+              "hasInternet": true,
+              "isValidated": true,
+              "isCaptivePortal": false,
+              "interfaceName": "ccmni3",
+              "addresses": [
+                "10.227.130.79",
+                "2408:8411:60a1:b697::1"
+              ],
+              "dnsServers": [
+                "\/2408:8888:0:8888::8",
+                "\/2408:8899:0:8899::8",
+                "\/202.99.96.68",
+                "\/202.99.104.68"
+              ],
+              "hasIpv4": true,
+              "hasIpv6": true
+            },
+            "bootstrap": {
+              "packagedManifestUrls": [
+                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
+              ],
+              "lastBootstrapReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
+              "lastRemoteUrl": "https:\/\/champion-snowboard-princeton-subscribers.trycloudflare.com",
+              "lastUpstreamStaleUrl": "https:\/\/champion-snowboard-princeton-subscribers.trycloudflare.com\/",
+              "lastUpstreamStaleAt": "2026-04-16T09:27:44.594601Z",
+              "lastConfigSyncAt": "2026-04-16T09:27:34.918422Z"
+            }
+          }
+        },
+        "capturedAt": "2026-04-16T09:27:46.848926Z",
+        "nativeSequence": 12173
+      },
+      {
+        "source": "android-shell",
+        "category": "proxy.reconnect.dispatch",
+        "message": "Android 应用壳准备立即重新解析电脑端最新地址",
+        "details": {
+          "reason": "web-client-request:auth-status-request-failed",
+          "message": "正在重新连接电脑端服务…",
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 13,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-16T09:27:46.867161Z",
+        "nativeSequence": 12174
+      },
+      {
+        "source": "android-shell",
+        "category": "diagnostic.github.publish.error",
+        "message": "诊断日志上传失败",
+        "details": {
+          "error": "UnknownHostException",
+          "message": "Unable to resolve host \"ghproxy.vip\": No address associated with hostname",
+          "stack": [
+            "java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:124)",
+            "java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:103)",
+            "java.net.InetAddress.getAllByName(InetAddress.java:1152)",
+            "com.android.okhttp.Dns$1.lookup(Dns.java:41)",
+            "com.android.okhttp.internal.http.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:178)",
+            "com.android.okhttp.internal.http.RouteSelector.nextProxy(RouteSelector.java:144)",
+            "com.android.okhttp.internal.http.RouteSelector.next(RouteSelector.java:86)",
+            "com.android.okhttp.internal.http.StreamAllocation.findConnection(StreamAllocation.java:176)",
+            "com.android.okhttp.internal.http.StreamAllocation.findHealthyConnection(StreamAllocation.java:128)",
+            "com.android.okhttp.internal.http.StreamAllocation.newStream(StreamAllocation.java:97)"
+          ],
+          "triggerCategory": "webview.page.error",
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 13,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-16T09:27:46.887723Z",
+        "nativeSequence": 12175
+      },
+      {
+        "source": "android-shell",
+        "category": "proxy.reload",
+        "message": "准备重新解析并加载 Pocket Codex 页面",
+        "details": {
+          "generation": 14,
+          "triggerReason": "web-client-request:auth-status-request-failed",
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 14,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false,
+            "currentUrl": "http:\/\/127.0.0.1:3180\/?_pcv=0.1.17-18-9-1776331655002",
+            "recordAudioPermissionGranted": true,
+            "proxyReady": false,
+            "bootstrapLoadInProgress": true,
+            "bootstrapLoadGeneration": 14,
+            "activeBootstrapReason": "web-client-request:auth-status-request-failed",
             "reconnectDispatchPending": false,
             "reconnectDispatchReason": "",
             "scheduledReconnectReason": "",
@@ -239,15 +768,253 @@
                 "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
               ],
               "lastBootstrapReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
-              "lastRemoteUrl": "",
-              "lastUpstreamStaleUrl": "https:\/\/pen-pond-metabolism-warranties.trycloudflare.com\/",
-              "lastUpstreamStaleAt": "2026-04-16T05:31:44.842997Z",
-              "lastConfigSyncAt": "2026-04-16T09:07:51.981032Z"
+              "lastRemoteUrl": "https:\/\/champion-snowboard-princeton-subscribers.trycloudflare.com",
+              "lastUpstreamStaleUrl": "https:\/\/champion-snowboard-princeton-subscribers.trycloudflare.com\/",
+              "lastUpstreamStaleAt": "2026-04-16T09:27:44.594601Z",
+              "lastConfigSyncAt": "2026-04-16T09:27:34.918422Z"
             }
           }
         },
-        "capturedAt": "2026-04-16T09:08:04.098472Z",
-        "nativeSequence": 12055
+        "capturedAt": "2026-04-16T09:27:46.907125Z",
+        "nativeSequence": 12176
+      },
+      {
+        "source": "android-shell",
+        "category": "bootstrap.resolve.start",
+        "message": "开始从 GitHub 引导清单解析最新地址",
+        "details": {
+          "manifestCandidates": [
+            "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
+          ],
+          "manifestCandidateCount": 1,
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 14,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-16T09:27:46.916529Z",
+        "nativeSequence": 12177
+      },
+      {
+        "source": "android-shell",
+        "category": "bootstrap.manifest.fetch.start",
+        "message": "开始读取 GitHub 引导清单",
+        "details": {
+          "manifestUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 14,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-16T09:27:46.946816Z",
+        "nativeSequence": 12178
+      },
+      {
+        "source": "android-shell",
+        "category": "webview.page.error",
+        "message": "WebView 页面加载失败",
+        "details": {
+          "url": "http:\/\/127.0.0.1:3180\/api\/state",
+          "isMainFrame": false,
+          "errorCode": -6,
+          "description": "net::ERR_CONNECTION_REFUSED",
+          "countsAsPageError": false,
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 14,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false,
+            "currentUrl": "http:\/\/127.0.0.1:3180\/?_pcv=0.1.17-18-9-1776331655002",
+            "recordAudioPermissionGranted": true,
+            "proxyReady": false,
+            "bootstrapLoadInProgress": true,
+            "bootstrapLoadGeneration": 14,
+            "activeBootstrapReason": "web-client-request:auth-status-request-failed",
+            "reconnectDispatchPending": false,
+            "reconnectDispatchReason": "",
+            "scheduledReconnectReason": "",
+            "scheduledReconnectAtMs": 0,
+            "scheduledReconnectWaitMs": 0,
+            "lastProxySource": "bootstrap-manifest:configured",
+            "lastResolvedUpstreamBaseUrl": "https:\/\/champion-snowboard-princeton-subscribers.trycloudflare.com",
+            "sdkInt": 34,
+            "manufacturer": "HONOR",
+            "model": "CLK-AN00",
+            "app": {
+              "applicationId": "com.pocketcodex.shell",
+              "versionName": "0.1.17",
+              "versionCode": 18,
+              "localProxyPort": 3180,
+              "githubDiagnostic": {
+                "configured": true,
+                "owner": "wishforgood",
+                "repo": "pocket-codex-bootstrap",
+                "branch": "main",
+                "pathPrefix": "pocket-codex\/device-logs",
+                "proxyPrefix": "https:\/\/ghproxy.vip\/",
+                "deviceId": "5e740ae166b533fb",
+                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
+              }
+            },
+            "network": {
+              "available": true,
+              "activeNetworkPresent": true,
+              "transports": [
+                "CELLULAR"
+              ],
+              "hasInternet": true,
+              "isValidated": true,
+              "isCaptivePortal": false,
+              "interfaceName": "ccmni3",
+              "addresses": [
+                "10.227.130.79",
+                "2408:8411:60a1:b697::1"
+              ],
+              "dnsServers": [
+                "\/2408:8888:0:8888::8",
+                "\/2408:8899:0:8899::8",
+                "\/202.99.96.68",
+                "\/202.99.104.68"
+              ],
+              "hasIpv4": true,
+              "hasIpv6": true
+            },
+            "bootstrap": {
+              "packagedManifestUrls": [
+                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
+              ],
+              "lastBootstrapReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
+              "lastRemoteUrl": "https:\/\/champion-snowboard-princeton-subscribers.trycloudflare.com",
+              "lastUpstreamStaleUrl": "https:\/\/champion-snowboard-princeton-subscribers.trycloudflare.com\/",
+              "lastUpstreamStaleAt": "2026-04-16T09:27:44.594601Z",
+              "lastConfigSyncAt": "2026-04-16T09:27:34.918422Z"
+            }
+          }
+        },
+        "capturedAt": "2026-04-16T09:27:47.676832Z",
+        "nativeSequence": 12179
+      },
+      {
+        "source": "android-shell",
+        "category": "proxy.web-reconnect.waiting",
+        "message": "网页已请求重连，但应用壳当前正在等待电脑端服务恢复",
+        "details": {
+          "reason": "state-poll-failed",
+          "payload": {
+            "reason": "state-poll-failed",
+            "connectionLabel": "重连中",
+            "hasActiveRun": false,
+            "currentUrl": "http:\/\/127.0.0.1:3180\/?_pcv=0.1.17-18-9-1776331655002",
+            "lastStateSyncAt": "2026-04-16T09:27:44.658Z",
+            "failureCount": 7,
+            "offlineForMs": 3021,
+            "endpoint": "\/api\/state",
+            "message": "Failed to fetch"
+          },
+          "bootstrapLoadGeneration": 14,
+          "reconnectDispatchPending": false,
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 14,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-16T09:27:47.700777Z",
+        "nativeSequence": 12180
+      },
+      {
+        "source": "android-shell",
+        "category": "webview.console",
+        "message": "TypeError: Failed to fetch",
+        "details": {
+          "pageUrl": "http:\/\/127.0.0.1:3180\/?_pcv=0.1.17-18-9-1776331655002",
+          "messageLevel": "ERROR",
+          "sourceId": "http:\/\/127.0.0.1:3180\/app.js",
+          "lineNumber": 2080,
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 14,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false,
+            "currentUrl": "http:\/\/127.0.0.1:3180\/?_pcv=0.1.17-18-9-1776331655002",
+            "recordAudioPermissionGranted": true,
+            "proxyReady": false,
+            "bootstrapLoadInProgress": true,
+            "bootstrapLoadGeneration": 14,
+            "activeBootstrapReason": "web-client-request:auth-status-request-failed",
+            "reconnectDispatchPending": false,
+            "reconnectDispatchReason": "",
+            "scheduledReconnectReason": "",
+            "scheduledReconnectAtMs": 0,
+            "scheduledReconnectWaitMs": 0,
+            "lastProxySource": "bootstrap-manifest:configured",
+            "lastResolvedUpstreamBaseUrl": "https:\/\/champion-snowboard-princeton-subscribers.trycloudflare.com",
+            "sdkInt": 34,
+            "manufacturer": "HONOR",
+            "model": "CLK-AN00",
+            "app": {
+              "applicationId": "com.pocketcodex.shell",
+              "versionName": "0.1.17",
+              "versionCode": 18,
+              "localProxyPort": 3180,
+              "githubDiagnostic": {
+                "configured": true,
+                "owner": "wishforgood",
+                "repo": "pocket-codex-bootstrap",
+                "branch": "main",
+                "pathPrefix": "pocket-codex\/device-logs",
+                "proxyPrefix": "https:\/\/ghproxy.vip\/",
+                "deviceId": "5e740ae166b533fb",
+                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
+              }
+            },
+            "network": {
+              "available": true,
+              "activeNetworkPresent": true,
+              "transports": [
+                "CELLULAR"
+              ],
+              "hasInternet": true,
+              "isValidated": true,
+              "isCaptivePortal": false,
+              "interfaceName": "ccmni3",
+              "addresses": [
+                "10.227.130.79",
+                "2408:8411:60a1:b697::1"
+              ],
+              "dnsServers": [
+                "\/2408:8888:0:8888::8",
+                "\/2408:8899:0:8899::8",
+                "\/202.99.96.68",
+                "\/202.99.104.68"
+              ],
+              "hasIpv4": true,
+              "hasIpv6": true
+            },
+            "bootstrap": {
+              "packagedManifestUrls": [
+                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
+              ],
+              "lastBootstrapReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
+              "lastRemoteUrl": "https:\/\/champion-snowboard-princeton-subscribers.trycloudflare.com",
+              "lastUpstreamStaleUrl": "https:\/\/champion-snowboard-princeton-subscribers.trycloudflare.com\/",
+              "lastUpstreamStaleAt": "2026-04-16T09:27:44.594601Z",
+              "lastConfigSyncAt": "2026-04-16T09:27:34.918422Z"
+            }
+          }
+        },
+        "capturedAt": "2026-04-16T09:27:47.753121Z",
+        "nativeSequence": 12181
       }
     ]
   }
