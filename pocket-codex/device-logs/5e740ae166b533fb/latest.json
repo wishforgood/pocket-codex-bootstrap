@@ -1,13 +1,24 @@
 {
-  "capturedAt": "2026-04-17T04:22:24.210475Z",
+  "capturedAt": "2026-04-17T04:22:27.160181Z",
   "trigger": {
-    "category": "bootstrap.resolve.error",
-    "message": "GitHub 清单里的公网 IPv6 当前不可达",
+    "category": "proxy.resolve.error",
+    "message": "Android 应用壳解析上游地址失败",
     "details": {
-      "error": "CandidateProbeException",
+      "error": "UnknownHostException",
       "message": "Unable to resolve host \"shot-cheapest-sisters-soundtrack.trycloudflare.com\": No address associated with hostname",
-      "cause": "UnknownHostException",
-      "causeMessage": "Unable to resolve host \"shot-cheapest-sisters-soundtrack.trycloudflare.com\": No address associated with hostname",
+      "stack": [
+        "java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:124)",
+        "java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:103)",
+        "java.net.InetAddress.getAllByName(InetAddress.java:1152)",
+        "com.android.okhttp.Dns$1.lookup(Dns.java:41)",
+        "com.android.okhttp.internal.http.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:178)",
+        "com.android.okhttp.internal.http.RouteSelector.nextProxy(RouteSelector.java:144)",
+        "com.android.okhttp.internal.http.RouteSelector.next(RouteSelector.java:86)",
+        "com.android.okhttp.internal.http.StreamAllocation.findConnection(StreamAllocation.java:176)",
+        "com.android.okhttp.internal.http.StreamAllocation.findHealthyConnection(StreamAllocation.java:128)",
+        "com.android.okhttp.internal.http.StreamAllocation.newStream(StreamAllocation.java:97)"
+      ],
+      "generation": 11,
       "nativeContext": {
         "lifecycleState": "resumed",
         "loadGeneration": 11,
@@ -34,7 +45,7 @@
     }
   },
   "nativeSnapshot": {
-    "capturedAt": "2026-04-17T04:22:24.210692Z",
+    "capturedAt": "2026-04-17T04:22:27.160463Z",
     "app": {
       "applicationId": "com.pocketcodex.shell",
       "versionName": "0.1.17",
@@ -53,7 +64,7 @@
     },
     "summary": {
       "lifecycleState": "resumed",
-      "loadGeneration": 23,
+      "loadGeneration": 25,
       "hasWindowFocus": true,
       "isFinishing": false,
       "isDestroyed": false
@@ -94,9 +105,109 @@
     }
   },
   "recentLogs": {
-    "pendingCount": 316,
-    "lastSequence": 13962,
+    "pendingCount": 342,
+    "lastSequence": 13988,
     "recent": [
+      {
+        "source": "android-shell",
+        "category": "bootstrap.manifest.fetch.start",
+        "message": "开始读取 GitHub 引导清单",
+        "details": {
+          "manifestUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 24,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-17T04:22:24.640962Z",
+        "nativeSequence": 13969
+      },
+      {
+        "source": "android-shell",
+        "category": "bootstrap.manifest.fetch.success",
+        "message": "GitHub 引导清单读取成功",
+        "details": {
+          "manifestUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
+          "requestUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json?_pcv=1776399744720-cl11ve6dh8",
+          "statusCode": 200,
+          "bodyPreview": "{   \"schemaVersion\": 1,   \"generatedAt\": \"2026-04-17T04:21:54.788Z\",   \"appName\": \"Pocket Codex\",   \"provider\": \"github-repo\",   \"status\": \"在线\",   \"publicUrl\": \"https:\/\/shot-cheapest-sisters-soundtrack.trycloudflare.com\",   \"preferredUpstre...",
+          "candidateCount": 1,
+          "publicUrl": "https:\/\/shot-cheapest-sisters-soundtrack.trycloudflare.com",
+          "preferredUpstreamUrl": "https:\/\/shot-cheapest-sisters-soundtrack.trycloudflare.com",
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 24,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-17T04:22:25.010088Z",
+        "nativeSequence": 13970
+      },
+      {
+        "source": "android-shell",
+        "category": "bootstrap.candidate.probe.start",
+        "message": "开始探测 GitHub 清单里的公网地址是否可用",
+        "details": {
+          "upstreamBaseUrl": "https:\/\/shot-cheapest-sisters-soundtrack.trycloudflare.com",
+          "source": "bootstrap-manifest:configured",
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 24,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-17T04:22:25.125071Z",
+        "nativeSequence": 13971
+      },
+      {
+        "source": "android-shell",
+        "category": "bootstrap.candidate.probe.error",
+        "message": "探测 GitHub 清单里的公网地址失败",
+        "details": {
+          "error": "UnknownHostException",
+          "message": "Unable to resolve host \"shot-cheapest-sisters-soundtrack.trycloudflare.com\": No address associated with hostname",
+          "cause": "GaiException",
+          "causeMessage": "android_getaddrinfo failed: EAI_NODATA (No address associated with hostname)",
+          "upstreamBaseUrl": "https:\/\/shot-cheapest-sisters-soundtrack.trycloudflare.com",
+          "source": "bootstrap-manifest:configured",
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 24,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-17T04:22:25.244460Z",
+        "nativeSequence": 13972
+      },
+      {
+        "source": "android-shell",
+        "category": "bootstrap.resolve.error",
+        "message": "GitHub 清单里的公网 IPv6 当前不可达",
+        "details": {
+          "error": "CandidateProbeException",
+          "message": "Unable to resolve host \"shot-cheapest-sisters-soundtrack.trycloudflare.com\": No address associated with hostname",
+          "cause": "UnknownHostException",
+          "causeMessage": "Unable to resolve host \"shot-cheapest-sisters-soundtrack.trycloudflare.com\": No address associated with hostname",
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 24,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-17T04:22:25.394020Z",
+        "nativeSequence": 13973
+      },
       {
         "source": "android-shell",
         "category": "proxy.resolve.error",
@@ -118,37 +229,17 @@
             "com.android.okhttp.internal.http.StreamAllocation.findHealthyConnection(StreamAllocation.java:128)",
             "com.android.okhttp.internal.http.StreamAllocation.newStream(StreamAllocation.java:97)"
           ],
-          "generation": 22,
+          "generation": 24,
           "nativeContext": {
             "lifecycleState": "resumed",
-            "loadGeneration": 22,
+            "loadGeneration": 24,
             "hasWindowFocus": true,
             "isFinishing": false,
             "isDestroyed": false
           }
         },
-        "capturedAt": "2026-04-17T04:22:20.910688Z",
-        "nativeSequence": 13943
-      },
-      {
-        "source": "android-shell",
-        "category": "diagnostic.github.publish.success",
-        "message": "诊断日志已通过 ghproxy 上传到 GitHub",
-        "details": {
-          "triggerCategory": "webview.page.error",
-          "filePath": "pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
-          "readUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
-          "statusCode": 200,
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 22,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-17T04:22:20.983737Z",
-        "nativeSequence": 13944
+        "capturedAt": "2026-04-17T04:22:25.513598Z",
+        "nativeSequence": 13974
       },
       {
         "source": "android-shell",
@@ -160,10 +251,10 @@
           "attempt": 8,
           "lastPageError": "",
           "lastResolvedUpstreamBaseUrl": "https:\/\/ear-receive-expressions-opposed.trycloudflare.com",
-          "scheduledReconnectAtMs": 1776399752984,
+          "scheduledReconnectAtMs": 1776399757589,
           "nativeContext": {
             "lifecycleState": "resumed",
-            "loadGeneration": 22,
+            "loadGeneration": 24,
             "hasWindowFocus": true,
             "isFinishing": false,
             "isDestroyed": false,
@@ -176,7 +267,7 @@
             "reconnectDispatchPending": false,
             "reconnectDispatchReason": "",
             "scheduledReconnectReason": "show-error",
-            "scheduledReconnectAtMs": 1776399752984,
+            "scheduledReconnectAtMs": 1776399757589,
             "scheduledReconnectWaitMs": 11999,
             "lastProxySource": "bootstrap-manifest:configured",
             "lastResolvedUpstreamBaseUrl": "https:\/\/ear-receive-expressions-opposed.trycloudflare.com",
@@ -234,8 +325,8 @@
             }
           }
         },
-        "capturedAt": "2026-04-17T04:22:21.165108Z",
-        "nativeSequence": 13945
+        "capturedAt": "2026-04-17T04:22:25.619773Z",
+        "nativeSequence": 13975
       },
       {
         "source": "android-shell",
@@ -249,7 +340,7 @@
           "countsAsPageError": false,
           "nativeContext": {
             "lifecycleState": "resumed",
-            "loadGeneration": 22,
+            "loadGeneration": 24,
             "hasWindowFocus": true,
             "isFinishing": false,
             "isDestroyed": false,
@@ -262,8 +353,8 @@
             "reconnectDispatchPending": false,
             "reconnectDispatchReason": "",
             "scheduledReconnectReason": "show-error",
-            "scheduledReconnectAtMs": 1776399752984,
-            "scheduledReconnectWaitMs": 11679,
+            "scheduledReconnectAtMs": 1776399757589,
+            "scheduledReconnectWaitMs": 11872,
             "lastProxySource": "bootstrap-manifest:configured",
             "lastResolvedUpstreamBaseUrl": "https:\/\/ear-receive-expressions-opposed.trycloudflare.com",
             "sdkInt": 34,
@@ -320,8 +411,8 @@
             }
           }
         },
-        "capturedAt": "2026-04-17T04:22:21.339532Z",
-        "nativeSequence": 13946
+        "capturedAt": "2026-04-17T04:22:25.737956Z",
+        "nativeSequence": 13976
       },
       {
         "source": "android-shell",
@@ -335,21 +426,21 @@
             "hasActiveRun": true,
             "currentUrl": "http:\/\/127.0.0.1:3180\/?_pcv=0.1.17-18-8-1776399085844",
             "lastStateSyncAt": "2026-04-17T04:20:47.483Z",
-            "failureCount": 63,
-            "offlineForMs": 33078,
+            "failureCount": 66,
+            "offlineForMs": 37490,
             "endpoint": "\/api\/state",
             "message": "Failed to fetch"
           },
           "nativeContext": {
             "lifecycleState": "resumed",
-            "loadGeneration": 22,
+            "loadGeneration": 24,
             "hasWindowFocus": true,
             "isFinishing": false,
             "isDestroyed": false
           }
         },
-        "capturedAt": "2026-04-17T04:22:21.376344Z",
-        "nativeSequence": 13947
+        "capturedAt": "2026-04-17T04:22:25.783290Z",
+        "nativeSequence": 13977
       },
       {
         "source": "android-shell",
@@ -362,7 +453,7 @@
           "lineNumber": 2080,
           "nativeContext": {
             "lifecycleState": "resumed",
-            "loadGeneration": 22,
+            "loadGeneration": 24,
             "hasWindowFocus": true,
             "isFinishing": false,
             "isDestroyed": false,
@@ -375,8 +466,8 @@
             "reconnectDispatchPending": false,
             "reconnectDispatchReason": "",
             "scheduledReconnectReason": "show-error",
-            "scheduledReconnectAtMs": 1776399752984,
-            "scheduledReconnectWaitMs": 11608,
+            "scheduledReconnectAtMs": 1776399757589,
+            "scheduledReconnectWaitMs": 11806,
             "lastProxySource": "bootstrap-manifest:configured",
             "lastResolvedUpstreamBaseUrl": "https:\/\/ear-receive-expressions-opposed.trycloudflare.com",
             "sdkInt": 34,
@@ -433,8 +524,8 @@
             }
           }
         },
-        "capturedAt": "2026-04-17T04:22:21.461314Z",
-        "nativeSequence": 13948
+        "capturedAt": "2026-04-17T04:22:25.891278Z",
+        "nativeSequence": 13978
       },
       {
         "source": "android-shell",
@@ -445,25 +536,25 @@
           "message": "正在重新连接电脑端服务…",
           "nativeContext": {
             "lifecycleState": "resumed",
-            "loadGeneration": 22,
+            "loadGeneration": 24,
             "hasWindowFocus": true,
             "isFinishing": false,
             "isDestroyed": false
           }
         },
-        "capturedAt": "2026-04-17T04:22:21.498123Z",
-        "nativeSequence": 13949
+        "capturedAt": "2026-04-17T04:22:25.940278Z",
+        "nativeSequence": 13979
       },
       {
         "source": "android-shell",
         "category": "proxy.reload",
         "message": "准备重新解析并加载 Pocket Codex 页面",
         "details": {
-          "generation": 23,
+          "generation": 25,
           "triggerReason": "web-client-request:state-poll-failed",
           "nativeContext": {
             "lifecycleState": "resumed",
-            "loadGeneration": 23,
+            "loadGeneration": 25,
             "hasWindowFocus": true,
             "isFinishing": false,
             "isDestroyed": false,
@@ -471,7 +562,7 @@
             "recordAudioPermissionGranted": true,
             "proxyReady": false,
             "bootstrapLoadInProgress": true,
-            "bootstrapLoadGeneration": 23,
+            "bootstrapLoadGeneration": 25,
             "activeBootstrapReason": "web-client-request:state-poll-failed",
             "reconnectDispatchPending": false,
             "reconnectDispatchReason": "",
@@ -534,8 +625,8 @@
             }
           }
         },
-        "capturedAt": "2026-04-17T04:22:21.575572Z",
-        "nativeSequence": 13950
+        "capturedAt": "2026-04-17T04:22:26.019606Z",
+        "nativeSequence": 13980
       },
       {
         "source": "android-shell",
@@ -548,14 +639,14 @@
           "manifestCandidateCount": 1,
           "nativeContext": {
             "lifecycleState": "resumed",
-            "loadGeneration": 23,
+            "loadGeneration": 25,
             "hasWindowFocus": true,
             "isFinishing": false,
             "isDestroyed": false
           }
         },
-        "capturedAt": "2026-04-17T04:22:21.647659Z",
-        "nativeSequence": 13951
+        "capturedAt": "2026-04-17T04:22:26.105753Z",
+        "nativeSequence": 13981
       },
       {
         "source": "android-shell",
@@ -565,14 +656,14 @@
           "manifestUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
           "nativeContext": {
             "lifecycleState": "resumed",
-            "loadGeneration": 23,
+            "loadGeneration": 25,
             "hasWindowFocus": true,
             "isFinishing": false,
             "isDestroyed": false
           }
         },
-        "capturedAt": "2026-04-17T04:22:21.724212Z",
-        "nativeSequence": 13952
+        "capturedAt": "2026-04-17T04:22:26.252107Z",
+        "nativeSequence": 13982
       },
       {
         "source": "android-shell",
@@ -580,7 +671,7 @@
         "message": "GitHub 引导清单读取成功",
         "details": {
           "manifestUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
-          "requestUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json?_pcv=1776399741801-cl10j4sqdi",
+          "requestUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json?_pcv=1776399746329-cl12m08kwx",
           "statusCode": 200,
           "bodyPreview": "{   \"schemaVersion\": 1,   \"generatedAt\": \"2026-04-17T04:21:54.788Z\",   \"appName\": \"Pocket Codex\",   \"provider\": \"github-repo\",   \"status\": \"在线\",   \"publicUrl\": \"https:\/\/shot-cheapest-sisters-soundtrack.trycloudflare.com\",   \"preferredUpstre...",
           "candidateCount": 1,
@@ -588,14 +679,14 @@
           "preferredUpstreamUrl": "https:\/\/shot-cheapest-sisters-soundtrack.trycloudflare.com",
           "nativeContext": {
             "lifecycleState": "resumed",
-            "loadGeneration": 23,
+            "loadGeneration": 25,
             "hasWindowFocus": true,
             "isFinishing": false,
             "isDestroyed": false
           }
         },
-        "capturedAt": "2026-04-17T04:22:22.340476Z",
-        "nativeSequence": 13953
+        "capturedAt": "2026-04-17T04:22:26.615336Z",
+        "nativeSequence": 13983
       },
       {
         "source": "android-shell",
@@ -606,14 +697,14 @@
           "source": "bootstrap-manifest:configured",
           "nativeContext": {
             "lifecycleState": "resumed",
-            "loadGeneration": 23,
+            "loadGeneration": 25,
             "hasWindowFocus": true,
             "isFinishing": false,
             "isDestroyed": false
           }
         },
-        "capturedAt": "2026-04-17T04:22:22.454179Z",
-        "nativeSequence": 13954
+        "capturedAt": "2026-04-17T04:22:26.738507Z",
+        "nativeSequence": 13984
       },
       {
         "source": "android-shell",
@@ -626,14 +717,14 @@
           "source": "bootstrap-manifest:configured",
           "nativeContext": {
             "lifecycleState": "resumed",
-            "loadGeneration": 23,
+            "loadGeneration": 25,
             "hasWindowFocus": true,
             "isFinishing": false,
             "isDestroyed": false
           }
         },
-        "capturedAt": "2026-04-17T04:22:22.574414Z",
-        "nativeSequence": 13955
+        "capturedAt": "2026-04-17T04:22:26.861896Z",
+        "nativeSequence": 13985
       },
       {
         "source": "android-shell",
@@ -646,130 +737,34 @@
           "causeMessage": "Unable to resolve host \"shot-cheapest-sisters-soundtrack.trycloudflare.com\": No address associated with hostname",
           "nativeContext": {
             "lifecycleState": "resumed",
-            "loadGeneration": 23,
+            "loadGeneration": 25,
             "hasWindowFocus": true,
             "isFinishing": false,
             "isDestroyed": false
           }
         },
-        "capturedAt": "2026-04-17T04:22:22.686979Z",
-        "nativeSequence": 13956
+        "capturedAt": "2026-04-17T04:22:26.985736Z",
+        "nativeSequence": 13986
       },
       {
         "source": "android-shell",
-        "category": "webview.page.error",
-        "message": "WebView 页面加载失败",
+        "category": "diagnostic.github.publish.success",
+        "message": "诊断日志已通过 ghproxy 上传到 GitHub",
         "details": {
-          "url": "http:\/\/127.0.0.1:3180\/api\/state",
-          "isMainFrame": false,
-          "errorCode": -6,
-          "description": "net::ERR_CONNECTION_REFUSED",
-          "countsAsPageError": false,
+          "triggerCategory": "bootstrap.resolve.error",
+          "filePath": "pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
+          "readUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
+          "statusCode": 200,
           "nativeContext": {
             "lifecycleState": "resumed",
-            "loadGeneration": 23,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false,
-            "currentUrl": "http:\/\/127.0.0.1:3180\/?_pcv=0.1.17-18-8-1776399085844",
-            "recordAudioPermissionGranted": true,
-            "proxyReady": false,
-            "bootstrapLoadInProgress": true,
-            "bootstrapLoadGeneration": 23,
-            "activeBootstrapReason": "web-client-request:state-poll-failed",
-            "reconnectDispatchPending": false,
-            "reconnectDispatchReason": "",
-            "scheduledReconnectReason": "",
-            "scheduledReconnectAtMs": 0,
-            "scheduledReconnectWaitMs": 0,
-            "lastProxySource": "bootstrap-manifest:configured",
-            "lastResolvedUpstreamBaseUrl": "https:\/\/ear-receive-expressions-opposed.trycloudflare.com",
-            "sdkInt": 34,
-            "manufacturer": "HONOR",
-            "model": "CLK-AN00",
-            "app": {
-              "applicationId": "com.pocketcodex.shell",
-              "versionName": "0.1.17",
-              "versionCode": 18,
-              "localProxyPort": 3180,
-              "githubDiagnostic": {
-                "configured": true,
-                "owner": "wishforgood",
-                "repo": "pocket-codex-bootstrap",
-                "branch": "main",
-                "pathPrefix": "pocket-codex\/device-logs",
-                "proxyPrefix": "https:\/\/ghproxy.vip\/",
-                "deviceId": "5e740ae166b533fb",
-                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
-              }
-            },
-            "network": {
-              "available": true,
-              "activeNetworkPresent": true,
-              "transports": [
-                "CELLULAR"
-              ],
-              "hasInternet": true,
-              "isValidated": true,
-              "isCaptivePortal": false,
-              "interfaceName": "ccmni3",
-              "addresses": [
-                "10.11.147.15",
-                "2408:8411:60b0:e446::1"
-              ],
-              "dnsServers": [
-                "\/2408:8888:0:8888::8",
-                "\/2408:8899:0:8899::8",
-                "\/202.99.96.68",
-                "\/202.99.104.68"
-              ],
-              "hasIpv4": true,
-              "hasIpv6": true
-            },
-            "bootstrap": {
-              "packagedManifestUrls": [
-                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
-              ],
-              "lastBootstrapReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
-              "lastRemoteUrl": "",
-              "lastUpstreamStaleUrl": "https:\/\/ear-receive-expressions-opposed.trycloudflare.com\/",
-              "lastUpstreamStaleAt": "2026-04-17T04:21:58.515173Z",
-              "lastConfigSyncAt": "2026-04-17T04:20:47.487737Z"
-            }
-          }
-        },
-        "capturedAt": "2026-04-17T04:22:22.760291Z",
-        "nativeSequence": 13957
-      },
-      {
-        "source": "android-shell",
-        "category": "proxy.web-reconnect.waiting",
-        "message": "网页已请求重连，但应用壳当前正在等待电脑端服务恢复",
-        "details": {
-          "reason": "state-poll-failed",
-          "payload": {
-            "reason": "state-poll-failed",
-            "connectionLabel": "重连中",
-            "hasActiveRun": true,
-            "currentUrl": "http:\/\/127.0.0.1:3180\/?_pcv=0.1.17-18-8-1776399085844",
-            "lastStateSyncAt": "2026-04-17T04:20:47.483Z",
-            "failureCount": 64,
-            "offlineForMs": 34492,
-            "endpoint": "\/api\/state",
-            "message": "Failed to fetch"
-          },
-          "bootstrapLoadGeneration": 23,
-          "reconnectDispatchPending": false,
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 23,
+            "loadGeneration": 25,
             "hasWindowFocus": true,
             "isFinishing": false,
             "isDestroyed": false
           }
         },
-        "capturedAt": "2026-04-17T04:22:22.883976Z",
-        "nativeSequence": 13958
+        "capturedAt": "2026-04-17T04:22:27.071827Z",
+        "nativeSequence": 13987
       },
       {
         "source": "android-shell",
@@ -790,209 +785,17 @@
             "com.android.okhttp.internal.http.StreamAllocation.findHealthyConnection(StreamAllocation.java:128)",
             "com.android.okhttp.internal.http.StreamAllocation.newStream(StreamAllocation.java:97)"
           ],
-          "generation": 23,
+          "generation": 25,
           "nativeContext": {
             "lifecycleState": "resumed",
-            "loadGeneration": 23,
+            "loadGeneration": 25,
             "hasWindowFocus": true,
             "isFinishing": false,
             "isDestroyed": false
           }
         },
-        "capturedAt": "2026-04-17T04:22:22.995388Z",
-        "nativeSequence": 13959
-      },
-      {
-        "source": "android-shell",
-        "category": "webview.console",
-        "message": "TypeError: Failed to fetch",
-        "details": {
-          "pageUrl": "http:\/\/127.0.0.1:3180\/?_pcv=0.1.17-18-8-1776399085844",
-          "messageLevel": "ERROR",
-          "sourceId": "http:\/\/127.0.0.1:3180\/app.js",
-          "lineNumber": 2080,
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 23,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false,
-            "currentUrl": "http:\/\/127.0.0.1:3180\/?_pcv=0.1.17-18-8-1776399085844",
-            "recordAudioPermissionGranted": true,
-            "proxyReady": false,
-            "bootstrapLoadInProgress": true,
-            "bootstrapLoadGeneration": 23,
-            "activeBootstrapReason": "web-client-request:state-poll-failed",
-            "reconnectDispatchPending": false,
-            "reconnectDispatchReason": "",
-            "scheduledReconnectReason": "",
-            "scheduledReconnectAtMs": 0,
-            "scheduledReconnectWaitMs": 0,
-            "lastProxySource": "bootstrap-manifest:configured",
-            "lastResolvedUpstreamBaseUrl": "https:\/\/ear-receive-expressions-opposed.trycloudflare.com",
-            "sdkInt": 34,
-            "manufacturer": "HONOR",
-            "model": "CLK-AN00",
-            "app": {
-              "applicationId": "com.pocketcodex.shell",
-              "versionName": "0.1.17",
-              "versionCode": 18,
-              "localProxyPort": 3180,
-              "githubDiagnostic": {
-                "configured": true,
-                "owner": "wishforgood",
-                "repo": "pocket-codex-bootstrap",
-                "branch": "main",
-                "pathPrefix": "pocket-codex\/device-logs",
-                "proxyPrefix": "https:\/\/ghproxy.vip\/",
-                "deviceId": "5e740ae166b533fb",
-                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
-              }
-            },
-            "network": {
-              "available": true,
-              "activeNetworkPresent": true,
-              "transports": [
-                "CELLULAR"
-              ],
-              "hasInternet": true,
-              "isValidated": true,
-              "isCaptivePortal": false,
-              "interfaceName": "ccmni3",
-              "addresses": [
-                "10.11.147.15",
-                "2408:8411:60b0:e446::1"
-              ],
-              "dnsServers": [
-                "\/2408:8888:0:8888::8",
-                "\/2408:8899:0:8899::8",
-                "\/202.99.96.68",
-                "\/202.99.104.68"
-              ],
-              "hasIpv4": true,
-              "hasIpv6": true
-            },
-            "bootstrap": {
-              "packagedManifestUrls": [
-                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
-              ],
-              "lastBootstrapReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
-              "lastRemoteUrl": "",
-              "lastUpstreamStaleUrl": "https:\/\/ear-receive-expressions-opposed.trycloudflare.com\/",
-              "lastUpstreamStaleAt": "2026-04-17T04:21:58.515173Z",
-              "lastConfigSyncAt": "2026-04-17T04:20:47.487737Z"
-            }
-          }
-        },
-        "capturedAt": "2026-04-17T04:22:23.066384Z",
-        "nativeSequence": 13960
-      },
-      {
-        "source": "android-shell",
-        "category": "proxy.auto-reconnect.schedule",
-        "message": "Android 应用壳已安排自动重连",
-        "details": {
-          "reason": "show-error",
-          "delayMs": 12000,
-          "attempt": 8,
-          "lastPageError": "",
-          "lastResolvedUpstreamBaseUrl": "https:\/\/ear-receive-expressions-opposed.trycloudflare.com",
-          "scheduledReconnectAtMs": 1776399755139,
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 23,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false,
-            "currentUrl": "http:\/\/127.0.0.1:3180\/?_pcv=0.1.17-18-8-1776399085844",
-            "recordAudioPermissionGranted": true,
-            "proxyReady": false,
-            "bootstrapLoadInProgress": false,
-            "bootstrapLoadGeneration": 0,
-            "activeBootstrapReason": "",
-            "reconnectDispatchPending": false,
-            "reconnectDispatchReason": "",
-            "scheduledReconnectReason": "show-error",
-            "scheduledReconnectAtMs": 1776399755139,
-            "scheduledReconnectWaitMs": 12000,
-            "lastProxySource": "bootstrap-manifest:configured",
-            "lastResolvedUpstreamBaseUrl": "https:\/\/ear-receive-expressions-opposed.trycloudflare.com",
-            "sdkInt": 34,
-            "manufacturer": "HONOR",
-            "model": "CLK-AN00",
-            "app": {
-              "applicationId": "com.pocketcodex.shell",
-              "versionName": "0.1.17",
-              "versionCode": 18,
-              "localProxyPort": 3180,
-              "githubDiagnostic": {
-                "configured": true,
-                "owner": "wishforgood",
-                "repo": "pocket-codex-bootstrap",
-                "branch": "main",
-                "pathPrefix": "pocket-codex\/device-logs",
-                "proxyPrefix": "https:\/\/ghproxy.vip\/",
-                "deviceId": "5e740ae166b533fb",
-                "latestReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json"
-              }
-            },
-            "network": {
-              "available": true,
-              "activeNetworkPresent": true,
-              "transports": [
-                "CELLULAR"
-              ],
-              "hasInternet": true,
-              "isValidated": true,
-              "isCaptivePortal": false,
-              "interfaceName": "ccmni3",
-              "addresses": [
-                "10.11.147.15",
-                "2408:8411:60b0:e446::1"
-              ],
-              "dnsServers": [
-                "\/2408:8888:0:8888::8",
-                "\/2408:8899:0:8899::8",
-                "\/202.99.96.68",
-                "\/202.99.104.68"
-              ],
-              "hasIpv4": true,
-              "hasIpv6": true
-            },
-            "bootstrap": {
-              "packagedManifestUrls": [
-                "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
-              ],
-              "lastBootstrapReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
-              "lastRemoteUrl": "",
-              "lastUpstreamStaleUrl": "https:\/\/ear-receive-expressions-opposed.trycloudflare.com\/",
-              "lastUpstreamStaleAt": "2026-04-17T04:21:58.515173Z",
-              "lastConfigSyncAt": "2026-04-17T04:20:47.487737Z"
-            }
-          }
-        },
-        "capturedAt": "2026-04-17T04:22:23.172436Z",
-        "nativeSequence": 13961
-      },
-      {
-        "source": "android-shell",
-        "category": "diagnostic.github.publish.success",
-        "message": "诊断日志已通过 ghproxy 上传到 GitHub",
-        "details": {
-          "triggerCategory": "bootstrap.candidate.probe.error",
-          "filePath": "pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
-          "readUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
-          "statusCode": 200,
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 23,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-17T04:22:24.125792Z",
-        "nativeSequence": 13962
+        "capturedAt": "2026-04-17T04:22:27.206076Z",
+        "nativeSequence": 13988
       }
     ]
   }
