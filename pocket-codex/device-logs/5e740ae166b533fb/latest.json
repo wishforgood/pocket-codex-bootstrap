@@ -1,13 +1,23 @@
 {
-  "capturedAt": "2026-04-17T12:03:19.616847Z",
+  "capturedAt": "2026-04-17T12:03:22.315362Z",
   "trigger": {
-    "category": "bootstrap.manifest.fetch.error",
-    "message": "读取 GitHub 引导清单失败",
+    "category": "proxy.resolve.error",
+    "message": "Android 应用壳解析上游地址失败",
     "details": {
       "error": "ManifestPendingException",
       "message": "电脑端当前外网入口状态为：在线",
+      "stack": [
+        "com.pocketcodex.shell.PocketCodexBootstrapResolver.resolveFromManifest(PocketCodexBootstrapResolver.java:238)",
+        "com.pocketcodex.shell.PocketCodexBootstrapResolver.resolve(PocketCodexBootstrapResolver.java:63)",
+        "com.pocketcodex.shell.MainActivity.startOrReloadProxy(MainActivity.java:495)",
+        "com.pocketcodex.shell.MainActivity.lambda$loadPocketCodex$4(MainActivity.java:361)",
+        "com.pocketcodex.shell.MainActivity.$r8$lambda$vnP4WSy9edJ98qcrNny_BZ_mtkY(Unknown Source:0)",
+        "com.pocketcodex.shell.MainActivity$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)",
+        "java.lang.Thread.run(Thread.java:1019)"
+      ],
+      "generation": 2,
       "nativeContext": {
-        "lifecycleState": "stopped",
+        "lifecycleState": "resumed",
         "loadGeneration": 2,
         "hasWindowFocus": false,
         "isFinishing": false,
@@ -32,7 +42,7 @@
     }
   },
   "nativeSnapshot": {
-    "capturedAt": "2026-04-17T12:03:19.617155Z",
+    "capturedAt": "2026-04-17T12:03:22.315833Z",
     "app": {
       "applicationId": "com.pocketcodex.shell",
       "versionName": "0.1.17",
@@ -85,134 +95,16 @@
         "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
       ],
       "lastBootstrapReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
-      "lastRemoteUrl": "https:\/\/kai-sometimes-laser-cam.trycloudflare.com",
+      "lastRemoteUrl": "https:\/\/efforts-cable-productive-vegas.trycloudflare.com",
       "lastUpstreamStaleUrl": "https:\/\/kai-sometimes-laser-cam.trycloudflare.com\/",
       "lastUpstreamStaleAt": "2026-04-17T11:54:11.575706Z",
-      "lastConfigSyncAt": "2026-04-17T11:54:03.349120Z"
+      "lastConfigSyncAt": "2026-04-17T12:03:20.546884Z"
     }
   },
   "recentLogs": {
-    "pendingCount": 400,
-    "lastSequence": 16000,
+    "pendingCount": 378,
+    "lastSequence": 16006,
     "recent": [
-      {
-        "source": "android-shell",
-        "category": "bootstrap.manifest.fetch.start",
-        "message": "开始读取 GitHub 引导清单",
-        "details": {
-          "manifestUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
-          "nativeContext": {
-            "lifecycleState": "stopped",
-            "loadGeneration": 2,
-            "hasWindowFocus": false,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-17T11:58:56.348581Z",
-        "nativeSequence": 15981
-      },
-      {
-        "source": "android-shell",
-        "category": "bootstrap.manifest.fetch.success",
-        "message": "GitHub 引导清单读取成功",
-        "details": {
-          "manifestUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
-          "requestUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json?_pcv=1776427136476-cs1wlo1pn0",
-          "statusCode": 200,
-          "bodyPreview": "{   \"schemaVersion\": 1,   \"generatedAt\": \"2026-04-17T10:56:50.365Z\",   \"appName\": \"Pocket Codex\",   \"provider\": \"github-repo\",   \"status\": \"在线\",   \"publicUrl\": \"https:\/\/kai-sometimes-laser-cam.trycloudflare.com\",   \"preferredUpstreamUrl\": \"...",
-          "candidateCount": 1,
-          "publicUrl": "https:\/\/kai-sometimes-laser-cam.trycloudflare.com",
-          "preferredUpstreamUrl": "https:\/\/kai-sometimes-laser-cam.trycloudflare.com",
-          "nativeContext": {
-            "lifecycleState": "stopped",
-            "loadGeneration": 2,
-            "hasWindowFocus": false,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-17T11:58:57.744030Z",
-        "nativeSequence": 15982
-      },
-      {
-        "source": "android-shell",
-        "category": "bootstrap.candidate.probe.start",
-        "message": "开始探测 GitHub 清单里的公网地址是否可用",
-        "details": {
-          "upstreamBaseUrl": "https:\/\/kai-sometimes-laser-cam.trycloudflare.com",
-          "source": "bootstrap-manifest:configured",
-          "nativeContext": {
-            "lifecycleState": "stopped",
-            "loadGeneration": 2,
-            "hasWindowFocus": false,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-17T11:58:58.073142Z",
-        "nativeSequence": 15983
-      },
-      {
-        "source": "android-shell",
-        "category": "diagnostic.github.publish.success",
-        "message": "诊断日志已通过 ghproxy 上传到 GitHub",
-        "details": {
-          "triggerCategory": "bootstrap.manifest.fetch.error",
-          "filePath": "pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
-          "readUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
-          "statusCode": 200,
-          "nativeContext": {
-            "lifecycleState": "stopped",
-            "loadGeneration": 2,
-            "hasWindowFocus": false,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-17T11:58:58.333655Z",
-        "nativeSequence": 15984
-      },
-      {
-        "source": "android-shell",
-        "category": "bootstrap.candidate.probe.pending",
-        "message": "GitHub 清单里的公网地址暂时还没准备好",
-        "details": {
-          "upstreamBaseUrl": "https:\/\/kai-sometimes-laser-cam.trycloudflare.com",
-          "source": "bootstrap-manifest:configured",
-          "probeUrl": "https:\/\/kai-sometimes-laser-cam.trycloudflare.com\/downloads\/pocket-codex.json",
-          "statusCode": 530,
-          "responsePreview": "<!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 8]>    <html class=\"no-...",
-          "ready": false,
-          "nativeContext": {
-            "lifecycleState": "stopped",
-            "loadGeneration": 2,
-            "hasWindowFocus": false,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-17T11:58:58.579094Z",
-        "nativeSequence": 15985
-      },
-      {
-        "source": "android-shell",
-        "category": "bootstrap.manifest.pending",
-        "message": "GitHub 引导清单返回了等待状态",
-        "details": {
-          "error": "ManifestPendingException",
-          "message": "电脑端当前外网入口状态为：在线",
-          "nativeContext": {
-            "lifecycleState": "stopped",
-            "loadGeneration": 2,
-            "hasWindowFocus": false,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-17T11:58:58.840668Z",
-        "nativeSequence": 15986
-      },
       {
         "source": "android-shell",
         "category": "bootstrap.manifest.fetch.error",
@@ -821,6 +713,129 @@
         },
         "capturedAt": "2026-04-17T12:03:19.458021Z",
         "nativeSequence": 16000
+      },
+      {
+        "source": "android-shell",
+        "category": "bootstrap.candidate.probe.ready",
+        "message": "GitHub 清单里的公网地址探测成功",
+        "details": {
+          "upstreamBaseUrl": "https:\/\/efforts-cable-productive-vegas.trycloudflare.com",
+          "source": "bootstrap-manifest:configured",
+          "probeUrl": "https:\/\/efforts-cable-productive-vegas.trycloudflare.com\/downloads\/pocket-codex.json",
+          "statusCode": 200,
+          "responsePreview": "{\"available\":true,\"channel\":\"release\",\"applicationId\":\"com.pocketcodex.shell\",\"versionName\":\"0.1.17\",\"versionCode\":18,\"size\":4701109,\"updatedAt\":\"2026-04-17T02:49:48.254Z\",\"downloadPath\":\"\/downloads\/p...",
+          "ready": true,
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 3,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-17T12:03:20.399764Z",
+        "nativeSequence": 16001
+      },
+      {
+        "source": "android-shell",
+        "category": "bootstrap.resolve.success",
+        "message": "已从 GitHub 引导清单解析到最新地址",
+        "details": {
+          "manifestUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
+          "source": "bootstrap-manifest:configured",
+          "upstreamBaseUrl": "https:\/\/efforts-cable-productive-vegas.trycloudflare.com",
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 3,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-17T12:03:20.601203Z",
+        "nativeSequence": 16002
+      },
+      {
+        "source": "android-shell",
+        "category": "proxy.upstream-wait.start",
+        "message": "已解析到外网地址，开始等待电脑端服务真正恢复",
+        "details": {
+          "generation": 3,
+          "source": "bootstrap-manifest:configured",
+          "upstreamBaseUrl": "https:\/\/efforts-cable-productive-vegas.trycloudflare.com",
+          "waitTimeoutMs": 45000,
+          "requiredSuccessCount": 0,
+          "resolutionAlreadyProbed": true,
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 3,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-17T12:03:20.739860Z",
+        "nativeSequence": 16003
+      },
+      {
+        "source": "android-shell",
+        "category": "proxy.upstream-wait.skip",
+        "message": "引导解析阶段已经确认当前地址可用，跳过额外稳定等待",
+        "details": {
+          "generation": 3,
+          "source": "bootstrap-manifest:configured",
+          "upstreamBaseUrl": "https:\/\/efforts-cable-productive-vegas.trycloudflare.com",
+          "resolutionAlreadyProbed": true,
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 3,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-17T12:03:20.853091Z",
+        "nativeSequence": 16004
+      },
+      {
+        "source": "android-shell",
+        "category": "proxy.resolved",
+        "message": "Android 应用壳已解析出上游地址",
+        "details": {
+          "generation": 3,
+          "source": "bootstrap-manifest:configured",
+          "upstreamBaseUrl": "https:\/\/efforts-cable-productive-vegas.trycloudflare.com",
+          "localProxyUrl": "http:\/\/127.0.0.1:3180\/",
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 3,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-17T12:03:20.971050Z",
+        "nativeSequence": 16005
+      },
+      {
+        "source": "android-shell",
+        "category": "diagnostic.github.publish.success",
+        "message": "诊断日志已通过 ghproxy 上传到 GitHub",
+        "details": {
+          "triggerCategory": "bootstrap.manifest.fetch.error",
+          "filePath": "pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
+          "readUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
+          "statusCode": 200,
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 3,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-17T12:03:22.151734Z",
+        "nativeSequence": 16006
       }
     ]
   }
