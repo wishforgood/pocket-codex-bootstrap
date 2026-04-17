@@ -1,8 +1,8 @@
 {
-  "capturedAt": "2026-04-17T10:51:53.537013Z",
+  "capturedAt": "2026-04-17T10:51:56.401860Z",
   "trigger": {
-    "category": "bootstrap.manifest.pending",
-    "message": "GitHub 引导清单返回了等待状态",
+    "category": "bootstrap.manifest.fetch.error",
+    "message": "读取 GitHub 引导清单失败",
     "details": {
       "error": "ManifestPendingException",
       "message": "电脑端当前外网入口状态为：在线",
@@ -32,7 +32,7 @@
     }
   },
   "nativeSnapshot": {
-    "capturedAt": "2026-04-17T10:51:53.537539Z",
+    "capturedAt": "2026-04-17T10:51:56.402292Z",
     "app": {
       "applicationId": "com.pocketcodex.shell",
       "versionName": "0.1.17",
@@ -92,27 +92,9 @@
     }
   },
   "recentLogs": {
-    "pendingCount": 129,
-    "lastSequence": 14758,
+    "pendingCount": 130,
+    "lastSequence": 14759,
     "recent": [
-      {
-        "source": "android-shell",
-        "category": "bootstrap.candidate.probe.start",
-        "message": "开始探测 GitHub 清单里的公网地址是否可用",
-        "details": {
-          "upstreamBaseUrl": "https:\/\/shot-cheapest-sisters-soundtrack.trycloudflare.com",
-          "source": "bootstrap-manifest:configured",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 48,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-17T10:51:48.146160Z",
-        "nativeSequence": 14739
-      },
       {
         "source": "android-shell",
         "category": "bootstrap.candidate.probe.pending",
@@ -698,6 +680,26 @@
         },
         "capturedAt": "2026-04-17T10:51:53.555404Z",
         "nativeSequence": 14758
+      },
+      {
+        "source": "android-shell",
+        "category": "diagnostic.github.publish.success",
+        "message": "诊断日志已通过 ghproxy 上传到 GitHub",
+        "details": {
+          "triggerCategory": "bootstrap.manifest.pending",
+          "filePath": "pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
+          "readUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
+          "statusCode": 200,
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 49,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-17T10:51:56.337719Z",
+        "nativeSequence": 14759
       }
     ]
   }
