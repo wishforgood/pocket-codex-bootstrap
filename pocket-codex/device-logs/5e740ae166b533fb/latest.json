@@ -1,8 +1,8 @@
 {
-  "capturedAt": "2026-04-17T10:56:47.733989Z",
+  "capturedAt": "2026-04-17T10:56:51.056867Z",
   "trigger": {
-    "category": "bootstrap.manifest.pending",
-    "message": "GitHub 引导清单返回了等待状态",
+    "category": "bootstrap.manifest.fetch.error",
+    "message": "读取 GitHub 引导清单失败",
     "details": {
       "error": "ManifestPendingException",
       "message": "电脑端当前外网入口状态为：在线",
@@ -32,7 +32,7 @@
     }
   },
   "nativeSnapshot": {
-    "capturedAt": "2026-04-17T10:56:47.734398Z",
+    "capturedAt": "2026-04-17T10:56:51.057339Z",
     "app": {
       "applicationId": "com.pocketcodex.shell",
       "versionName": "0.1.17",
@@ -88,41 +88,13 @@
       "lastRemoteUrl": "",
       "lastUpstreamStaleUrl": "https:\/\/shot-cheapest-sisters-soundtrack.trycloudflare.com\/",
       "lastUpstreamStaleAt": "2026-04-17T10:51:36.689851Z",
-      "lastConfigSyncAt": "2026-04-17T10:56:43.742348Z"
+      "lastConfigSyncAt": "2026-04-17T10:56:50.244709Z"
     }
   },
   "recentLogs": {
-    "pendingCount": 167,
-    "lastSequence": 15371,
+    "pendingCount": 96,
+    "lastSequence": 15372,
     "recent": [
-      {
-        "source": "android-shell",
-        "category": "proxy.resolve.error",
-        "message": "Android 应用壳解析上游地址失败",
-        "details": {
-          "error": "ManifestPendingException",
-          "message": "电脑端当前外网入口状态为：在线",
-          "stack": [
-            "com.pocketcodex.shell.PocketCodexBootstrapResolver.resolveFromManifest(PocketCodexBootstrapResolver.java:238)",
-            "com.pocketcodex.shell.PocketCodexBootstrapResolver.resolve(PocketCodexBootstrapResolver.java:63)",
-            "com.pocketcodex.shell.MainActivity.startOrReloadProxy(MainActivity.java:495)",
-            "com.pocketcodex.shell.MainActivity.lambda$loadPocketCodex$4(MainActivity.java:361)",
-            "com.pocketcodex.shell.MainActivity.$r8$lambda$vnP4WSy9edJ98qcrNny_BZ_mtkY(Unknown Source:0)",
-            "com.pocketcodex.shell.MainActivity$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)",
-            "java.lang.Thread.run(Thread.java:1019)"
-          ],
-          "generation": 30,
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 30,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-17T10:56:27.895102Z",
-        "nativeSequence": 15352
-      },
       {
         "source": "android-shell",
         "category": "proxy.auto-reconnect.schedule",
@@ -761,6 +733,26 @@
         },
         "capturedAt": "2026-04-17T10:56:47.698665Z",
         "nativeSequence": 15371
+      },
+      {
+        "source": "android-shell",
+        "category": "diagnostic.github.publish.success",
+        "message": "诊断日志已通过 ghproxy 上传到 GitHub",
+        "details": {
+          "triggerCategory": "bootstrap.manifest.pending",
+          "filePath": "pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
+          "readUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
+          "statusCode": 200,
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 31,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-17T10:56:51.032763Z",
+        "nativeSequence": 15372
       }
     ]
   }
