@@ -1,13 +1,24 @@
 {
-  "capturedAt": "2026-04-17T04:23:08.275564Z",
+  "capturedAt": "2026-04-17T04:23:10.975988Z",
   "trigger": {
-    "category": "bootstrap.resolve.error",
-    "message": "GitHub 清单里的公网 IPv6 当前不可达",
+    "category": "proxy.resolve.error",
+    "message": "Android 应用壳解析上游地址失败",
     "details": {
-      "error": "CandidateProbeException",
+      "error": "UnknownHostException",
       "message": "Unable to resolve host \"shot-cheapest-sisters-soundtrack.trycloudflare.com\": No address associated with hostname",
-      "cause": "UnknownHostException",
-      "causeMessage": "Unable to resolve host \"shot-cheapest-sisters-soundtrack.trycloudflare.com\": No address associated with hostname",
+      "stack": [
+        "java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:124)",
+        "java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:103)",
+        "java.net.InetAddress.getAllByName(InetAddress.java:1152)",
+        "com.android.okhttp.Dns$1.lookup(Dns.java:41)",
+        "com.android.okhttp.internal.http.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:178)",
+        "com.android.okhttp.internal.http.RouteSelector.nextProxy(RouteSelector.java:144)",
+        "com.android.okhttp.internal.http.RouteSelector.next(RouteSelector.java:86)",
+        "com.android.okhttp.internal.http.StreamAllocation.findConnection(StreamAllocation.java:176)",
+        "com.android.okhttp.internal.http.StreamAllocation.findHealthyConnection(StreamAllocation.java:128)",
+        "com.android.okhttp.internal.http.StreamAllocation.newStream(StreamAllocation.java:97)"
+      ],
+      "generation": 15,
       "nativeContext": {
         "lifecycleState": "resumed",
         "loadGeneration": 15,
@@ -34,7 +45,7 @@
     }
   },
   "nativeSnapshot": {
-    "capturedAt": "2026-04-17T04:23:08.275892Z",
+    "capturedAt": "2026-04-17T04:23:10.976317Z",
     "app": {
       "applicationId": "com.pocketcodex.shell",
       "versionName": "0.1.17",
@@ -90,31 +101,13 @@
       "lastRemoteUrl": "",
       "lastUpstreamStaleUrl": "https:\/\/ear-receive-expressions-opposed.trycloudflare.com\/",
       "lastUpstreamStaleAt": "2026-04-17T04:21:58.515173Z",
-      "lastConfigSyncAt": "2026-04-17T04:23:07.878558Z"
+      "lastConfigSyncAt": "2026-04-17T04:23:10.891271Z"
     }
   },
   "recentLogs": {
-    "pendingCount": 288,
-    "lastSequence": 14221,
+    "pendingCount": 241,
+    "lastSequence": 14222,
     "recent": [
-      {
-        "source": "android-shell",
-        "category": "bootstrap.candidate.probe.start",
-        "message": "开始探测 GitHub 清单里的公网地址是否可用",
-        "details": {
-          "upstreamBaseUrl": "https:\/\/shot-cheapest-sisters-soundtrack.trycloudflare.com",
-          "source": "bootstrap-manifest:configured",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 39,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-17T04:22:59.738665Z",
-        "nativeSequence": 14202
-      },
       {
         "source": "android-shell",
         "category": "webview.page.error",
@@ -1043,6 +1036,26 @@
         },
         "capturedAt": "2026-04-17T04:23:08.217706Z",
         "nativeSequence": 14221
+      },
+      {
+        "source": "android-shell",
+        "category": "diagnostic.github.publish.success",
+        "message": "诊断日志已通过 ghproxy 上传到 GitHub",
+        "details": {
+          "triggerCategory": "bootstrap.resolve.error",
+          "filePath": "pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
+          "readUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
+          "statusCode": 200,
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 39,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-17T04:23:10.916925Z",
+        "nativeSequence": 14222
       }
     ]
   }
