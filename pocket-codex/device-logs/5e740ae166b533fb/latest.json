@@ -1,11 +1,21 @@
 {
-  "capturedAt": "2026-04-17T10:56:39.330584Z",
+  "capturedAt": "2026-04-17T10:56:43.020044Z",
   "trigger": {
-    "category": "bootstrap.manifest.fetch.error",
-    "message": "读取 GitHub 引导清单失败",
+    "category": "proxy.resolve.error",
+    "message": "Android 应用壳解析上游地址失败",
     "details": {
       "error": "ManifestPendingException",
       "message": "电脑端当前外网入口状态为：在线",
+      "stack": [
+        "com.pocketcodex.shell.PocketCodexBootstrapResolver.resolveFromManifest(PocketCodexBootstrapResolver.java:238)",
+        "com.pocketcodex.shell.PocketCodexBootstrapResolver.resolve(PocketCodexBootstrapResolver.java:63)",
+        "com.pocketcodex.shell.MainActivity.startOrReloadProxy(MainActivity.java:495)",
+        "com.pocketcodex.shell.MainActivity.lambda$loadPocketCodex$4(MainActivity.java:361)",
+        "com.pocketcodex.shell.MainActivity.$r8$lambda$vnP4WSy9edJ98qcrNny_BZ_mtkY(Unknown Source:0)",
+        "com.pocketcodex.shell.MainActivity$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)",
+        "java.lang.Thread.run(Thread.java:1019)"
+      ],
+      "generation": 19,
       "nativeContext": {
         "lifecycleState": "resumed",
         "loadGeneration": 19,
@@ -32,7 +42,7 @@
     }
   },
   "nativeSnapshot": {
-    "capturedAt": "2026-04-17T10:56:39.330754Z",
+    "capturedAt": "2026-04-17T10:56:43.020426Z",
     "app": {
       "applicationId": "com.pocketcodex.shell",
       "versionName": "0.1.17",
@@ -85,34 +95,16 @@
         "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json"
       ],
       "lastBootstrapReadUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/bootstrap.json",
-      "lastRemoteUrl": "https:\/\/kai-sometimes-laser-cam.trycloudflare.com",
+      "lastRemoteUrl": "",
       "lastUpstreamStaleUrl": "https:\/\/shot-cheapest-sisters-soundtrack.trycloudflare.com\/",
       "lastUpstreamStaleAt": "2026-04-17T10:51:36.689851Z",
-      "lastConfigSyncAt": "2026-04-17T10:56:34.238959Z"
+      "lastConfigSyncAt": "2026-04-17T10:56:42.927344Z"
     }
   },
   "recentLogs": {
-    "pendingCount": 333,
-    "lastSequence": 15369,
+    "pendingCount": 286,
+    "lastSequence": 15370,
     "recent": [
-      {
-        "source": "android-shell",
-        "category": "bootstrap.manifest.fetch.error",
-        "message": "读取 GitHub 引导清单失败",
-        "details": {
-          "error": "ManifestPendingException",
-          "message": "电脑端当前外网入口状态为：在线",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 30,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-17T10:56:27.749648Z",
-        "nativeSequence": 15350
-      },
       {
         "source": "android-shell",
         "category": "bootstrap.resolve.pending",
@@ -757,6 +749,26 @@
         },
         "capturedAt": "2026-04-17T10:56:39.264992Z",
         "nativeSequence": 15369
+      },
+      {
+        "source": "android-shell",
+        "category": "diagnostic.github.publish.success",
+        "message": "诊断日志已通过 ghproxy 上传到 GitHub",
+        "details": {
+          "triggerCategory": "bootstrap.manifest.fetch.error",
+          "filePath": "pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
+          "readUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
+          "statusCode": 200,
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 31,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-17T10:56:42.913756Z",
+        "nativeSequence": 15370
       }
     ]
   }
