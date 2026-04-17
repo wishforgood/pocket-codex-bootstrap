@@ -1,13 +1,13 @@
 {
-  "capturedAt": "2026-04-17T04:23:26.073111Z",
+  "capturedAt": "2026-04-17T04:23:28.156309Z",
   "trigger": {
-    "category": "bootstrap.candidate.probe.error",
-    "message": "探测 GitHub 清单里的公网地址失败",
+    "category": "bootstrap.resolve.error",
+    "message": "GitHub 清单里的公网 IPv6 当前不可达",
     "details": {
-      "error": "UnknownHostException",
+      "error": "CandidateProbeException",
       "message": "Unable to resolve host \"shot-cheapest-sisters-soundtrack.trycloudflare.com\": No address associated with hostname",
-      "upstreamBaseUrl": "https:\/\/shot-cheapest-sisters-soundtrack.trycloudflare.com",
-      "source": "bootstrap-manifest:configured",
+      "cause": "UnknownHostException",
+      "causeMessage": "Unable to resolve host \"shot-cheapest-sisters-soundtrack.trycloudflare.com\": No address associated with hostname",
       "nativeContext": {
         "lifecycleState": "resumed",
         "loadGeneration": 17,
@@ -34,7 +34,7 @@
     }
   },
   "nativeSnapshot": {
-    "capturedAt": "2026-04-17T04:23:26.073784Z",
+    "capturedAt": "2026-04-17T04:23:28.156688Z",
     "app": {
       "applicationId": "com.pocketcodex.shell",
       "versionName": "0.1.17",
@@ -90,19 +90,19 @@
       "lastRemoteUrl": "",
       "lastUpstreamStaleUrl": "https:\/\/ear-receive-expressions-opposed.trycloudflare.com\/",
       "lastUpstreamStaleAt": "2026-04-17T04:21:58.515173Z",
-      "lastConfigSyncAt": "2026-04-17T04:23:25.945087Z"
+      "lastConfigSyncAt": "2026-04-17T04:23:27.351660Z"
     }
   },
   "recentLogs": {
     "pendingCount": 1,
-    "lastSequence": 14228,
+    "lastSequence": 14229,
     "recent": [
       {
         "source": "android-shell",
         "category": "diagnostic.github.publish.success",
         "message": "诊断日志已通过 ghproxy 上传到 GitHub",
         "details": {
-          "triggerCategory": "webview.page.error",
+          "triggerCategory": "bootstrap.candidate.probe.error",
           "filePath": "pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
           "readUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
           "statusCode": 200,
@@ -114,8 +114,8 @@
             "isDestroyed": false
           }
         },
-        "capturedAt": "2026-04-17T04:23:26.069379Z",
-        "nativeSequence": 14228
+        "capturedAt": "2026-04-17T04:23:28.154955Z",
+        "nativeSequence": 14229
       }
     ]
   }
