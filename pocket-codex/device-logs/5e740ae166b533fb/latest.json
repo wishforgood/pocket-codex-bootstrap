@@ -1,13 +1,24 @@
 {
-  "capturedAt": "2026-04-17T04:23:42.724326Z",
+  "capturedAt": "2026-04-17T04:23:45.051067Z",
   "trigger": {
-    "category": "bootstrap.resolve.error",
-    "message": "GitHub 清单里的公网 IPv6 当前不可达",
+    "category": "proxy.resolve.error",
+    "message": "Android 应用壳解析上游地址失败",
     "details": {
-      "error": "CandidateProbeException",
+      "error": "UnknownHostException",
       "message": "Unable to resolve host \"shot-cheapest-sisters-soundtrack.trycloudflare.com\": No address associated with hostname",
-      "cause": "UnknownHostException",
-      "causeMessage": "Unable to resolve host \"shot-cheapest-sisters-soundtrack.trycloudflare.com\": No address associated with hostname",
+      "stack": [
+        "java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:124)",
+        "java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:103)",
+        "java.net.InetAddress.getAllByName(InetAddress.java:1152)",
+        "com.android.okhttp.Dns$1.lookup(Dns.java:41)",
+        "com.android.okhttp.internal.http.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:178)",
+        "com.android.okhttp.internal.http.RouteSelector.nextProxy(RouteSelector.java:144)",
+        "com.android.okhttp.internal.http.RouteSelector.next(RouteSelector.java:86)",
+        "com.android.okhttp.internal.http.StreamAllocation.findConnection(StreamAllocation.java:176)",
+        "com.android.okhttp.internal.http.StreamAllocation.findHealthyConnection(StreamAllocation.java:128)",
+        "com.android.okhttp.internal.http.StreamAllocation.newStream(StreamAllocation.java:97)"
+      ],
+      "generation": 19,
       "nativeContext": {
         "lifecycleState": "resumed",
         "loadGeneration": 19,
@@ -34,7 +45,7 @@
     }
   },
   "nativeSnapshot": {
-    "capturedAt": "2026-04-17T04:23:42.724686Z",
+    "capturedAt": "2026-04-17T04:23:45.052005Z",
     "app": {
       "applicationId": "com.pocketcodex.shell",
       "versionName": "0.1.17",
@@ -90,19 +101,19 @@
       "lastRemoteUrl": "",
       "lastUpstreamStaleUrl": "https:\/\/ear-receive-expressions-opposed.trycloudflare.com\/",
       "lastUpstreamStaleAt": "2026-04-17T04:21:58.515173Z",
-      "lastConfigSyncAt": "2026-04-17T04:23:42.572032Z"
+      "lastConfigSyncAt": "2026-04-17T04:23:43.880739Z"
     }
   },
   "recentLogs": {
     "pendingCount": 1,
-    "lastSequence": 14237,
+    "lastSequence": 14238,
     "recent": [
       {
         "source": "android-shell",
         "category": "diagnostic.github.publish.success",
         "message": "诊断日志已通过 ghproxy 上传到 GitHub",
         "details": {
-          "triggerCategory": "bootstrap.candidate.probe.error",
+          "triggerCategory": "bootstrap.resolve.error",
           "filePath": "pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
           "readUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
           "statusCode": 200,
@@ -114,8 +125,8 @@
             "isDestroyed": false
           }
         },
-        "capturedAt": "2026-04-17T04:23:42.721749Z",
-        "nativeSequence": 14237
+        "capturedAt": "2026-04-17T04:23:45.047080Z",
+        "nativeSequence": 14238
       }
     ]
   }
