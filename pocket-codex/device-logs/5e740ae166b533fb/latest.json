@@ -1,13 +1,13 @@
 {
-  "capturedAt": "2026-04-19T06:07:25.275621Z",
+  "capturedAt": "2026-04-19T06:07:44.676621Z",
   "trigger": {
     "category": "webview.page.error",
     "message": "WebView 页面加载失败",
     "details": {
-      "url": "http:\/\/127.0.0.1:3180\/api\/state",
+      "url": "http:\/\/127.0.0.1:3180\/api\/events",
       "isMainFrame": false,
-      "errorCode": -6,
-      "description": "net::ERR_CONNECTION_REFUSED",
+      "errorCode": -1,
+      "description": "net::ERR_INCOMPLETE_CHUNKED_ENCODING",
       "countsAsPageError": false,
       "nativeContext": {
         "lifecycleState": "resumed",
@@ -25,7 +25,7 @@
         "reconnectDispatchReason": "",
         "scheduledReconnectReason": "show-error",
         "scheduledReconnectAtMs": 1776578128952,
-        "scheduledReconnectWaitMs": 2099,
+        "scheduledReconnectWaitMs": 2092,
         "lastProxySource": "bootstrap-manifest:configured",
         "lastResolvedUpstreamBaseUrl": "https:\/\/wellness-achieve-licenses-met.trycloudflare.com",
         "sdkInt": 34,
@@ -100,7 +100,7 @@
     }
   },
   "nativeSnapshot": {
-    "capturedAt": "2026-04-19T06:07:25.275826Z",
+    "capturedAt": "2026-04-19T06:07:44.677575Z",
     "app": {
       "applicationId": "com.pocketcodex.shell",
       "versionName": "0.1.17",
@@ -156,35 +156,22 @@
       "lastRemoteUrl": "",
       "lastUpstreamStaleUrl": "https:\/\/rocks-telling-usually-labeled.trycloudflare.com\/",
       "lastUpstreamStaleAt": "2026-04-19T01:35:38.506702Z",
-      "lastConfigSyncAt": "2026-04-19T06:07:24.179710Z"
+      "lastConfigSyncAt": "2026-04-19T06:07:43.991599Z"
     }
   },
   "recentLogs": {
     "pendingCount": 1,
-    "lastSequence": 17768,
+    "lastSequence": 17769,
     "recent": [
       {
         "source": "android-shell",
-        "category": "diagnostic.github.publish.error",
-        "message": "诊断日志上传失败",
+        "category": "diagnostic.github.publish.success",
+        "message": "诊断日志已通过 ghproxy 上传到 GitHub",
         "details": {
-          "error": "SocketTimeoutException",
-          "message": "timeout",
-          "cause": "SocketException",
-          "causeMessage": "Socket closed",
-          "stack": [
-            "com.android.okhttp.okio.Okio$3.newTimeoutException(Okio.java:214)",
-            "com.android.okhttp.okio.AsyncTimeout.exit(AsyncTimeout.java:263)",
-            "com.android.okhttp.okio.AsyncTimeout$2.read(AsyncTimeout.java:217)",
-            "com.android.okhttp.okio.RealBufferedSource.indexOf(RealBufferedSource.java:307)",
-            "com.android.okhttp.okio.RealBufferedSource.indexOf(RealBufferedSource.java:301)",
-            "com.android.okhttp.okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:197)",
-            "com.android.okhttp.internal.http.Http1xStream.readResponse(Http1xStream.java:188)",
-            "com.android.okhttp.internal.http.Http1xStream.readResponseHeaders(Http1xStream.java:129)",
-            "com.android.okhttp.internal.http.HttpEngine.readNetworkResponse(HttpEngine.java:750)",
-            "com.android.okhttp.internal.http.HttpEngine.readResponse(HttpEngine.java:622)"
-          ],
-          "triggerCategory": "proxy.resolve.error",
+          "triggerCategory": "webview.page.error",
+          "filePath": "pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
+          "readUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
+          "statusCode": 200,
           "nativeContext": {
             "lifecycleState": "resumed",
             "loadGeneration": 4,
@@ -193,8 +180,8 @@
             "isDestroyed": false
           }
         },
-        "capturedAt": "2026-04-19T06:07:25.274700Z",
-        "nativeSequence": 17768
+        "capturedAt": "2026-04-19T06:07:44.670890Z",
+        "nativeSequence": 17769
       }
     ]
   }
