@@ -1,13 +1,26 @@
 {
-  "capturedAt": "2026-04-21T05:45:52.448054Z",
+  "capturedAt": "2026-04-21T05:45:56.438057Z",
   "trigger": {
-    "category": "bootstrap.resolve.error",
-    "message": "GitHub 清单里的公网 IPv6 当前不可达",
+    "category": "proxy.resolve.error",
+    "message": "Android 应用壳解析上游地址失败",
     "details": {
-      "error": "CandidateProbeException",
+      "error": "UnknownHostException",
       "message": "Unable to resolve host \"forums-stuck-disturbed-cool.trycloudflare.com\": No address associated with hostname",
-      "cause": "UnknownHostException",
-      "causeMessage": "Unable to resolve host \"forums-stuck-disturbed-cool.trycloudflare.com\": No address associated with hostname",
+      "cause": "GaiException",
+      "causeMessage": "android_getaddrinfo failed: EAI_NODATA (No address associated with hostname)",
+      "stack": [
+        "java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:156)",
+        "java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:103)",
+        "java.net.InetAddress.getAllByName(InetAddress.java:1152)",
+        "com.android.okhttp.Dns$1.lookup(Dns.java:41)",
+        "com.android.okhttp.internal.http.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:178)",
+        "com.android.okhttp.internal.http.RouteSelector.nextProxy(RouteSelector.java:144)",
+        "com.android.okhttp.internal.http.RouteSelector.next(RouteSelector.java:86)",
+        "com.android.okhttp.internal.http.StreamAllocation.findConnection(StreamAllocation.java:176)",
+        "com.android.okhttp.internal.http.StreamAllocation.findHealthyConnection(StreamAllocation.java:128)",
+        "com.android.okhttp.internal.http.StreamAllocation.newStream(StreamAllocation.java:97)"
+      ],
+      "generation": 17,
       "nativeContext": {
         "lifecycleState": "resumed",
         "loadGeneration": 17,
@@ -34,7 +47,7 @@
     }
   },
   "nativeSnapshot": {
-    "capturedAt": "2026-04-21T05:45:52.448551Z",
+    "capturedAt": "2026-04-21T05:45:56.438355Z",
     "app": {
       "applicationId": "com.pocketcodex.shell",
       "versionName": "0.1.17",
@@ -95,26 +108,8 @@
   },
   "recentLogs": {
     "pendingCount": 400,
-    "lastSequence": 19835,
+    "lastSequence": 19836,
     "recent": [
-      {
-        "source": "android-shell",
-        "category": "bootstrap.candidate.probe.start",
-        "message": "开始探测 GitHub 清单里的公网地址是否可用",
-        "details": {
-          "upstreamBaseUrl": "https:\/\/forums-stuck-disturbed-cool.trycloudflare.com",
-          "source": "bootstrap-manifest:configured",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 22,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-21T05:45:33.839320Z",
-        "nativeSequence": 19816
-      },
       {
         "source": "android-shell",
         "category": "diagnostic.github.publish.success",
@@ -722,6 +717,26 @@
         },
         "capturedAt": "2026-04-21T05:45:52.324259Z",
         "nativeSequence": 19835
+      },
+      {
+        "source": "android-shell",
+        "category": "diagnostic.github.publish.success",
+        "message": "诊断日志已通过 ghproxy 上传到 GitHub",
+        "details": {
+          "triggerCategory": "bootstrap.resolve.error",
+          "filePath": "pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
+          "readUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
+          "statusCode": 200,
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 23,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-21T05:45:56.261073Z",
+        "nativeSequence": 19836
       }
     ]
   }
