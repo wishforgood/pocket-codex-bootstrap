@@ -1,11 +1,21 @@
 {
-  "capturedAt": "2026-04-21T07:39:10.410191Z",
+  "capturedAt": "2026-04-21T07:39:12.639039Z",
   "trigger": {
-    "category": "bootstrap.manifest.fetch.error",
-    "message": "读取 GitHub 引导清单失败",
+    "category": "proxy.resolve.error",
+    "message": "Android 应用壳解析上游地址失败",
     "details": {
       "error": "ManifestPendingException",
       "message": "电脑端当前外网入口状态为：在线",
+      "stack": [
+        "com.pocketcodex.shell.PocketCodexBootstrapResolver.resolveFromManifest(PocketCodexBootstrapResolver.java:238)",
+        "com.pocketcodex.shell.PocketCodexBootstrapResolver.resolve(PocketCodexBootstrapResolver.java:63)",
+        "com.pocketcodex.shell.MainActivity.startOrReloadProxy(MainActivity.java:495)",
+        "com.pocketcodex.shell.MainActivity.lambda$loadPocketCodex$4(MainActivity.java:361)",
+        "com.pocketcodex.shell.MainActivity.$r8$lambda$vnP4WSy9edJ98qcrNny_BZ_mtkY(Unknown Source:0)",
+        "com.pocketcodex.shell.MainActivity$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)",
+        "java.lang.Thread.run(Thread.java:1019)"
+      ],
+      "generation": 24,
       "nativeContext": {
         "lifecycleState": "resumed",
         "loadGeneration": 24,
@@ -32,7 +42,7 @@
     }
   },
   "nativeSnapshot": {
-    "capturedAt": "2026-04-21T07:39:10.411595Z",
+    "capturedAt": "2026-04-21T07:39:12.639778Z",
     "app": {
       "applicationId": "com.pocketcodex.shell",
       "versionName": "0.1.17",
@@ -88,19 +98,19 @@
       "lastRemoteUrl": "",
       "lastUpstreamStaleUrl": "https:\/\/green-act-forms-implementation.trycloudflare.com\/",
       "lastUpstreamStaleAt": "2026-04-21T07:35:30.797012Z",
-      "lastConfigSyncAt": "2026-04-21T07:39:10.362273Z"
+      "lastConfigSyncAt": "2026-04-21T07:39:11.818239Z"
     }
   },
   "recentLogs": {
     "pendingCount": 1,
-    "lastSequence": 20748,
+    "lastSequence": 20749,
     "recent": [
       {
         "source": "android-shell",
         "category": "diagnostic.github.publish.success",
         "message": "诊断日志已通过 ghproxy 上传到 GitHub",
         "details": {
-          "triggerCategory": "bootstrap.manifest.pending",
+          "triggerCategory": "bootstrap.manifest.fetch.error",
           "filePath": "pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
           "readUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
           "statusCode": 200,
@@ -112,8 +122,8 @@
             "isDestroyed": false
           }
         },
-        "capturedAt": "2026-04-21T07:39:10.407018Z",
-        "nativeSequence": 20748
+        "capturedAt": "2026-04-21T07:39:12.635354Z",
+        "nativeSequence": 20749
       }
     ]
   }
