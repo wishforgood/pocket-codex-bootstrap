@@ -1,15 +1,13 @@
 {
-  "capturedAt": "2026-04-21T05:45:37.718883Z",
+  "capturedAt": "2026-04-21T05:45:41.218498Z",
   "trigger": {
-    "category": "bootstrap.candidate.probe.error",
-    "message": "探测 GitHub 清单里的公网地址失败",
+    "category": "bootstrap.resolve.error",
+    "message": "GitHub 清单里的公网 IPv6 当前不可达",
     "details": {
-      "error": "UnknownHostException",
+      "error": "CandidateProbeException",
       "message": "Unable to resolve host \"forums-stuck-disturbed-cool.trycloudflare.com\": No address associated with hostname",
-      "cause": "GaiException",
-      "causeMessage": "android_getaddrinfo failed: EAI_NODATA (No address associated with hostname)",
-      "upstreamBaseUrl": "https:\/\/forums-stuck-disturbed-cool.trycloudflare.com",
-      "source": "bootstrap-manifest:configured",
+      "cause": "UnknownHostException",
+      "causeMessage": "Unable to resolve host \"forums-stuck-disturbed-cool.trycloudflare.com\": No address associated with hostname",
       "nativeContext": {
         "lifecycleState": "resumed",
         "loadGeneration": 16,
@@ -36,7 +34,7 @@
     }
   },
   "nativeSnapshot": {
-    "capturedAt": "2026-04-21T05:45:37.719337Z",
+    "capturedAt": "2026-04-21T05:45:41.218766Z",
     "app": {
       "applicationId": "com.pocketcodex.shell",
       "versionName": "0.1.17",
@@ -97,28 +95,8 @@
   },
   "recentLogs": {
     "pendingCount": 400,
-    "lastSequence": 19822,
+    "lastSequence": 19823,
     "recent": [
-      {
-        "source": "android-shell",
-        "category": "diagnostic.github.publish.success",
-        "message": "诊断日志已通过 ghproxy 上传到 GitHub",
-        "details": {
-          "triggerCategory": "bootstrap.manifest.fetch.error",
-          "filePath": "pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
-          "readUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
-          "statusCode": 200,
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 21,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-21T05:45:22.990021Z",
-        "nativeSequence": 19803
-      },
       {
         "source": "android-shell",
         "category": "bootstrap.manifest.fetch.success",
@@ -727,6 +705,26 @@
         },
         "capturedAt": "2026-04-21T05:45:37.594368Z",
         "nativeSequence": 19822
+      },
+      {
+        "source": "android-shell",
+        "category": "diagnostic.github.publish.success",
+        "message": "诊断日志已通过 ghproxy 上传到 GitHub",
+        "details": {
+          "triggerCategory": "bootstrap.candidate.probe.error",
+          "filePath": "pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
+          "readUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
+          "statusCode": 200,
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 22,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-21T05:45:41.082640Z",
+        "nativeSequence": 19823
       }
     ]
   }
