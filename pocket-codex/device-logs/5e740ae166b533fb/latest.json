@@ -1,15 +1,13 @@
 {
-  "capturedAt": "2026-04-21T05:46:10.338555Z",
+  "capturedAt": "2026-04-21T05:46:14.505961Z",
   "trigger": {
-    "category": "bootstrap.candidate.probe.error",
-    "message": "探测 GitHub 清单里的公网地址失败",
+    "category": "bootstrap.resolve.error",
+    "message": "GitHub 清单里的公网 IPv6 当前不可达",
     "details": {
-      "error": "UnknownHostException",
+      "error": "CandidateProbeException",
       "message": "Unable to resolve host \"forums-stuck-disturbed-cool.trycloudflare.com\": No address associated with hostname",
-      "cause": "GaiException",
-      "causeMessage": "android_getaddrinfo failed: EAI_NODATA (No address associated with hostname)",
-      "upstreamBaseUrl": "https:\/\/forums-stuck-disturbed-cool.trycloudflare.com",
-      "source": "bootstrap-manifest:configured",
+      "cause": "UnknownHostException",
+      "causeMessage": "Unable to resolve host \"forums-stuck-disturbed-cool.trycloudflare.com\": No address associated with hostname",
       "nativeContext": {
         "lifecycleState": "resumed",
         "loadGeneration": 19,
@@ -36,7 +34,7 @@
     }
   },
   "nativeSnapshot": {
-    "capturedAt": "2026-04-21T05:46:10.338783Z",
+    "capturedAt": "2026-04-21T05:46:14.506186Z",
     "app": {
       "applicationId": "com.pocketcodex.shell",
       "versionName": "0.1.17",
@@ -97,30 +95,8 @@
   },
   "recentLogs": {
     "pendingCount": 400,
-    "lastSequence": 19849,
+    "lastSequence": 19850,
     "recent": [
-      {
-        "source": "android-shell",
-        "category": "bootstrap.candidate.probe.error",
-        "message": "探测 GitHub 清单里的公网地址失败",
-        "details": {
-          "error": "UnknownHostException",
-          "message": "Unable to resolve host \"forums-stuck-disturbed-cool.trycloudflare.com\": No address associated with hostname",
-          "cause": "GaiException",
-          "causeMessage": "android_getaddrinfo failed: EAI_NODATA (No address associated with hostname)",
-          "upstreamBaseUrl": "https:\/\/forums-stuck-disturbed-cool.trycloudflare.com",
-          "source": "bootstrap-manifest:configured",
-          "nativeContext": {
-            "lifecycleState": "resumed",
-            "loadGeneration": 23,
-            "hasWindowFocus": true,
-            "isFinishing": false,
-            "isDestroyed": false
-          }
-        },
-        "capturedAt": "2026-04-21T05:45:48.530010Z",
-        "nativeSequence": 19830
-      },
       {
         "source": "android-shell",
         "category": "diagnostic.github.publish.success",
@@ -726,6 +702,26 @@
         },
         "capturedAt": "2026-04-21T05:46:10.259500Z",
         "nativeSequence": 19849
+      },
+      {
+        "source": "android-shell",
+        "category": "diagnostic.github.publish.success",
+        "message": "诊断日志已通过 ghproxy 上传到 GitHub",
+        "details": {
+          "triggerCategory": "bootstrap.candidate.probe.error",
+          "filePath": "pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
+          "readUrl": "https:\/\/ghproxy.vip\/https:\/\/raw.githubusercontent.com\/wishforgood\/pocket-codex-bootstrap\/main\/pocket-codex\/device-logs\/5e740ae166b533fb\/latest.json",
+          "statusCode": 200,
+          "nativeContext": {
+            "lifecycleState": "resumed",
+            "loadGeneration": 24,
+            "hasWindowFocus": true,
+            "isFinishing": false,
+            "isDestroyed": false
+          }
+        },
+        "capturedAt": "2026-04-21T05:46:14.356991Z",
+        "nativeSequence": 19850
       }
     ]
   }
